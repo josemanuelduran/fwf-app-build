@@ -1,20 +1,20 @@
 webpackJsonp([0],{
 
-/***/ 575:
+/***/ 571:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MatchesPageModule", function() { return MatchesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_moment__ = __webpack_require__(595);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_moment__ = __webpack_require__(591);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matches_component__ = __webpack_require__(605);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_matches_list_item_matches_list_item_component__ = __webpack_require__(607);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_pipes_module__ = __webpack_require__(608);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_components_module__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matches_component__ = __webpack_require__(601);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_matches_list_item_matches_list_item_component__ = __webpack_require__(603);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_pipes_module__ = __webpack_require__(604);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_components_module__ = __webpack_require__(407);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56,7 +56,7 @@ var MatchesPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 582:
+/***/ 578:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -90,7 +90,7 @@ exports.AddPipe = AddPipe;
 
 /***/ }),
 
-/***/ 583:
+/***/ 579:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -201,7 +201,7 @@ exports.CalendarPipe = CalendarPipe;
 
 /***/ }),
 
-/***/ 584:
+/***/ 580:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -240,7 +240,7 @@ exports.DateFormatPipe = DateFormatPipe;
 
 /***/ }),
 
-/***/ 585:
+/***/ 581:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -275,7 +275,7 @@ exports.DifferencePipe = DifferencePipe;
 
 /***/ }),
 
-/***/ 586:
+/***/ 582:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -312,7 +312,7 @@ exports.DurationPipe = DurationPipe;
 
 /***/ }),
 
-/***/ 587:
+/***/ 583:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -350,7 +350,7 @@ exports.FromUnixPipe = FromUnixPipe;
 
 /***/ }),
 
-/***/ 588:
+/***/ 584:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -382,7 +382,7 @@ exports.ParsePipe = ParsePipe;
 
 /***/ }),
 
-/***/ 589:
+/***/ 585:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -416,7 +416,7 @@ exports.SubtractPipe = SubtractPipe;
 
 /***/ }),
 
-/***/ 590:
+/***/ 586:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -521,7 +521,7 @@ exports.TimeAgoPipe = TimeAgoPipe;
 
 /***/ }),
 
-/***/ 591:
+/***/ 587:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -553,7 +553,7 @@ exports.UtcPipe = UtcPipe;
 
 /***/ }),
 
-/***/ 592:
+/***/ 588:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -588,7 +588,7 @@ exports.FromUtcPipe = FromUtcPipe;
 
 /***/ }),
 
-/***/ 593:
+/***/ 589:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -620,7 +620,7 @@ exports.LocalTimePipe = LocalTimePipe;
 
 /***/ }),
 
-/***/ 594:
+/***/ 590:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -652,45 +652,45 @@ exports.LocalePipe = LocalePipe;
 
 /***/ }),
 
-/***/ 595:
+/***/ 591:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var add_pipe_1 = __webpack_require__(582);
+var add_pipe_1 = __webpack_require__(578);
 exports.AddPipe = add_pipe_1.AddPipe;
-var calendar_pipe_1 = __webpack_require__(583);
+var calendar_pipe_1 = __webpack_require__(579);
 exports.CalendarPipe = calendar_pipe_1.CalendarPipe;
-var date_format_pipe_1 = __webpack_require__(584);
+var date_format_pipe_1 = __webpack_require__(580);
 exports.DateFormatPipe = date_format_pipe_1.DateFormatPipe;
-var difference_pipe_1 = __webpack_require__(585);
+var difference_pipe_1 = __webpack_require__(581);
 exports.DifferencePipe = difference_pipe_1.DifferencePipe;
-var duration_pipe_1 = __webpack_require__(586);
+var duration_pipe_1 = __webpack_require__(582);
 exports.DurationPipe = duration_pipe_1.DurationPipe;
-var from_unix_pipe_1 = __webpack_require__(587);
+var from_unix_pipe_1 = __webpack_require__(583);
 exports.FromUnixPipe = from_unix_pipe_1.FromUnixPipe;
-var parse_pipe_1 = __webpack_require__(588);
+var parse_pipe_1 = __webpack_require__(584);
 exports.ParsePipe = parse_pipe_1.ParsePipe;
-var moment_module_1 = __webpack_require__(596);
+var moment_module_1 = __webpack_require__(592);
 exports.MomentModule = moment_module_1.MomentModule;
-var subtract_pipe_1 = __webpack_require__(589);
+var subtract_pipe_1 = __webpack_require__(585);
 exports.SubtractPipe = subtract_pipe_1.SubtractPipe;
-var time_ago_pipe_1 = __webpack_require__(590);
+var time_ago_pipe_1 = __webpack_require__(586);
 exports.TimeAgoPipe = time_ago_pipe_1.TimeAgoPipe;
-var utc_pipe_1 = __webpack_require__(591);
+var utc_pipe_1 = __webpack_require__(587);
 exports.UtcPipe = utc_pipe_1.UtcPipe;
-var from_utc_pipe_1 = __webpack_require__(592);
+var from_utc_pipe_1 = __webpack_require__(588);
 exports.FromUtcPipe = from_utc_pipe_1.FromUtcPipe;
-var local_pipe_1 = __webpack_require__(593);
+var local_pipe_1 = __webpack_require__(589);
 exports.LocalTimePipe = local_pipe_1.LocalTimePipe;
-var locale_pipe_1 = __webpack_require__(594);
+var locale_pipe_1 = __webpack_require__(590);
 exports.LocalePipe = locale_pipe_1.LocalePipe;
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ 596:
+/***/ 592:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -703,19 +703,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var add_pipe_1 = __webpack_require__(582);
-var calendar_pipe_1 = __webpack_require__(583);
-var date_format_pipe_1 = __webpack_require__(584);
-var difference_pipe_1 = __webpack_require__(585);
-var duration_pipe_1 = __webpack_require__(586);
-var from_unix_pipe_1 = __webpack_require__(587);
-var parse_pipe_1 = __webpack_require__(588);
-var subtract_pipe_1 = __webpack_require__(589);
-var time_ago_pipe_1 = __webpack_require__(590);
-var utc_pipe_1 = __webpack_require__(591);
-var from_utc_pipe_1 = __webpack_require__(592);
-var local_pipe_1 = __webpack_require__(593);
-var locale_pipe_1 = __webpack_require__(594);
+var add_pipe_1 = __webpack_require__(578);
+var calendar_pipe_1 = __webpack_require__(579);
+var date_format_pipe_1 = __webpack_require__(580);
+var difference_pipe_1 = __webpack_require__(581);
+var duration_pipe_1 = __webpack_require__(582);
+var from_unix_pipe_1 = __webpack_require__(583);
+var parse_pipe_1 = __webpack_require__(584);
+var subtract_pipe_1 = __webpack_require__(585);
+var time_ago_pipe_1 = __webpack_require__(586);
+var utc_pipe_1 = __webpack_require__(587);
+var from_utc_pipe_1 = __webpack_require__(588);
+var local_pipe_1 = __webpack_require__(589);
+var locale_pipe_1 = __webpack_require__(590);
 var ANGULAR_MOMENT_PIPES = [
     add_pipe_1.AddPipe,
     calendar_pipe_1.CalendarPipe,
@@ -747,15 +747,15 @@ exports.MomentModule = MomentModule;
 
 /***/ }),
 
-/***/ 597:
+/***/ 593:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_match_add_match_component__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_match_add_match_component__ = __webpack_require__(404);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__add_match_add_match_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__overflow_menu_overflow_menu_component__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__overflow_menu_overflow_menu_component__ = __webpack_require__(405);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__overflow_menu_overflow_menu_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teams_maker_teams_maker_component__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teams_maker_teams_maker_component__ = __webpack_require__(406);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__teams_maker_teams_maker_component__["a"]; });
 
 
@@ -764,21 +764,21 @@ exports.MomentModule = MomentModule;
 
 /***/ }),
 
-/***/ 605:
+/***/ 601:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MatchesPageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(606);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(602);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components__ = __webpack_require__(597);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components__ = __webpack_require__(593);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -885,8 +885,8 @@ var MatchesPageComponent = /** @class */ (function () {
     MatchesPageComponent.prototype.delete = function (matchSelected) {
         var _this = this;
         var alert = this.alertCtrl.create({
-            title: this.translate.instant('MATCHES_PAGE.DELETE_MATCH'),
-            subTitle: this.translate.instant('MATCHES_PAGE.DELETE_SURE'),
+            title: this.translate.instant('MATCHESPAGE.DELETE_MATCH'),
+            subTitle: this.translate.instant('MATCHESPAGE.DELETE_SURE'),
             buttons: [
                 {
                     text: this.translate.instant('CANCEL_BUTTON'),
@@ -979,7 +979,7 @@ var MatchesPageComponent = /** @class */ (function () {
     };
     MatchesPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-matches',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\matches\matches.component.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <!--Android pushes buttons to the left even if start attribute is present.\n            Check demo: http://ionicframework.com/docs/v2/components/#buttons-in-components-->\n        <!--If placing the menuToggle in a navbar or toolbar, it should be placed as a child of the <ion-navbar> or <ion-toolbar>, and not in the <ion-buttons> element\n        http://ionicframework.com/docs/v2/api/components/menu/MenuToggle/-->\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n            {{ "MATCHES_PAGE.TITLE" | translate}}\n        </ion-title>\n        <ion-buttons end>\n            <button ion-button\n                    icon-only\n                    clear\n                    (click)="openSearchBox()">\n                <ion-icon name="funnel"></ion-icon>\n            </button>        \n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-refresher (ionRefresh)="loadListMatches($event)">\n        <ion-refresher-content\n                pullingIcon="arrow-dropdown"\n                pullingText="{{\'REFRESHER_COMPONENT.PULL_TO_REFRESH\' | translate}}"\n                refreshingSpinner="circles">\n        </ion-refresher-content>\n    </ion-refresher>\n\n    <ion-list\n            *ngFor="let group of groupedMatches"\n            no-lines\n            list-grouped\n            class="expanded">\n        <ion-list-header>\n            {{(group.group | fwfCapitalize)}}\n        </ion-list-header>\n        <div class="item-group">\n            <fwf-matches-list-item\n                    *ngFor="let matchMonthYear of group.matches"\n                    [match]="matchMonthYear.match"\n                    [isAdmin]="isAdmin"\n                    [playerId]="userLogged.playerId"\n                    (action)="doAction(matchMonthYear.match, $event)">\n            </fwf-matches-list-item>\n        </div>\n    </ion-list>\n    <!--No treatments available to display-->\n    <fwf-empty-state *ngIf="groupedMatches?.length === 0">\n        {{\'MATCHES_PAGE.NO_FOUND\' | translate}}\n    </fwf-empty-state>\n    <ion-fab right bottom *ngIf="isAdmin">\n        <button ion-fab color="primary" (click)="addMatch()">\n            <ion-icon name="add"></ion-icon>\n        </button>\n    </ion-fab>\n</ion-content>\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\matches\matches.component.html"*/,
+            selector: 'fwf-page-matches',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\matches\matches.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n\n        <!--Android pushes buttons to the left even if start attribute is present.\n\n            Check demo: http://ionicframework.com/docs/v2/components/#buttons-in-components-->\n\n        <!--If placing the menuToggle in a navbar or toolbar, it should be placed as a child of the <ion-navbar> or <ion-toolbar>, and not in the <ion-buttons> element\n\n        http://ionicframework.com/docs/v2/api/components/menu/MenuToggle/-->\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            {{ "MATCHESPAGE.TITLE" | translate}}\n\n        </ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    (click)="openSearchBox()">\n\n                <ion-icon name="funnel"></ion-icon>\n\n            </button>        \n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <ion-refresher (ionRefresh)="loadListMatches($event)">\n\n        <ion-refresher-content\n\n                pullingIcon="arrow-dropdown"\n\n                pullingText="{{\'REFRESHER_COMPONENT.PULL_TO_REFRESH\' | translate}}"\n\n                refreshingSpinner="circles">\n\n        </ion-refresher-content>\n\n    </ion-refresher>\n\n\n\n    <ion-list\n\n            *ngFor="let group of groupedMatches"\n\n            no-lines\n\n            list-grouped\n\n            class="expanded">\n\n        <ion-list-header>\n\n            {{(group.group | fwfCapitalize)}}\n\n        </ion-list-header>\n\n        <div class="item-group">\n\n            <fwf-matches-list-item\n\n                    *ngFor="let matchMonthYear of group.matches"\n\n                    [match]="matchMonthYear.match"\n\n                    [isAdmin]="isAdmin"\n\n                    [playerId]="userLogged.playerId"\n\n                    (action)="doAction(matchMonthYear.match, $event)">\n\n            </fwf-matches-list-item>\n\n        </div>\n\n    </ion-list>\n\n    <!--No treatments available to display-->\n\n    <fwf-empty-state *ngIf="groupedMatches?.length === 0">\n\n        {{\'MATCHESPAGE.NO_FOUND\' | translate}}\n\n    </fwf-empty-state>\n\n    <ion-fab right bottom *ngIf="isAdmin">\n\n        <button ion-fab color="primary" (click)="addMatch()">\n\n            <ion-icon name="add"></ion-icon>\n\n        </button>\n\n    </ion-fab>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\matches\matches.component.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_6__providers__["h" /* MatchesService */],
@@ -996,7 +996,7 @@ var MatchesPageComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 606:
+/***/ 602:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -18098,17 +18098,17 @@ var MatchesPageComponent = /** @class */ (function () {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(78), __webpack_require__(409)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(77), __webpack_require__(408)(module)))
 
 /***/ }),
 
-/***/ 607:
+/***/ 603:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MatchesListItemComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models__ = __webpack_require__(76);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18206,14 +18206,14 @@ var MatchesListItemComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 608:
+/***/ 604:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PipesModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__capitalize_pipe__ = __webpack_require__(609);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__elapsed_time_pipe__ = __webpack_require__(610);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__capitalize_pipe__ = __webpack_require__(605);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__elapsed_time_pipe__ = __webpack_require__(606);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18245,7 +18245,7 @@ var PipesModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 609:
+/***/ 605:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18280,7 +18280,7 @@ var CapitalizePipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 610:
+/***/ 606:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

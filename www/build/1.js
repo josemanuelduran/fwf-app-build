@@ -1,17 +1,17 @@
 webpackJsonp([1],{
 
-/***/ 574:
+/***/ 570:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MatchPageModule", function() { return MatchPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_moment__ = __webpack_require__(595);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_moment__ = __webpack_require__(591);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angular2_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__match_component__ = __webpack_require__(604);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__match_component__ = __webpack_require__(600);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -45,7 +45,7 @@ var MatchPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 582:
+/***/ 578:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79,7 +79,7 @@ exports.AddPipe = AddPipe;
 
 /***/ }),
 
-/***/ 583:
+/***/ 579:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -190,7 +190,7 @@ exports.CalendarPipe = CalendarPipe;
 
 /***/ }),
 
-/***/ 584:
+/***/ 580:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -229,7 +229,7 @@ exports.DateFormatPipe = DateFormatPipe;
 
 /***/ }),
 
-/***/ 585:
+/***/ 581:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -264,7 +264,7 @@ exports.DifferencePipe = DifferencePipe;
 
 /***/ }),
 
-/***/ 586:
+/***/ 582:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -301,7 +301,7 @@ exports.DurationPipe = DurationPipe;
 
 /***/ }),
 
-/***/ 587:
+/***/ 583:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -339,7 +339,7 @@ exports.FromUnixPipe = FromUnixPipe;
 
 /***/ }),
 
-/***/ 588:
+/***/ 584:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -371,7 +371,7 @@ exports.ParsePipe = ParsePipe;
 
 /***/ }),
 
-/***/ 589:
+/***/ 585:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -405,7 +405,7 @@ exports.SubtractPipe = SubtractPipe;
 
 /***/ }),
 
-/***/ 590:
+/***/ 586:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -510,7 +510,7 @@ exports.TimeAgoPipe = TimeAgoPipe;
 
 /***/ }),
 
-/***/ 591:
+/***/ 587:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -542,7 +542,7 @@ exports.UtcPipe = UtcPipe;
 
 /***/ }),
 
-/***/ 592:
+/***/ 588:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -577,7 +577,7 @@ exports.FromUtcPipe = FromUtcPipe;
 
 /***/ }),
 
-/***/ 593:
+/***/ 589:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -609,7 +609,7 @@ exports.LocalTimePipe = LocalTimePipe;
 
 /***/ }),
 
-/***/ 594:
+/***/ 590:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -641,45 +641,45 @@ exports.LocalePipe = LocalePipe;
 
 /***/ }),
 
-/***/ 595:
+/***/ 591:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var add_pipe_1 = __webpack_require__(582);
+var add_pipe_1 = __webpack_require__(578);
 exports.AddPipe = add_pipe_1.AddPipe;
-var calendar_pipe_1 = __webpack_require__(583);
+var calendar_pipe_1 = __webpack_require__(579);
 exports.CalendarPipe = calendar_pipe_1.CalendarPipe;
-var date_format_pipe_1 = __webpack_require__(584);
+var date_format_pipe_1 = __webpack_require__(580);
 exports.DateFormatPipe = date_format_pipe_1.DateFormatPipe;
-var difference_pipe_1 = __webpack_require__(585);
+var difference_pipe_1 = __webpack_require__(581);
 exports.DifferencePipe = difference_pipe_1.DifferencePipe;
-var duration_pipe_1 = __webpack_require__(586);
+var duration_pipe_1 = __webpack_require__(582);
 exports.DurationPipe = duration_pipe_1.DurationPipe;
-var from_unix_pipe_1 = __webpack_require__(587);
+var from_unix_pipe_1 = __webpack_require__(583);
 exports.FromUnixPipe = from_unix_pipe_1.FromUnixPipe;
-var parse_pipe_1 = __webpack_require__(588);
+var parse_pipe_1 = __webpack_require__(584);
 exports.ParsePipe = parse_pipe_1.ParsePipe;
-var moment_module_1 = __webpack_require__(596);
+var moment_module_1 = __webpack_require__(592);
 exports.MomentModule = moment_module_1.MomentModule;
-var subtract_pipe_1 = __webpack_require__(589);
+var subtract_pipe_1 = __webpack_require__(585);
 exports.SubtractPipe = subtract_pipe_1.SubtractPipe;
-var time_ago_pipe_1 = __webpack_require__(590);
+var time_ago_pipe_1 = __webpack_require__(586);
 exports.TimeAgoPipe = time_ago_pipe_1.TimeAgoPipe;
-var utc_pipe_1 = __webpack_require__(591);
+var utc_pipe_1 = __webpack_require__(587);
 exports.UtcPipe = utc_pipe_1.UtcPipe;
-var from_utc_pipe_1 = __webpack_require__(592);
+var from_utc_pipe_1 = __webpack_require__(588);
 exports.FromUtcPipe = from_utc_pipe_1.FromUtcPipe;
-var local_pipe_1 = __webpack_require__(593);
+var local_pipe_1 = __webpack_require__(589);
 exports.LocalTimePipe = local_pipe_1.LocalTimePipe;
-var locale_pipe_1 = __webpack_require__(594);
+var locale_pipe_1 = __webpack_require__(590);
 exports.LocalePipe = locale_pipe_1.LocalePipe;
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ 596:
+/***/ 592:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -692,19 +692,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var add_pipe_1 = __webpack_require__(582);
-var calendar_pipe_1 = __webpack_require__(583);
-var date_format_pipe_1 = __webpack_require__(584);
-var difference_pipe_1 = __webpack_require__(585);
-var duration_pipe_1 = __webpack_require__(586);
-var from_unix_pipe_1 = __webpack_require__(587);
-var parse_pipe_1 = __webpack_require__(588);
-var subtract_pipe_1 = __webpack_require__(589);
-var time_ago_pipe_1 = __webpack_require__(590);
-var utc_pipe_1 = __webpack_require__(591);
-var from_utc_pipe_1 = __webpack_require__(592);
-var local_pipe_1 = __webpack_require__(593);
-var locale_pipe_1 = __webpack_require__(594);
+var add_pipe_1 = __webpack_require__(578);
+var calendar_pipe_1 = __webpack_require__(579);
+var date_format_pipe_1 = __webpack_require__(580);
+var difference_pipe_1 = __webpack_require__(581);
+var duration_pipe_1 = __webpack_require__(582);
+var from_unix_pipe_1 = __webpack_require__(583);
+var parse_pipe_1 = __webpack_require__(584);
+var subtract_pipe_1 = __webpack_require__(585);
+var time_ago_pipe_1 = __webpack_require__(586);
+var utc_pipe_1 = __webpack_require__(587);
+var from_utc_pipe_1 = __webpack_require__(588);
+var local_pipe_1 = __webpack_require__(589);
+var locale_pipe_1 = __webpack_require__(590);
 var ANGULAR_MOMENT_PIPES = [
     add_pipe_1.AddPipe,
     calendar_pipe_1.CalendarPipe,
@@ -736,15 +736,15 @@ exports.MomentModule = MomentModule;
 
 /***/ }),
 
-/***/ 597:
+/***/ 593:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_match_add_match_component__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_match_add_match_component__ = __webpack_require__(404);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__add_match_add_match_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__overflow_menu_overflow_menu_component__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__overflow_menu_overflow_menu_component__ = __webpack_require__(405);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__overflow_menu_overflow_menu_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teams_maker_teams_maker_component__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teams_maker_teams_maker_component__ = __webpack_require__(406);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__teams_maker_teams_maker_component__["a"]; });
 
 
@@ -753,18 +753,18 @@ exports.MomentModule = MomentModule;
 
 /***/ }),
 
-/***/ 604:
+/***/ 600:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MatchPageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components__ = __webpack_require__(597);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_scoreboard_scoreboard_component__ = __webpack_require__(410);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components__ = __webpack_require__(593);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_scoreboard_scoreboard_component__ = __webpack_require__(409);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ionic_angular_util_util__ = __webpack_require__(3);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -787,73 +787,73 @@ var AVAILABLE_OPTIONS = [
     {
         action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EDIT_TEAMS,
         roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN, __WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].COACH],
-        token: 'MATCH_PAGE.ACTION.EDIT_TEAMS',
+        token: 'MATCHPAGE.ACTION.EDIT_TEAMS',
         icon: 'build'
     },
     {
         action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EDIT_MATCH,
         roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
-        token: 'MATCH_PAGE.ACTION.EDIT_MATCH',
+        token: 'MATCHPAGE.ACTION.EDIT_MATCH',
         icon: 'create'
     },
     {
         action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].DELETE_MATCH,
         roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
-        token: 'MATCH_PAGE.ACTION.DELETE_MATCH',
+        token: 'MATCHPAGE.ACTION.DELETE_MATCH',
         icon: 'trash'
     },
     {
         action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].SET_SCOREBOARD,
         roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
-        token: 'MATCH_PAGE.ACTION.SCOREBOARD',
+        token: 'MATCHPAGE.ACTION.SCOREBOARD',
         icon: 'football'
     },
     {
         action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].JOIN_CALL_UP,
         roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].PLAYER],
-        token: 'MATCH_PAGE.ACTION.JOIN_CALL_UP',
+        token: 'MATCHPAGE.ACTION.JOIN_CALL_UP',
         icon: 'thumbs-up'
     },
     {
         action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].UNJOIN_CALL_UP,
         roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].PLAYER],
-        token: 'MATCH_PAGE.ACTION.UNJOIN_CALL_UP',
+        token: 'MATCHPAGE.ACTION.UNJOIN_CALL_UP',
         icon: 'thumbs-down'
     },
     {
         action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].DISCARD_ME_CALL_UP,
         roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].PLAYER],
-        token: 'MATCH_PAGE.ACTION.DISCARD_ME_CALL_UP',
+        token: 'MATCHPAGE.ACTION.DISCARD_ME_CALL_UP',
         icon: 'remove-circle'
     },
     {
         action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EXIT_FROM_DISCARDS,
         roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].PLAYER],
-        token: 'MATCH_PAGE.ACTION.EXIT_FROM_DISCARDS',
+        token: 'MATCHPAGE.ACTION.EXIT_FROM_DISCARDS',
         icon: 'checkmark-circle'
     },
     {
         action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EDIT_CALL_UP,
         roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
-        token: 'MATCH_PAGE.ACTION.EDIT_CALL_UP',
+        token: 'MATCHPAGE.ACTION.EDIT_CALL_UP',
         icon: 'people'
     },
     {
         action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EDIT_DISCARDS,
         roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
-        token: 'MATCH_PAGE.ACTION.EDIT_DISCARDS',
+        token: 'MATCHPAGE.ACTION.EDIT_DISCARDS',
         icon: 'close-circle'
     },
     {
         action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].ADD_EXTRA_PLAYER,
         roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
-        token: 'MATCH_PAGE.ACTION.ADD_EXTRA_PLAYER',
+        token: 'MATCHPAGE.ACTION.ADD_EXTRA_PLAYER',
         icon: 'add'
     },
     {
         action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].REMOVE_EXTRA_PLAYER,
         roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
-        token: 'MATCH_PAGE.ACTION.REMOVE_EXTRA_PLAYER',
+        token: 'MATCHPAGE.ACTION.REMOVE_EXTRA_PLAYER',
         icon: 'remove'
     }
 ];
@@ -941,7 +941,7 @@ var MatchPageComponent = /** @class */ (function () {
         this.navCtrl.push('CallUpPage', { match: this.match, reserves: true });
     };
     MatchPageComponent.prototype.goToValuations = function () {
-        this.navCtrl.push('ValuationsPage', { match: this.match, player: this.player });
+        this.navCtrl.push('ValuationsPage', { match: this.match });
     };
     MatchPageComponent.prototype.getOptionsAllowed = function () {
         var _this = this;
@@ -979,7 +979,7 @@ var MatchPageComponent = /** @class */ (function () {
     MatchPageComponent.prototype.editTeams = function () {
         var _this = this;
         if (this.match.callUp.length < this.match.numPlayers) {
-            this.messages.showInfo('MATCH_PAGE.CALL_UP_INCOMPLETED');
+            this.messages.showInfo('MATCHPAGE.CALL_UP_INCOMPLETED');
         }
         else {
             var dialog = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__components__["c" /* TeamsMakerComponent */], { match: this.match, player: this.player }, { enableBackdropDismiss: false });
@@ -998,8 +998,8 @@ var MatchPageComponent = /** @class */ (function () {
     MatchPageComponent.prototype.deleteMatch = function () {
         var _this = this;
         var alert = this.alertCtrl.create({
-            title: this.translate.instant('MATCHES_PAGE.DELETE_MATCH'),
-            subTitle: this.translate.instant('MATCHES_PAGE.DELETE_SURE'),
+            title: this.translate.instant('MATCHESPAGE.DELETE_MATCH'),
+            subTitle: this.translate.instant('MATCHESPAGE.DELETE_SURE'),
             buttons: [
                 {
                     text: this.translate.instant('CANCEL_BUTTON'),
@@ -1135,11 +1135,11 @@ var MatchPageComponent = /** @class */ (function () {
     MatchPageComponent.prototype.addExtraPlayer = function () {
         var _this = this;
         var prompt = this.alertCtrl.create({
-            title: this.translate.instant('MATCH_PAGE.ACTION.ADD_EXTRA_PLAYER'),
+            title: this.translate.instant('MATCHPAGE.ACTION.ADD_EXTRA_PLAYER'),
             inputs: [
                 {
                     name: 'name',
-                    placeholder: this.translate.instant('MATCH_PAGE.NAME_NEW_PLAYER')
+                    placeholder: this.translate.instant('MATCHPAGE.NAME_NEW_PLAYER')
                 },
             ],
             buttons: [
@@ -1168,11 +1168,11 @@ var MatchPageComponent = /** @class */ (function () {
     MatchPageComponent.prototype.removeExtraPlayer = function () {
         var _this = this;
         var prompt = this.alertCtrl.create({
-            title: this.translate.instant('MATCH_PAGE.ACTION.ADD_EXTRA_PLAYER'),
+            title: this.translate.instant('MATCHPAGE.ACTION.ADD_EXTRA_PLAYER'),
             inputs: [
                 {
                     name: 'name',
-                    placeholder: this.translate.instant('MATCH_PAGE.NAME_NEW_PLAYER')
+                    placeholder: this.translate.instant('MATCHPAGE.NAME_NEW_PLAYER')
                 },
             ],
             buttons: [
@@ -1202,7 +1202,7 @@ var MatchPageComponent = /** @class */ (function () {
     MatchPageComponent.prototype.showListPlayersCallUp = function (players) {
         var _this = this;
         var alert = this.alertCtrl.create();
-        alert.setTitle(this.translate.instant('MATCH_PAGE.ADD_PLAYER'));
+        alert.setTitle(this.translate.instant('MATCHPAGE.ADD_PLAYER'));
         players.forEach(function (player) {
             var checked = _this.match.callUp && _this.match.callUp.findIndex(function (el) { return el.player.id === player.id; }) >= 0;
             alert.addInput({
@@ -1225,7 +1225,7 @@ var MatchPageComponent = /** @class */ (function () {
     MatchPageComponent.prototype.showListPlayersDiscards = function (players) {
         var _this = this;
         var alert = this.alertCtrl.create();
-        alert.setTitle(this.translate.instant('MATCH_PAGE.DISCARD_PLAYER'));
+        alert.setTitle(this.translate.instant('MATCHPAGE.DISCARD_PLAYER'));
         players.forEach(function (player) {
             var checked = _this.match.discards && _this.match.discards.findIndex(function (el) { return el.player.id === player.id; }) >= 0;
             alert.addInput({
@@ -1328,7 +1328,7 @@ var MatchPageComponent = /** @class */ (function () {
     };
     MatchPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-match',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\match\match.component.html"*/'<ion-header>\n    <ion-navbar color="primary">        \n        <ion-title>\n            {{match.name }}\n        </ion-title>\n        <ion-buttons end>               \n            <button ion-button\n                    icon-only\n                    clear\n                    [disabled]="menuDisable"\n                    (click)="showOptions($event)">\n                <ion-icon name="more"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-card>\n        <ion-card-header>\n            {{"MATCH_PAGE.DATA_HEADER" | translate}}\n        </ion-card-header>      \n        <ion-list>\n            <ion-item>\n                <ion-icon name="calendar" item-start></ion-icon>\n                {{match.date | amDateFormat: \'DD-MM-YYYY\'}}\n            </ion-item>                    \n            <ion-item color="none" on-click="goToCallUp()">\n                <ion-icon name="people" item-left></ion-icon>\n                {{ "MATCH_PAGE.CALL_UP" | translate}}  ({{match.callUp?.length || 0}}/{{match.numPlayers}})\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n            <ion-item color="none" on-click="goToTeams()">\n                <ion-icon name="shirt" item-left></ion-icon>\n                {{ "MATCH_PAGE.TEAMS" | translate}}\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n            <ion-item color="none">\n                <ion-icon name="football" item-left></ion-icon>\n                {{ "MATCH_PAGE.SCOREBOARD" | translate}}\n                <h4 class="scoreboard">\n                    <span *ngIf="matchPlayed; else elseBlock ">\n                        {{\'WHITE\' | translate}}: {{match.team1.goals}} - {{\'BLACK\' | translate}}: {{match.team2.goals}}\n                    </span>\n                    <ng-template #elseBlock>\n                        {{"MATCH_PAGE.NOT_PLAYED" | translate}}\n                    </ng-template>\n                </h4>\n            </ion-item>     \n            <ion-item color="none" *ngIf="match.mister">\n                <ion-icon name="build" item-left></ion-icon>\n                {{ "MATCH_PAGE.MISTER" | translate}}: {{match.mister.name}}\n            </ion-item>\n            <ion-item color="none" on-click="goToDiscards()">\n                <ion-icon name="thumbs-down" item-left></ion-icon>\n                {{ "MATCH_PAGE.DISCARDS" | translate}}  ({{match.discards?.length || 0}})\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n            <ion-item color="none" on-click="goToReserves()">\n                <ion-icon name="cut" item-left></ion-icon>\n                {{ "MATCH_PAGE.RESERVES" | translate}}  ({{match.reserves?.length || 0}})\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n            <ion-item *ngIf="matchPlayed" color="none" on-click="goToValuations()">\n                <ion-icon name="stats" item-left></ion-icon>\n                {{ "MATCH_PAGE.VALUATIONS" | translate}}\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item> \n        </ion-list>\n      </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\match\match.component.html"*/,
+            selector: 'fwf-page-match',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\match\match.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name }}\n\n        </ion-title>\n\n        <ion-buttons end>               \n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    [disabled]="menuDisable"\n\n                    (click)="showOptions($event)">\n\n                <ion-icon name="more"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-card>\n\n        <ion-card-header>\n\n            {{"MATCHPAGE.DATA_HEADER" | translate}}\n\n        </ion-card-header>      \n\n        <ion-list>\n\n            <ion-item>\n\n                <ion-icon name="calendar" item-start></ion-icon>\n\n                {{match.date | amDateFormat: \'DD-MM-YYYY\'}}\n\n            </ion-item>                    \n\n            <ion-item color="none" on-click="goToCallUp()">\n\n                <ion-icon name="people" item-left></ion-icon>\n\n                {{ "MATCHPAGE.CALL_UP" | translate}}  ({{match.callUp?.length || 0}}/{{match.numPlayers}})\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" on-click="goToTeams()">\n\n                <ion-icon name="shirt" item-left></ion-icon>\n\n                {{ "MATCHPAGE.TEAMS" | translate}}\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none">\n\n                <ion-icon name="football" item-left></ion-icon>\n\n                {{ "MATCHPAGE.SCOREBOARD" | translate}}\n\n                <h4 class="scoreboard">\n\n                    <span *ngIf="matchPlayed; else elseBlock ">\n\n                        {{\'WHITE\' | translate}}: {{match.team1.goals}} - {{\'BLACK\' | translate}}: {{match.team2.goals}}\n\n                    </span>\n\n                    <ng-template #elseBlock>\n\n                        {{"MATCHPAGE.NOT_PLAYED" | translate}}\n\n                    </ng-template>\n\n                </h4>\n\n            </ion-item>     \n\n            <ion-item color="none" *ngIf="match.mister">\n\n                <ion-icon name="build" item-left></ion-icon>\n\n                {{ "MATCHPAGE.MISTER" | translate}}: {{match.mister.name}}\n\n            </ion-item>\n\n            <ion-item color="none" on-click="goToDiscards()">\n\n                <ion-icon name="thumbs-down" item-left></ion-icon>\n\n                {{ "MATCHPAGE.DISCARDS" | translate}}  ({{match.discards?.length || 0}})\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" on-click="goToReserves()">\n\n                <ion-icon name="cut" item-left></ion-icon>\n\n                {{ "MATCHPAGE.RESERVES" | translate}}  ({{match.reserves?.length || 0}})\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item *ngIf="matchPlayed" color="none" on-click="goToValuations()">\n\n                <ion-icon name="stats" item-left></ion-icon>\n\n                {{ "MATCHPAGE.VALUATIONS" | translate}}\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item> \n\n        </ion-list>\n\n      </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\match\match.component.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
