@@ -1,0 +1,144 @@
+{
+    "APPLICATION_DETAIL": {
+        "COPYRIGHT": " 2018 Jose Manuel Durán. All rights reserved.",
+        "NAME": "Football With Friends",
+        "VERSION": "v0.1.0"
+    },
+    "INTRODUCTION": {
+        "CONTINUE": "Continue",
+        "SLIDE1_1": "Welcome to",
+        "SLIDE1_2": "The",
+        "SLIDE1_3": "to manage the football game on Tuesdays",
+        "SLIDE2_1": "What is it and what does it serve Football with friends?",
+        "SLIDE2_2": "is an high quality mobile apps available for both iOS and Android.",
+        "SLIDE2_3": "allows you to manage everything related to the games of the Tuesday we have been playing for almost 10 years. At last!!",
+        "SLIDE3_1": "What do you have to do now?",
+        "SLIDE3_2": "You just have to enjoy the application and say",
+        "SLIDE3_3": "\"vaya equipito\"",
+        "SLIDE3_4": "every time the teams are made every week",
+        "SLIDE4_1": "And remember to be careful with Jero"
+    },
+    "MENU": {
+        "TITLE": "Football With Friends",
+        "MATCHES": "Matches",
+        "PROFILE": "Profile",
+        "PAYMENTS": "Payments",
+        "STATS": "Stats",
+        "SETTINGS": "Settings",
+        "INTRODUCTION": "Introduction",
+        "ABOUT": "About",
+        "LOGOUT": "Log-out",
+        "TITLE_DIVIDER": "Settings",
+        "LOCATION": "Location"
+    },
+    "TABS": {
+        "TAB1": "Matches",
+        "TAB2": "Profile",
+        "TAB3": "Payments",
+        "TAB4": "Stats"
+    },
+    "LOGIN": {
+        "LOGIN": "Login",
+        "USERNAME": "Username",
+        "PASSWORD": "Password",
+        "ERROR_LOGIN_TITLE": "Login Error",
+        "ERROR_LOGIN_MSG": "Invalid username or password"
+    },
+    "MATCHES_PAGE": {
+        "TITLE": "Matches",
+        "NO_FOUND": "No matches have been found for those dates.",
+        "DELETE_MATCH": "Delete Match",
+        "DELETE_SURE": "Are you sure of delete this match?"
+    },
+    "MATCH_PAGE": {
+        "DATA_HEADER": "Match Information",
+        "CALL_UP": "Call up",
+        "TEAMS": "Teams",
+        "SCOREBOARD": "Scoreboard",
+        "MISTER": "Teams maker",
+        "DISCARDS": "Discards",
+        "RESERVES": "Reserves",
+        "VALUATIONS": "Valuations",
+        "NOT_PLAYED": "Not played",
+        "CALL_UP_INCOMPLETED": "The call up is not completed",
+        "NAME_NEW_PLAYER": "Name",
+        "ACTION": {
+            "EDIT_TEAMS": "Edit Teams",
+            "EDIT_MATCH": "Edit Match",
+            "DELETE_MATCH": "Delete Match",
+            "SCOREBOARD": "Set Scoreboard",
+            "JOIN_CALL_UP": "Join Match",
+            "UNJOIN_CALL_UP": "Unjoin Match",
+            "DISCARD_ME_CALL_UP": "I can't play",
+            "EXIT_FROM_DISCARDS": "Exit from discards",
+            "EDIT_CALL_UP": "Edit Call up",
+            "EDIT_DISCARDS": "Edit discards",
+            "ADD_EXTRA_PLAYER": "Add extra Player",
+            "REMOVE_EXTRA_PLAYER": "Remove extra Player"
+        }
+    },
+    "ADD_MATCH_PAGE": {
+        "TITLE": "Add new match",
+        "NAME": "Name",
+        "DATE": "Date",
+        "NUMPLAYERS": "Number of players",
+        "OPEN_CALL_UP": "Open call up",
+        "CANCELLED": "Match cancelled",
+        "SURE": "Are you sure you want to cancel the process?",
+        "CANCEL": "Cancel modification"
+    },
+    "PAYMENTS_PAGE": {
+        "TITLE": "Payments",
+        "NO_FOUND": "No payments have been found."
+    },
+    "PROFILE_PAGE": {
+        "TITLE": "Profile",
+        "DATA_HEADER": "Player Data",
+        "NAME": "Full name",
+        "ALIAS": "Nickname",
+        "EMAIL": "Email",
+        "PHONE": "Phone Number",
+        "USERNAME": "Username",
+        "STATUS": "Status",
+        "CHANGE_PASSWORD": "Change password",
+        "FIXED": "Fixed",
+        "NO_FIXED": "No Fixed"
+    },
+    "EDIT_PROFILE_PAGE": {
+        "TITLE": "Modificar Perfil",
+        "NAME": "Full name",
+        "ALIAS": "Nickname",
+        "EMAIL": "Email",
+        "PHONE": "Phone Number",
+        "USERNAME": "Username",
+        "SURE": "Are you sure you want to cancel the process?",
+        "CANCEL": "Cancel modification",
+        "ERROR": "An error occurred when saving the changes"
+    },
+    "STATS_PAGE": {
+        "TITLE": "Stats",
+        "NO_FOUND": "No stats have been found."
+    },
+    "REFRESHER_COMPONENT": {
+        "PULL_TO_REFRESH": "Pull to refresh"
+    },
+    "BUSY_INDICATOR": {
+        "PLEASE_WAIT": "Please wait..." 
+    },
+    "TOAST": {
+        "CLOSE": "Close"
+    },
+    "OK_BUTTON": "Ok",
+    "CANCEL_BUTTON": "Cancel",
+    "DELETE_BUTTON": "Delete",
+    "EDIT_BUTTON": "Edit",
+    "JOIN_BUTTON": "Join",
+    "UNJOIN_BUTTON": "Unjoin",
+    "DISCARD_BUTTON": "Discard me",
+    "CONFIRMATION": "Confirmation",
+    "ACTION_OK": "Action completed successfully",
+    "INFORMATION": "Information",
+    "ERROR": "Error",
+    "BLACK": "Black",
+    "WHITE": "White"
+}
