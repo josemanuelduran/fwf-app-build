@@ -1,4 +1,4 @@
-webpackJsonp([12],{
+webpackJsonp([13],{
 
 /***/ 120:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6,7 +6,7 @@ webpackJsonp([12],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular2_jwt__ = __webpack_require__(475);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular2_jwt__ = __webpack_require__(467);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular2_jwt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_angular2_jwt__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -63,52 +63,56 @@ webpackEmptyAsyncContext.id = 163;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"pages/call-up/call-up.component.module": [
+	"pages/about/about.component.module": [
 		570,
+		12
+	],
+	"pages/call-up/call-up.component.module": [
+		571,
 		11
 	],
 	"pages/discards/discards.component.module": [
-		571,
+		572,
 		10
 	],
 	"pages/introduction/introduction.component.module": [
-		572,
+		573,
 		9
 	],
 	"pages/login/login.component.module": [
-		573,
+		574,
 		2
 	],
 	"pages/match/match.component.module": [
-		574,
+		575,
 		1
 	],
 	"pages/matches/matches.component.module": [
-		575,
+		576,
 		0
 	],
 	"pages/payments/payments.component.module": [
-		576,
+		577,
 		8
 	],
 	"pages/profile/profile.component.module": [
-		577,
+		578,
 		7
 	],
 	"pages/stats/stats.component.module": [
-		578,
+		579,
 		6
 	],
 	"pages/tabs-controller/tabs-controller.module": [
-		579,
+		580,
 		5
 	],
 	"pages/teams/teams.component.module": [
-		580,
+		581,
 		4
 	],
 	"pages/valuations/valuations.component.module": [
-		581,
+		582,
 		3
 	]
 };
@@ -134,8 +138,8 @@ module.exports = webpackAsyncContext;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BusyIndicatorService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(32);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -192,9 +196,9 @@ var BusyIndicatorService = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddMatchComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(77);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -319,7 +323,7 @@ var AddMatchComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OverflowMenuComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -362,8 +366,8 @@ var OverflowMenuComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeamsMakerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(77);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -481,8 +485,8 @@ var TeamsMakerComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu_menu_component__ = __webpack_require__(501);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__empty_state_empty_state_component__ = __webpack_require__(502);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__add_match_add_match_component__ = __webpack_require__(405);
@@ -559,7 +563,7 @@ var ComponentsModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ScoreboardComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -622,9 +626,9 @@ var ScoreboardComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditProfileComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(77);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -745,14 +749,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__ = __webpack_require__(520);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(375);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(376);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_keyboard__ = __webpack_require__(527);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_vibration__ = __webpack_require__(528);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_storage__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ngx_translate_core__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ngx_translate_core__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ngx_translate_http_loader__ = __webpack_require__(529);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__app_component__ = __webpack_require__(530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers__ = __webpack_require__(77);
@@ -791,6 +795,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["c" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* FootballWithFriendsAppComponent */], {}, {
                     links: [
+                        { loadChildren: 'pages/about/about.component.module#StatsPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/call-up/call-up.component.module#CallUpPageModule', name: 'CallUpPage', segment: 'call-up.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/discards/discards.component.module#CallUpPageModule', name: 'DiscardsPage', segment: 'discards.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/introduction/introduction.component.module#IntroductionPageModule', name: 'IntroductionPage', segment: 'introduction', priority: 'low', defaultHistory: [] },
@@ -871,98 +876,7 @@ function HttpLoaderFactory(http) {
 
 /***/ }),
 
-/***/ 468:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Role; });
-var Role;
-(function (Role) {
-    Role[Role["ADMIN"] = 0] = "ADMIN";
-    Role[Role["PLAYER"] = 1] = "PLAYER";
-    Role[Role["TREASURER"] = 2] = "TREASURER";
-    Role[Role["COACH"] = 3] = "COACH";
-    Role[Role["GUEST"] = 4] = "GUEST";
-})(Role || (Role = {}));
-//# sourceMappingURL=user.model.js.map
-
-/***/ }),
-
-/***/ 469:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export Position */
-var Position;
-(function (Position) {
-    Position[Position["DEFENDER"] = 0] = "DEFENDER";
-    Position[Position["MIDFIELD"] = 1] = "MIDFIELD";
-    Position[Position["FORWARD"] = 2] = "FORWARD";
-    Position[Position["SWEEPER"] = 3] = "SWEEPER";
-    Position[Position["LEFT_BACK"] = 4] = "LEFT_BACK";
-    Position[Position["RIGHT_BACK"] = 5] = "RIGHT_BACK";
-})(Position || (Position = {}));
-//# sourceMappingURL=player.model.js.map
-
-/***/ }),
-
-/***/ 470:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeamColor; });
-var TeamColor;
-(function (TeamColor) {
-    TeamColor[TeamColor["WHITE"] = 0] = "WHITE";
-    TeamColor[TeamColor["BLACK"] = 1] = "BLACK";
-})(TeamColor || (TeamColor = {}));
-//# sourceMappingURL=match.model.js.map
-
-/***/ }),
-
-/***/ 471:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HTTP_HEADERS; });
-var HTTP_HEADERS = {
-    AUTHORIZATION: 'Authorization',
-    TOKEN_PREFIX: 'Bearer',
-    BASIC_PREFIX: 'Basic',
-    CONTENT_TYPE: 'Content-Type',
-    DEVICE_UUID: 'X-Device-UUID',
-    ACCEPT: 'Accept'
-};
-//# sourceMappingURL=http-headers.model.js.map
-
-/***/ }),
-
-/***/ 472:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Action; });
-var Action;
-(function (Action) {
-    Action[Action["VIEW_DETAILS"] = 0] = "VIEW_DETAILS";
-    Action[Action["DELETE_MATCH"] = 1] = "DELETE_MATCH";
-    Action[Action["EDIT_MATCH"] = 2] = "EDIT_MATCH";
-    Action[Action["JOIN_CALL_UP"] = 3] = "JOIN_CALL_UP";
-    Action[Action["UNJOIN_CALL_UP"] = 4] = "UNJOIN_CALL_UP";
-    Action[Action["DISCARD_ME_CALL_UP"] = 5] = "DISCARD_ME_CALL_UP";
-    Action[Action["EXIT_FROM_DISCARDS"] = 6] = "EXIT_FROM_DISCARDS";
-    Action[Action["EDIT_TEAMS"] = 7] = "EDIT_TEAMS";
-    Action[Action["SET_SCOREBOARD"] = 8] = "SET_SCOREBOARD";
-    Action[Action["EDIT_CALL_UP"] = 9] = "EDIT_CALL_UP";
-    Action[Action["EDIT_DISCARDS"] = 10] = "EDIT_DISCARDS";
-    Action[Action["ADD_EXTRA_PLAYER"] = 11] = "ADD_EXTRA_PLAYER";
-    Action[Action["REMOVE_EXTRA_PLAYER"] = 12] = "REMOVE_EXTRA_PLAYER";
-})(Action || (Action = {}));
-//# sourceMappingURL=option.model.js.map
-
-/***/ }),
-
-/***/ 473:
+/***/ 465:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1026,13 +940,13 @@ var MatchesService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 474:
+/***/ 466:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlobalService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1066,7 +980,7 @@ var GlobalService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 483:
+/***/ 475:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1124,7 +1038,98 @@ var TokenInterceptor = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 486:
+/***/ 478:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Role; });
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["PLAYER"] = 1] = "PLAYER";
+    Role[Role["TREASURER"] = 2] = "TREASURER";
+    Role[Role["COACH"] = 3] = "COACH";
+    Role[Role["GUEST"] = 4] = "GUEST";
+})(Role || (Role = {}));
+//# sourceMappingURL=user.model.js.map
+
+/***/ }),
+
+/***/ 479:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export Position */
+var Position;
+(function (Position) {
+    Position[Position["DEFENDER"] = 0] = "DEFENDER";
+    Position[Position["MIDFIELD"] = 1] = "MIDFIELD";
+    Position[Position["FORWARD"] = 2] = "FORWARD";
+    Position[Position["SWEEPER"] = 3] = "SWEEPER";
+    Position[Position["LEFT_BACK"] = 4] = "LEFT_BACK";
+    Position[Position["RIGHT_BACK"] = 5] = "RIGHT_BACK";
+})(Position || (Position = {}));
+//# sourceMappingURL=player.model.js.map
+
+/***/ }),
+
+/***/ 480:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeamColor; });
+var TeamColor;
+(function (TeamColor) {
+    TeamColor[TeamColor["WHITE"] = 0] = "WHITE";
+    TeamColor[TeamColor["BLACK"] = 1] = "BLACK";
+})(TeamColor || (TeamColor = {}));
+//# sourceMappingURL=match.model.js.map
+
+/***/ }),
+
+/***/ 481:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HTTP_HEADERS; });
+var HTTP_HEADERS = {
+    AUTHORIZATION: 'Authorization',
+    TOKEN_PREFIX: 'Bearer',
+    BASIC_PREFIX: 'Basic',
+    CONTENT_TYPE: 'Content-Type',
+    DEVICE_UUID: 'X-Device-UUID',
+    ACCEPT: 'Accept'
+};
+//# sourceMappingURL=http-headers.model.js.map
+
+/***/ }),
+
+/***/ 482:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Action; });
+var Action;
+(function (Action) {
+    Action[Action["VIEW_DETAILS"] = 0] = "VIEW_DETAILS";
+    Action[Action["DELETE_MATCH"] = 1] = "DELETE_MATCH";
+    Action[Action["EDIT_MATCH"] = 2] = "EDIT_MATCH";
+    Action[Action["JOIN_CALL_UP"] = 3] = "JOIN_CALL_UP";
+    Action[Action["UNJOIN_CALL_UP"] = 4] = "UNJOIN_CALL_UP";
+    Action[Action["DISCARD_ME_CALL_UP"] = 5] = "DISCARD_ME_CALL_UP";
+    Action[Action["EXIT_FROM_DISCARDS"] = 6] = "EXIT_FROM_DISCARDS";
+    Action[Action["EDIT_TEAMS"] = 7] = "EDIT_TEAMS";
+    Action[Action["SET_SCOREBOARD"] = 8] = "SET_SCOREBOARD";
+    Action[Action["EDIT_CALL_UP"] = 9] = "EDIT_CALL_UP";
+    Action[Action["EDIT_DISCARDS"] = 10] = "EDIT_DISCARDS";
+    Action[Action["ADD_EXTRA_PLAYER"] = 11] = "ADD_EXTRA_PLAYER";
+    Action[Action["REMOVE_EXTRA_PLAYER"] = 12] = "REMOVE_EXTRA_PLAYER";
+})(Action || (Action = {}));
+//# sourceMappingURL=option.model.js.map
+
+/***/ }),
+
+/***/ 483:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1164,7 +1169,7 @@ var UrlInterceptor = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 487:
+/***/ 484:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1213,7 +1218,7 @@ var HeaderInterceptor = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 488:
+/***/ 485:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1276,23 +1281,28 @@ var BusyIndicatorInterceptor = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 490:
+/***/ 487:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ErrorInterceptor; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_throw__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_throw__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(491);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_throw__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_throw__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(488);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 
 
@@ -1302,24 +1312,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
  * and extract the relevant information of it.
  */
 var ErrorInterceptor = /** @class */ (function () {
-    function ErrorInterceptor() {
+    function ErrorInterceptor(app) {
+        this.app = app;
     }
     ErrorInterceptor.prototype.intercept = function (req, next) {
+        var _this = this;
         return next.handle(req)
             .catch(function (errorResponse) {
             var errMsg;
             if (errorResponse instanceof __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["d" /* HttpErrorResponse */]) {
-                var err = errorResponse.message || JSON.stringify(errorResponse.error);
-                errMsg = errorResponse.status + " - " + (errorResponse.statusText || '') + " Details: " + err;
+                if (errorResponse.status === 401) {
+                    _this.app.getRootNav().setRoot('LoginPage');
+                    errMsg = 'Sesión Caducada';
+                }
+                else {
+                    var err = errorResponse.message || JSON.stringify(errorResponse.error);
+                    errMsg = errorResponse.status + " - " + (errorResponse.statusText || '') + " Details: " + err;
+                }
             }
             else {
                 errMsg = errorResponse.message ? errorResponse.message : errorResponse.toString();
             }
-            return Object(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_throw__["_throw"])(errMsg);
+            return Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_throw__["_throw"])(errMsg);
         });
     };
     ErrorInterceptor = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])()
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* App */]])
     ], ErrorInterceptor);
     return ErrorInterceptor;
 }());
@@ -1328,7 +1347,7 @@ var ErrorInterceptor = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 494:
+/***/ 491:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1379,7 +1398,7 @@ var ContextService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 495:
+/***/ 492:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1428,15 +1447,15 @@ var PlayersService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 496:
+/***/ 493:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export ToastType */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MessagesService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(32);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1541,7 +1560,7 @@ var MessagesService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 497:
+/***/ 494:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1588,7 +1607,7 @@ var ValuationsService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 498:
+/***/ 495:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1597,7 +1616,7 @@ var ValuationsService = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_forkJoin__ = __webpack_require__(499);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_forkJoin__ = __webpack_require__(496);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_forkJoin__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models__ = __webpack_require__(61);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
@@ -1924,7 +1943,8 @@ webpackContext.id = 500;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(32);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1936,9 +1956,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var MenuComponent = /** @class */ (function () {
-    function MenuComponent(menu) {
+    function MenuComponent(menu, translate) {
         this.menu = menu;
+        this.translate = translate;
         this.itemSelected = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
     }
     MenuComponent.prototype.ngOnInit = function () {
@@ -1946,6 +1968,9 @@ var MenuComponent = /** @class */ (function () {
     };
     MenuComponent.prototype.navigateTo = function (target) {
         this.menuItemSelected(target);
+    };
+    MenuComponent.prototype.getImageSource = function () {
+        return this.translate.instant('APPLICATION_DETAIL.IMAGE_SOURCE');
     };
     MenuComponent.prototype.menuItemSelected = function (item) {
         this.itemSelected.emit(item);
@@ -1975,16 +2000,16 @@ var MenuComponent = /** @class */ (function () {
             }
         ];
         this.tiles2 = [
-            {
-                title: 'MENU.SETTINGS',
-                target: 'tiles.settings',
-                icon: 'settings'
-            },
-            {
-                title: 'MENU.LOCATION',
-                target: 'tiles.location',
-                icon: 'pin'
-            },
+            // {
+            //     title: 'MENU.SETTINGS',
+            //     target: 'tiles.settings',
+            //     icon: 'settings'
+            // },
+            // {
+            //     title: 'MENU.LOCATION',
+            //     target: 'tiles.location',
+            //     icon: 'pin'
+            // },
             {
                 title: 'MENU.INTRODUCTION',
                 target: 'tiles.introduction',
@@ -2012,9 +2037,10 @@ var MenuComponent = /** @class */ (function () {
     ], MenuComponent.prototype, "itemSelected", void 0);
     MenuComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-menu',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\components\menu\menu.component.html"*/'<ion-menu [content]="content" swipeEnabled="false">\n    <ion-header>\n        <ion-card>\n            <img src="assets/img/png/FWF-logo.PNG"/>\n            <!-- <ion-card-content>\n              <ion-card-title>\n                {{\'MENU.TITLE\' | translate}}\n                </ion-card-title>\n              <p>\n                Aquí se puede poner algo o no\n              </p>\n            </ion-card-content> -->\n          </ion-card>\n    </ion-header>\n    <ion-content>\n        <ion-list>\n            <button ion-item\n                    *ngFor="let tile of tiles1"\n                    (click)="navigateTo(tile.target)">\n                <ion-icon [name]="tile.icon"></ion-icon>\n                {{tile.title | translate}}\n            </button>\n            <!--Menu divider-->\n            <ion-item-divider>\n                {{\'MENU.TITLE_DIVIDER\' | translate}}\n            </ion-item-divider>\n            <button ion-item\n                    *ngFor="let tile of tiles2"\n                    (click)="navigateTo(tile.target)">\n                <ion-icon [name]="tile.icon"></ion-icon>\n                {{tile.title | translate}}\n            </button>\n        </ion-list>\n      </ion-content>\n    <ion-footer>\n        <ion-toolbar class="product-info">\n            <ion-title>\n                <h2 class="product-name">\n                    <span>{{\'APPLICATION_DETAIL.NAME\' | translate}}</span>\n                    <span class="version">{{\'APPLICATION_DETAIL.VERSION\' | translate}}</span>\n                </h2>\n                <h3 class="copyright">\n                    {{ "APPLICATION_DETAIL.COPYRIGHT" | translate }}\n                </h3>\n            </ion-title>\n        </ion-toolbar>\n    </ion-footer>\n</ion-menu>'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\components\menu\menu.component.html"*/
+            selector: 'fwf-menu',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\components\menu\menu.component.html"*/'<ion-menu [content]="content" swipeEnabled="false">\n\n    <ion-header>\n\n        <ion-card>\n\n            <img [src]="getImageSource()"/>\n\n            <!-- <ion-card-content>\n\n              <ion-card-title>\n\n                {{\'MENU.TITLE\' | translate}}\n\n                </ion-card-title>\n\n              <p>\n\n                Aquí se puede poner algo o no\n\n              </p>\n\n            </ion-card-content> -->\n\n          </ion-card>\n\n    </ion-header>\n\n    <ion-content>\n\n        <ion-list>\n\n            <button ion-item\n\n                    *ngFor="let tile of tiles1"\n\n                    (click)="navigateTo(tile.target)">\n\n                <ion-icon [name]="tile.icon"></ion-icon>\n\n                {{tile.title | translate}}\n\n            </button>\n\n            <!--Menu divider-->\n\n            <ion-item-divider>\n\n                {{\'MENU.TITLE_DIVIDER\' | translate}}\n\n            </ion-item-divider>\n\n            <button ion-item\n\n                    *ngFor="let tile of tiles2"\n\n                    (click)="navigateTo(tile.target)">\n\n                <ion-icon [name]="tile.icon"></ion-icon>\n\n                {{tile.title | translate}}\n\n            </button>\n\n        </ion-list>\n\n      </ion-content>\n\n    <ion-footer>\n\n        <ion-toolbar class="product-info">\n\n            <ion-title>\n\n                <h2 class="product-name">\n\n                    <span>{{\'APPLICATION_DETAIL.NAME\' | translate}}</span>\n\n                    <span class="version">{{\'APPLICATION_DETAIL.VERSION\' | translate}}</span>\n\n                </h2>\n\n                <h3 class="copyright">\n\n                    {{ "APPLICATION_DETAIL.COPYRIGHT" | translate }}\n\n                </h3>\n\n            </ion-title>\n\n        </ion-toolbar>\n\n    </ion-footer>\n\n</ion-menu>'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\components\menu\menu.component.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */],
+            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]])
     ], MenuComponent);
     return MenuComponent;
 }());
@@ -2067,11 +2093,11 @@ var EmptyStateComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FootballWithFriendsAppComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__ = __webpack_require__(376);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(375);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_moment__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_moment_src_locale_es__ = __webpack_require__(531);
@@ -2140,6 +2166,10 @@ var FootballWithFriendsAppComponent = /** @class */ (function () {
             this.nav.setRoot('IntroductionPage');
             return;
         }
+        else if (item === 'tiles.about') {
+            this.nav.setRoot('AboutPage');
+            return;
+        }
         var index;
         switch (item) {
             case 'tiles.matches':
@@ -2154,7 +2184,6 @@ var FootballWithFriendsAppComponent = /** @class */ (function () {
             case 'tiles.stats':
                 index = 3;
                 break;
-            case 'tiles.introduction':
             default:
                 index = 0;
                 break;
@@ -2213,15 +2242,15 @@ var FootballWithFriendsAppComponent = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__user_model__ = __webpack_require__(468);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__user_model__ = __webpack_require__(478);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_0__user_model__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__player_model__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__player_model__ = __webpack_require__(479);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__match_model__ = __webpack_require__(470);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__match_model__ = __webpack_require__(480);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_2__match_model__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__http_headers_model__ = __webpack_require__(471);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__http_headers_model__ = __webpack_require__(481);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__http_headers_model__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__option_model__ = __webpack_require__(472);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__option_model__ = __webpack_require__(482);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_4__option_model__["a"]; });
 
 
@@ -2236,33 +2265,33 @@ var FootballWithFriendsAppComponent = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__matches_matches_service__ = __webpack_require__(473);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__matches_matches_service__ = __webpack_require__(465);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_0__matches_matches_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__global_service__ = __webpack_require__(474);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__global_service__ = __webpack_require__(466);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_1__global_service__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__authentication_auth_service__ = __webpack_require__(120);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__authentication_auth_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__interceptors_token_interceptor__ = __webpack_require__(483);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__interceptors_token_interceptor__ = __webpack_require__(475);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_3__interceptors_token_interceptor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__interceptors_url_interceptor__ = __webpack_require__(486);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__interceptors_url_interceptor__ = __webpack_require__(483);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_4__interceptors_url_interceptor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__interceptors_header_interceptor__ = __webpack_require__(487);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__interceptors_header_interceptor__ = __webpack_require__(484);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_5__interceptors_header_interceptor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__interceptors_busy_indicator_interceptor__ = __webpack_require__(488);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__interceptors_busy_indicator_interceptor__ = __webpack_require__(485);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_6__interceptors_busy_indicator_interceptor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__interceptors_error_interceptor__ = __webpack_require__(490);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__interceptors_error_interceptor__ = __webpack_require__(487);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_7__interceptors_error_interceptor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__context_context_service__ = __webpack_require__(494);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__context_context_service__ = __webpack_require__(491);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_8__context_context_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__players_players_service__ = __webpack_require__(495);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__players_players_service__ = __webpack_require__(492);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_9__players_players_service__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__busy_indicator_busy_indicator_service__ = __webpack_require__(211);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_10__busy_indicator_busy_indicator_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__messages_messages_service__ = __webpack_require__(496);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__messages_messages_service__ = __webpack_require__(493);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_11__messages_messages_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__valuations_valuations_service__ = __webpack_require__(497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__valuations_valuations_service__ = __webpack_require__(494);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "n", function() { return __WEBPACK_IMPORTED_MODULE_12__valuations_valuations_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__profile_profile_service__ = __webpack_require__(498);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__profile_profile_service__ = __webpack_require__(495);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_13__profile_profile_service__["a"]; });
 
 

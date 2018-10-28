@@ -1,15 +1,15 @@
 webpackJsonp([7],{
 
-/***/ 577:
+/***/ 578:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfilePageModule", function() { return ProfilePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_component__ = __webpack_require__(612);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_component__ = __webpack_require__(614);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,13 +41,13 @@ var ProfilePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 612:
+/***/ 614:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_edit_profile_edit_profile_component__ = __webpack_require__(411);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -66,12 +66,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ProfilePageComponent = /** @class */ (function () {
     function ProfilePageComponent(navCtrl, navParams, 
         // private translate: TranslateService,
-        context, modalCtrl, messages) {
+        context, modalCtrl, messages, alertCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.context = context;
         this.modalCtrl = modalCtrl;
         this.messages = messages;
+        this.alertCtrl = alertCtrl;
         this.loadProfile();
     }
     ProfilePageComponent.prototype.ionViewDidLoad = function () {
@@ -103,6 +104,42 @@ var ProfilePageComponent = /** @class */ (function () {
             username: userLogged.username
         };
     };
+    ProfilePageComponent.prototype.changePassword = function () {
+        var alert = this.alertCtrl.create({
+            title: 'Login',
+            inputs: [
+                {
+                    name: 'oldPassword',
+                    placeholder: 'Old Password',
+                    type: 'password'
+                },
+                {
+                    name: 'newPassword1',
+                    placeholder: 'New Password',
+                    type: 'password'
+                },
+                {
+                    name: 'newPassword2',
+                    placeholder: 'Repite Password',
+                    type: 'password'
+                }
+            ],
+            buttons: [
+                {
+                    text: 'Cancel',
+                    role: 'cancel',
+                    handler: function (data) {
+                    }
+                },
+                {
+                    text: 'Change',
+                    handler: function (data) {
+                    }
+                }
+            ]
+        });
+        alert.present();
+    };
     ProfilePageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'fwf-page-profile',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\profile\profile.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n\n        <!--Android pushes buttons to the left even if start attribute is present.\n\n            Check demo: http://ionicframework.com/docs/v2/components/#buttons-in-components-->\n\n        <!--If placing the menuToggle in a navbar or toolbar, it should be placed as a child of the <ion-navbar> or <ion-toolbar>, and not in the <ion-buttons> element\n\n        http://ionicframework.com/docs/v2/api/components/menu/MenuToggle/-->\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            {{ "PROFILE_PAGE.TITLE" | translate}}\n\n        </ion-title>\n\n        <ion-buttons end>               \n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    (click)="editProfile()">\n\n                <ion-icon name="create"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n    <!-- <ion-card> -->\n\n        <ion-card-header>\n\n            {{"PROFILE_PAGE.DATA_HEADER" | translate}}\n\n        </ion-card-header>      \n\n        <ion-list>         \n\n            <ion-item color="none">\n\n                <ion-icon name="person" item-left></ion-icon>\n\n                {{ "PROFILE_PAGE.NAME" | translate}}\n\n                <h4>\n\n                    {{profile.fullName}}\n\n                </h4>\n\n            </ion-item>\n\n            <ion-item color="none">\n\n                <ion-icon name="shirt" item-left></ion-icon>\n\n                {{ "PROFILE_PAGE.ALIAS" | translate}}\n\n                <h4>\n\n                    {{profile.alias}}\n\n                </h4>\n\n            </ion-item>\n\n            <ion-item color="none">\n\n                <ion-icon name="mail" item-left></ion-icon>\n\n                {{ "PROFILE_PAGE.EMAIL" | translate}}\n\n                <h4>\n\n                    <span *ngIf="profile.email; else elseBlock">\n\n                        {{profile.email}}\n\n                    </span>\n\n                    <ng-template #elseBlock>\n\n                        {{ "NOT_AVAILABLE" | translate}}\n\n                    </ng-template>\n\n                </h4>\n\n            </ion-item>     \n\n            <ion-item color="none">\n\n                <ion-icon name="call" item-left></ion-icon>\n\n                {{ "PROFILE_PAGE.PHONE" | translate}}\n\n                <h4>\n\n                    <span *ngIf="profile.phoneNumber; else elseBlock1">\n\n                        {{profile.phoneNumber}}\n\n                    </span>\n\n                    <ng-template #elseBlock1>\n\n                        {{ "NOT_AVAILABLE" | translate}}\n\n                    </ng-template>\n\n                </h4>\n\n            </ion-item>\n\n            <ion-item color="none">\n\n                <ion-icon name="cash" item-left></ion-icon>\n\n                {{ "PROFILE_PAGE.STATUS" | translate}}\n\n                <h4>\n\n                    <span *ngIf="profile.fixed; else elseBlock2">\n\n                        {{ "PROFILE_PAGE.FIXED" | translate}}\n\n                    </span>\n\n                    <ng-template #elseBlock2>\n\n                        {{ "PROFILE_PAGE.NO_FIXED" | translate}}\n\n                    </ng-template>\n\n                </h4>\n\n            </ion-item>\n\n            <ion-item color="none">\n\n                <ion-icon name="key" item-left></ion-icon>\n\n                {{ "PROFILE_PAGE.USERNAME" | translate}}\n\n                <h4>\n\n                    {{profile.username}}\n\n                </h4>\n\n            </ion-item>\n\n        </ion-list>\n\n        <button ion-button full (click)="changePassword()">{{ "PROFILE_PAGE.CHANGE_PASSWORD" | translate}}</button>\n\n      <!-- </ion-card> -->\n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\profile\profile.component.html"*/,
@@ -111,7 +148,8 @@ var ProfilePageComponent = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2__providers__["d" /* ContextService */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_2__providers__["i" /* MessagesService */]])
+            __WEBPACK_IMPORTED_MODULE_2__providers__["i" /* MessagesService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
     ], ProfilePageComponent);
     return ProfilePageComponent;
 }());

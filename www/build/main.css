@@ -109761,7 +109761,8 @@ fwf-login-form #loginForm ion-item .text-input {
   line-height: 2.0rem;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: black;
+  color: #26c048;
+  font-weight: bold;
 }
 
 fwf-login-form #loginForm button {
