@@ -1,6 +1,6 @@
 webpackJsonp([7],{
 
-/***/ 578:
+/***/ 577:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,8 +8,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfilePageModule", function() { return ProfilePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_component__ = __webpack_require__(614);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_component__ = __webpack_require__(608);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,15 +41,16 @@ var ProfilePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 614:
+/***/ 608:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_edit_profile_edit_profile_component__ = __webpack_require__(411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_edit_profile_edit_profile_component__ = __webpack_require__(411);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -63,23 +64,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ProfilePageComponent = /** @class */ (function () {
-    function ProfilePageComponent(navCtrl, navParams, 
-        // private translate: TranslateService,
-        context, modalCtrl, messages, alertCtrl) {
+    function ProfilePageComponent(navCtrl, navParams, translate, context, modalCtrl, messages, alertCtrl, profileService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.translate = translate;
         this.context = context;
         this.modalCtrl = modalCtrl;
         this.messages = messages;
         this.alertCtrl = alertCtrl;
+        this.profileService = profileService;
         this.loadProfile();
     }
     ProfilePageComponent.prototype.ionViewDidLoad = function () {
     };
     ProfilePageComponent.prototype.editProfile = function () {
         var _this = this;
-        var dialog = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__components_edit_profile_edit_profile_component__["a" /* EditProfileComponent */], { profile: this.profile }, { enableBackdropDismiss: false });
+        var dialog = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__components_edit_profile_edit_profile_component__["a" /* EditProfileComponent */], { profile: this.profile }, { enableBackdropDismiss: false });
         dialog.onDidDismiss(function (newProfile) {
             if (newProfile) {
                 _this.context.setPlayerLogged(newProfile.player);
@@ -105,35 +107,43 @@ var ProfilePageComponent = /** @class */ (function () {
         };
     };
     ProfilePageComponent.prototype.changePassword = function () {
+        var _this = this;
         var alert = this.alertCtrl.create({
-            title: 'Login',
+            title: this.translate.instant('PROFILE_PAGE.CHANGE_PASSWORD'),
             inputs: [
                 {
-                    name: 'oldPassword',
-                    placeholder: 'Old Password',
+                    name: 'currentPassword',
+                    placeholder: this.translate.instant('PROFILE_PAGE.CURRENT_PASSWORD'),
                     type: 'password'
                 },
                 {
                     name: 'newPassword1',
-                    placeholder: 'New Password',
+                    placeholder: this.translate.instant('PROFILE_PAGE.NEW_PASSWORD'),
                     type: 'password'
                 },
                 {
                     name: 'newPassword2',
-                    placeholder: 'Repite Password',
+                    placeholder: this.translate.instant('PROFILE_PAGE.REPIT_PASSWORD'),
                     type: 'password'
                 }
             ],
             buttons: [
                 {
-                    text: 'Cancel',
+                    text: this.translate.instant('CANCEL_BUTTON'),
                     role: 'cancel',
                     handler: function (data) {
                     }
                 },
                 {
-                    text: 'Change',
+                    text: this.translate.instant('SAVE_BUTTON'),
                     handler: function (data) {
+                        if (data.newPassword1 === data.newPassword2) {
+                            _this.profileService.changePassword(_this.context.getUserLogged().id, data.currentPassword, data.newPassword1)
+                                .subscribe(function (res) { return _this.messages.showSuccess('ACTION_OK', 'CONFIRMATION'); }, function (error) { return _this.messages.showError(error, 'PROFILE_PAGE.ERROR_CHANGE_PASSWORD'); });
+                        }
+                        else {
+                            _this.messages.showError('PROFILE_PAGE.BAD_NEW_PASSWORD_EXPLANATION', 'PROFILE_PAGE.BAD_NEW_PASSWORD');
+                        }
                     }
                 }
             ]
@@ -146,10 +156,12 @@ var ProfilePageComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers__["d" /* ContextService */],
+            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */],
+            __WEBPACK_IMPORTED_MODULE_3__providers__["d" /* ContextService */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_2__providers__["i" /* MessagesService */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+            __WEBPACK_IMPORTED_MODULE_3__providers__["i" /* MessagesService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_3__providers__["k" /* ProfileService */]])
     ], ProfilePageComponent);
     return ProfilePageComponent;
 }());
