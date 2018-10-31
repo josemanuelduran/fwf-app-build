@@ -109793,6 +109793,10 @@ fwf-page-matches ion-header {
   color: #ffffff;
 }
 
+.toast-message {
+  max-width: 80%;
+}
+
 .toast-success .toast-wrapper {
   background: #5b8c15;
 }
