@@ -951,7 +951,7 @@ var MatchesPageComponent = /** @class */ (function () {
     };
     MatchesPageComponent.prototype.getGroupedMatches = function (matches) {
         var groupedMatches;
-        groupedMatches = __WEBPACK_IMPORTED_MODULE_3_lodash__(matches).sortBy('match.date', 'desc')
+        groupedMatches = __WEBPACK_IMPORTED_MODULE_3_lodash__(matches).sortBy('match.date').reverse()
             .groupBy('monthYear')
             .toPairs()
             .map(function (currentGroup) {
