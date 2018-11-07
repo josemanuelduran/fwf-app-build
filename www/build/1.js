@@ -1129,7 +1129,7 @@ var MatchPageComponent = /** @class */ (function () {
     MatchPageComponent.prototype.userLoggedHasPlayed = function () {
         var _this = this;
         var index = this.match.callUp.findIndex(function (playerCallUp) { return playerCallUp.player.id === _this.player.id; });
-        return index > 0;
+        return index >= 0;
     };
     MatchPageComponent.prototype.editCallUp = function () {
         var _this = this;
