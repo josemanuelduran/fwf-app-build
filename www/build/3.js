@@ -1,15 +1,15 @@
 webpackJsonp([3],{
 
-/***/ 582:
+/***/ 583:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CallUpPageModule", function() { return CallUpPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ValuationsPageModule", function() { return ValuationsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__valuations_component__ = __webpack_require__(618);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__valuations_component__ = __webpack_require__(620);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,10 +20,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CallUpPageModule = /** @class */ (function () {
-    function CallUpPageModule() {
+var ValuationsPageModule = /** @class */ (function () {
+    function ValuationsPageModule() {
     }
-    CallUpPageModule = __decorate([
+    ValuationsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_3__valuations_component__["a" /* ValuationsPageComponent */],
@@ -33,32 +33,22 @@ var CallUpPageModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]
             ],
         })
-    ], CallUpPageModule);
-    return CallUpPageModule;
+    ], ValuationsPageModule);
+    return ValuationsPageModule;
 }());
 
 //# sourceMappingURL=valuations.component.module.js.map
 
 /***/ }),
 
-/***/ 618:
+/***/ 620:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ValuationsPageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(77);
-var __assign = (this && this.__assign) || Object.assign || function(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-        s = arguments[i];
-        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-            t[p] = s[p];
-    }
-    return t;
-};
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(77);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -71,7 +61,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var ValuationsPageComponent = /** @class */ (function () {
     function ValuationsPageComponent(navCtrl, navParams, valuationsService, messages) {
         this.navCtrl = navCtrl;
@@ -81,74 +70,56 @@ var ValuationsPageComponent = /** @class */ (function () {
     }
     ValuationsPageComponent.prototype.ngOnInit = function () {
         this.match = this.navParams.get('match');
-        this.playerConnected = this.navParams.get('player');
         this.loadScores();
-        var fechaPartido = __WEBPACK_IMPORTED_MODULE_2_moment__(this.match.date);
-        var fechaActual = __WEBPACK_IMPORTED_MODULE_2_moment__();
-        this.valuationDisabled = fechaActual.diff(fechaPartido, 'days') > 2;
-    };
-    ValuationsPageComponent.prototype.saveScores = function () {
-        var _this = this;
-        this.matchScore.date = new Date();
-        this.matchScore.scores = this.matchScore.scores.map(function (score) {
-            var result = score;
-            if (isNaN(score.score)) {
-                result = __assign({}, score, { score: undefined });
-            }
-            return result;
-        });
-        if (this.matchScore.id) {
-            this.valuationsService.updateMatchScore(this.matchScore)
-                .subscribe(function (data) {
-                _this.messages.showSuccess('ACTION_OK', 'CONFIRMATION');
-                _this.navCtrl.pop();
-            }, function (error) { return _this.messages.showError(error); });
-        }
-        else {
-            this.valuationsService.createMatchScore(this.matchScore)
-                .subscribe(function (data) {
-                _this.messages.showSuccess('ACTION_OK', 'CONFIRMATION');
-                _this.navCtrl.pop();
-            }, function (error) { return _this.messages.showError(error); });
-        }
     };
     ValuationsPageComponent.prototype.loadScores = function () {
         var _this = this;
-        this.valuationsService.fetchMatchScores(this.match.id, this.playerConnected.id)
+        this.valuationsService.fetchPlayersScores(this.match.id)
             .subscribe(function (data) {
             if (!data) {
                 _this.createNewScores();
             }
             else {
-                _this.matchScore = data;
+                _this.scores = data.map(function (item) {
+                    return {
+                        namePlayer: item.player.name,
+                        idPlayer: item.player.id,
+                        score: (item.totalScore / item.numVotes)
+                    };
+                });
+                _this.scores.sort(function (a, b) {
+                    if (a.score > b.score) {
+                        return -1;
+                    }
+                    else if (a.score < b.score) {
+                        return 1;
+                    }
+                    else {
+                        return 0;
+                    }
+                });
             }
         }, function (error) { return _this.messages.showError(error); });
     };
     ValuationsPageComponent.prototype.createNewScores = function () {
         var _this = this;
-        this.matchScore = {
-            matchId: this.match.id,
-            playerId: this.playerConnected.id,
-            scores: []
-        };
+        this.scores = [];
         this.match.callUp.forEach(function (item) {
-            if (item.player.id !== _this.playerConnected.id) {
-                var score = {
-                    namePlayer: item.player.name,
-                    idPlayer: item.player.id
-                };
-                _this.matchScore.scores.push(score);
-            }
+            var score = {
+                namePlayer: item.player.name,
+                idPlayer: item.player.id
+            };
+            _this.scores.push(score);
         });
     };
     ValuationsPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-valuations',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\valuations\valuations.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name}} {{"MATCH_PAGE.VALUATIONS" | translate}}\n\n        </ion-title>\n\n        <ion-buttons end *ngIf="!valuationDisabled">               \n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    (click)="saveScores()">\n\n                <ion-icon name="checkmark-circle"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-list *ngIf="matchScore">\n\n        <ion-item *ngFor="let item of matchScore.scores; let i = index;">\n\n            <ion-label>{{i+1}}. {{item.namePlayer}}</ion-label>\n\n                <ion-select [(ngModel)]="item.score" [disabled]="valuationDisabled">\n\n                    <ion-option selected=true>---</ion-option>\n\n                    <ion-option \n\n                        *ngFor="let score of [0,1,2,3,4,5,6,7,8,9,10]">\n\n                            {{score}}\n\n                    </ion-option>\n\n                </ion-select>\n\n        </ion-item>\n\n    </ion-list>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\valuations\valuations.component.html"*/,
+            selector: 'fwf-page-valuations',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\valuations\valuations.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.VALUATIONS" | translate}}</p>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-list *ngIf="scores">\n\n        <ion-item *ngFor="let item of scores; let i = index;">\n\n            <ion-label>{{i+1}}. {{item.namePlayer}}</ion-label>\n\n            <ion-label>{{item.score.toFixed(2)}}</ion-label>\n\n        </ion-item>\n\n    </ion-list>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\valuations\valuations.component.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_3__providers__["n" /* ValuationsService */],
-            __WEBPACK_IMPORTED_MODULE_3__providers__["i" /* MessagesService */]])
+            __WEBPACK_IMPORTED_MODULE_2__providers__["n" /* ValuationsService */],
+            __WEBPACK_IMPORTED_MODULE_2__providers__["i" /* MessagesService */]])
     ], ValuationsPageComponent);
     return ValuationsPageComponent;
 }());

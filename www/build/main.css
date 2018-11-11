@@ -40355,6 +40355,11 @@ ion-toolbar.filter-container {
   min-height: 4.3rem;
 }
 
+.toolbar-title .subtitle {
+  font-size: 80%;
+  margin: 0;
+}
+
 ion-action-sheet {
   left: 0;
   top: 0;

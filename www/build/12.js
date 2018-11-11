@@ -1,15 +1,15 @@
 webpackJsonp([12],{
 
-/***/ 570:
+/***/ 571:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StatsPageModule", function() { return StatsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CallUpPageModule", function() { return CallUpPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about_component__ = __webpack_require__(600);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__call_up_component__ = __webpack_require__(602);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,36 +20,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var StatsPageModule = /** @class */ (function () {
-    function StatsPageModule() {
+var CallUpPageModule = /** @class */ (function () {
+    function CallUpPageModule() {
     }
-    StatsPageModule = __decorate([
+    CallUpPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__about_component__["a" /* AboutPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_3__call_up_component__["a" /* CallUpPageComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__about_component__["a" /* AboutPageComponent */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__call_up_component__["a" /* CallUpPageComponent */]),
                 __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]
             ],
         })
-    ], StatsPageModule);
-    return StatsPageModule;
+    ], CallUpPageModule);
+    return CallUpPageModule;
 }());
 
-//# sourceMappingURL=about.component.module.js.map
+//# sourceMappingURL=call-up.component.module.js.map
 
 /***/ }),
 
-/***/ 600:
+/***/ 602:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPageComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CallUpPageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(77);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -61,35 +59,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
-
-var AboutPageComponent = /** @class */ (function () {
-    function AboutPageComponent(navCtrl, navParams, global, translate) {
+var CallUpPageComponent = /** @class */ (function () {
+    function CallUpPageComponent(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.global = global;
-        this.translate = translate;
-        this.imageSource = 'assets/img/png/FWF-logo.PNG';
     }
-    AboutPageComponent.prototype.ngOnInit = function () {
-        this.imageSource = this.translate.instant('APPLICATION_DETAIL.IMAGE_SOURCE');
+    CallUpPageComponent.prototype.ngOnInit = function () {
+        this.match = this.navParams.get('match');
+        this.reserves = this.navParams.get('reserves');
     };
-    AboutPageComponent.prototype.ionViewDidLoad = function () {
-        this.global.enableSideMenu(true);
-    };
-    AboutPageComponent = __decorate([
+    CallUpPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-about',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\about\about.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            {{"ABOUT_PAGE.TITLE" | translate}}\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n    <ion-card>\n\n        <img [src]="imageSource"/>\n\n        <ion-card-content>\n\n            <ion-card-title>\n\n                {{"APPLICATION_DETAIL.NAME" | translate}}\n\n            </ion-card-title>\n\n            <ion-list>\n\n                <ion-list-header>\n\n                    {{"ABOUT_PAGE.VERSION" | translate}}\n\n                </ion-list-header>\n\n                <ion-item>\n\n                    <ion-icon name="bookmark" item-start></ion-icon>\n\n                    {{"APPLICATION_DETAIL.VERSION" | translate}}\n\n                </ion-item>\n\n                <ion-item>\n\n                    <ion-icon name="calendar" item-start></ion-icon>\n\n                    {{"APPLICATION_DETAIL.VERSION_DATE" | translate}}\n\n                </ion-item>\n\n            </ion-list>\n\n            <ion-list>\n\n                <ion-list-header>\n\n                    {{"ABOUT_PAGE.AUTHOR" | translate}}\n\n                </ion-list-header>\n\n                <ion-item>\n\n                    <ion-avatar item-start>\n\n                        <img src="assets/img/jpg/author.jpg">\n\n                    </ion-avatar>\n\n                    {{"APPLICATION_DETAIL.AUTHOR" | translate}}\n\n                </ion-item>\n\n            </ion-list>\n\n        </ion-card-content>\n\n      </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\about\about.component.html"*/,
+            selector: 'fwf-page-call-up',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\call-up\call-up.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title *ngIf=!reserves>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.CALL_UP" | translate}}</p>\n\n        </ion-title>\n\n        <ion-title *ngIf=reserves>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.RESERVES" | translate}}</p>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list *ngIf="reserves">\n\n        <ion-item *ngFor="let item of match.reserves; let i = index;">\n\n            {{i+1}}. {{item.player.name}} <span *ngIf="!item.player.fixed">(s)</span>\n\n        </ion-item>\n\n    </ion-list>\n\n    <ion-list *ngIf="!reserves">\n\n        <ion-item *ngFor="let item of match.callUp; let i = index;">\n\n            {{i+1}}. {{item.player.name}} <span *ngIf="!item.player.fixed">(s)</span>\n\n        </ion-item>\n\n    </ion-list>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\call-up\call-up.component.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_3__providers__["f" /* GlobalService */],
-            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]])
-    ], AboutPageComponent);
-    return AboutPageComponent;
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]])
+    ], CallUpPageComponent);
+    return CallUpPageComponent;
 }());
 
-//# sourceMappingURL=about.component.js.map
+//# sourceMappingURL=call-up.component.js.map
 
 /***/ })
 

@@ -1,4 +1,4 @@
-webpackJsonp([13],{
+webpackJsonp([14],{
 
 /***/ 120:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -65,19 +65,19 @@ webpackEmptyAsyncContext.id = 163;
 var map = {
 	"pages/about/about.component.module": [
 		570,
-		12
+		13
 	],
 	"pages/call-up/call-up.component.module": [
 		571,
-		11
+		12
 	],
 	"pages/discards/discards.component.module": [
 		572,
-		10
+		11
 	],
 	"pages/introduction/introduction.component.module": [
 		573,
-		9
+		10
 	],
 	"pages/login/login.component.module": [
 		574,
@@ -91,28 +91,32 @@ var map = {
 		576,
 		0
 	],
-	"pages/payments/payments.component.module": [
+	"pages/my-valuations/my-valuations.component.module": [
 		577,
+		9
+	],
+	"pages/payments/payments.component.module": [
+		578,
 		8
 	],
 	"pages/profile/profile.component.module": [
-		578,
+		579,
 		7
 	],
 	"pages/stats/stats.component.module": [
-		579,
+		580,
 		6
 	],
 	"pages/tabs-controller/tabs-controller.module": [
-		580,
+		581,
 		5
 	],
 	"pages/teams/teams.component.module": [
-		581,
+		582,
 		4
 	],
 	"pages/valuations/valuations.component.module": [
-		582,
+		583,
 		3
 	]
 };
@@ -797,17 +801,18 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: 'pages/about/about.component.module#StatsPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/call-up/call-up.component.module#CallUpPageModule', name: 'CallUpPage', segment: 'call-up.component', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/discards/discards.component.module#CallUpPageModule', name: 'DiscardsPage', segment: 'discards.component', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/discards/discards.component.module#DiscardsPageModule', name: 'DiscardsPage', segment: 'discards.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/introduction/introduction.component.module#IntroductionPageModule', name: 'IntroductionPage', segment: 'introduction', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/login/login.component.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/match/match.component.module#MatchPageModule', name: 'MatchPage', segment: 'match.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/matches/matches.component.module#MatchesPageModule', name: 'MatchesPage', segment: 'matches', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/my-valuations/my-valuations.component.module#MyValuationsPageModule', name: 'MyValuationsPage', segment: 'my-valuations.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/payments/payments.component.module#PaymentsPageModule', name: 'PaymentsPage', segment: 'payments', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/profile/profile.component.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/stats/stats.component.module#StatsPageModule', name: 'StatsPage', segment: 'stats', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/tabs-controller/tabs-controller.module#TabsControllerPageModule', name: 'TabsController', segment: 'tabController', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/teams/teams.component.module#TeamsPageModule', name: 'TeamsPage', segment: 'teams.component', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/valuations/valuations.component.module#CallUpPageModule', name: 'ValuationsPage', segment: 'valuations.component', priority: 'low', defaultHistory: [] }
+                        { loadChildren: 'pages/valuations/valuations.component.module#ValuationsPageModule', name: 'ValuationsPage', segment: 'valuations.component', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_9__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
@@ -1586,6 +1591,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var MATCH_SCORING_URL = 'fwf/matchScoring';
+var MATCH_URL = 'fwf/match';
 var ValuationsService = /** @class */ (function () {
     function ValuationsService(http) {
         this.http = http;
@@ -1593,6 +1599,11 @@ var ValuationsService = /** @class */ (function () {
     ValuationsService.prototype.fetchMatchScores = function (matchId, playerId) {
         var url = MATCH_SCORING_URL + "?matchId=" + matchId + "&playerId=" + playerId;
         return this.http.get(url);
+    };
+    ValuationsService.prototype.fetchPlayersScores = function (matchId) {
+        var url = MATCH_URL + "/" + matchId + "/scores";
+        var result = this.http.get(url);
+        return result;
     };
     ValuationsService.prototype.createMatchScore = function (matchScore) {
         return this.http.post(MATCH_SCORING_URL, matchScore);

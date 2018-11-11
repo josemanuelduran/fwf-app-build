@@ -1,15 +1,15 @@
 webpackJsonp([9],{
 
-/***/ 573:
+/***/ 577:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IntroductionPageModule", function() { return IntroductionPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyValuationsPageModule", function() { return MyValuationsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__introduction_component__ = __webpack_require__(603);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__my_valuations_component__ = __webpack_require__(614);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,35 +20,45 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var IntroductionPageModule = /** @class */ (function () {
-    function IntroductionPageModule() {
+var MyValuationsPageModule = /** @class */ (function () {
+    function MyValuationsPageModule() {
     }
-    IntroductionPageModule = __decorate([
+    MyValuationsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__introduction_component__["a" /* IntroductionPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_3__my_valuations_component__["a" /* MyValuationsPageComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__introduction_component__["a" /* IntroductionPageComponent */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__my_valuations_component__["a" /* MyValuationsPageComponent */]),
                 __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]
             ],
         })
-    ], IntroductionPageModule);
-    return IntroductionPageModule;
+    ], MyValuationsPageModule);
+    return MyValuationsPageModule;
 }());
 
-//# sourceMappingURL=introduction.component.module.js.map
+//# sourceMappingURL=my-valuations.component.module.js.map
 
 /***/ }),
 
-/***/ 603:
+/***/ 614:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IntroductionPageComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyValuationsPageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(77);
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -61,53 +71,89 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var IntroductionPageComponent = /** @class */ (function () {
-    function IntroductionPageComponent(app, menu, storage) {
-        this.app = app;
-        this.menu = menu;
-        this.storage = storage;
-        this.showSkip = true;
-        this.image1 = 'assets/img/png/Cup.png';
-        this.image2 = 'assets/img/png/Kick.png';
-        this.image3 = 'assets/img/png/Goal.png';
-        this.image4 = 'assets/img/png/Foul.png';
+
+var MyValuationsPageComponent = /** @class */ (function () {
+    function MyValuationsPageComponent(navCtrl, navParams, valuationsService, messages) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.valuationsService = valuationsService;
+        this.messages = messages;
     }
-    IntroductionPageComponent.prototype.startApp = function () {
+    MyValuationsPageComponent.prototype.ngOnInit = function () {
+        this.match = this.navParams.get('match');
+        this.playerConnected = this.navParams.get('player');
+        this.loadScores();
+        var fechaPartido = __WEBPACK_IMPORTED_MODULE_2_moment__(this.match.date);
+        var fechaActual = __WEBPACK_IMPORTED_MODULE_2_moment__();
+        this.valuationDisabled = fechaActual.diff(fechaPartido, 'days') > 2;
+    };
+    MyValuationsPageComponent.prototype.saveScores = function () {
         var _this = this;
-        this.app.getActiveNavs()[0].setRoot('LoginPage').then(function () {
-            _this.storage.set('hasSeenTutorial', 'true');
+        this.matchScore.date = new Date();
+        this.matchScore.scores = this.matchScore.scores.map(function (score) {
+            var result = score;
+            if (isNaN(score.score)) {
+                result = __assign({}, score, { score: undefined });
+            }
+            return result;
+        });
+        if (this.matchScore.id) {
+            this.valuationsService.updateMatchScore(this.matchScore)
+                .subscribe(function (data) {
+                _this.messages.showSuccess('ACTION_OK', 'CONFIRMATION');
+                _this.navCtrl.pop();
+            }, function (error) { return _this.messages.showError(error); });
+        }
+        else {
+            this.valuationsService.createMatchScore(this.matchScore)
+                .subscribe(function (data) {
+                _this.messages.showSuccess('ACTION_OK', 'CONFIRMATION');
+                _this.navCtrl.pop();
+            }, function (error) { return _this.messages.showError(error); });
+        }
+    };
+    MyValuationsPageComponent.prototype.loadScores = function () {
+        var _this = this;
+        this.valuationsService.fetchMatchScores(this.match.id, this.playerConnected.id)
+            .subscribe(function (data) {
+            if (!data) {
+                _this.createNewScores();
+            }
+            else {
+                _this.matchScore = data;
+            }
+        }, function (error) { return _this.messages.showError(error); });
+    };
+    MyValuationsPageComponent.prototype.createNewScores = function () {
+        var _this = this;
+        this.matchScore = {
+            matchId: this.match.id,
+            playerId: this.playerConnected.id,
+            scores: []
+        };
+        this.match.callUp.forEach(function (item) {
+            if (item.player.id !== _this.playerConnected.id) {
+                var score = {
+                    namePlayer: item.player.name,
+                    idPlayer: item.player.id
+                };
+                _this.matchScore.scores.push(score);
+            }
         });
     };
-    IntroductionPageComponent.prototype.onSlideChangeStart = function (slider) {
-        this.showSkip = !slider.isEnd();
-    };
-    IntroductionPageComponent.prototype.ionViewWillEnter = function () {
-        this.slides.update();
-    };
-    IntroductionPageComponent.prototype.ionViewDidEnter = function () {
-        // the root left menu should be disabled on the tutorial page
-        this.menu.enable(false);
-    };
-    IntroductionPageComponent.prototype.ionViewDidLeave = function () {
-        // enable the root left menu when leaving the tutorial page
-        this.menu.enable(true);
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('slides'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* Slides */])
-    ], IntroductionPageComponent.prototype, "slides", void 0);
-    IntroductionPageComponent = __decorate([
+    MyValuationsPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-introduction',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\introduction\introduction.component.html"*/'<ion-header no-border>\n  <ion-navbar>\n    <ion-buttons end *ngIf="showSkip">\n      <button ion-button (click)="startApp()" color="primary">Skip</button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-bounce>\n    <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>\n\n        <ion-slide>\n            <img [src]="image1" class="slide-image"/>\n            <h2 class="slide-title">\n                {{\'INTRODUCTION.SLIDE1_1\' | translate}} <b>{{\'APPLICATION_DETAIL.NAME\' | translate}}</b>\n            </h2>\n            <p>\n                {{\'INTRODUCTION.SLIDE1_2\' | translate}} <b>app</b> {{\'INTRODUCTION.SLIDE1_3\' | translate}} \n            </p>\n        </ion-slide>\n\n        <ion-slide>\n            <img [src]="image2" class="slide-image"/>\n            <h2 class="slide-title" >\n                {{\'INTRODUCTION.SLIDE2_1\' | translate}}\n            </h2>\n\n            <p><b>{{\'APPLICATION_DETAIL.NAME\' | translate}}</b> {{\'INTRODUCTION.SLIDE2_2\' | translate}}</p>\n            <p><b>{{\'APPLICATION_DETAIL.NAME\' | translate}}</b> {{\'INTRODUCTION.SLIDE2_3\' | translate}}</p>\n        </ion-slide>\n\n        <ion-slide>\n            <img [src]="image3" class="slide-image"/>\n            <h2 class="slide-title">\n                {{\'INTRODUCTION.SLIDE3_1\' | translate}}\n            </h2>\n            <p>{{\'INTRODUCTION.SLIDE3_2\' | translate}} <b>{{\'INTRODUCTION.SLIDE3_3\' | translate}}</b> {{\'INTRODUCTION.SLIDE3_4\' | translate}}</p>\n        </ion-slide>\n\n        <ion-slide>\n            <img [src]="image4" class="slide-image"/>\n            <h2 class="slide-title">\n                {{\'INTRODUCTION.SLIDE4_1\' | translate}}\n            </h2>\n            <button ion-button icon-end large clear (click)="startApp()">\n                {{\'INTRODUCTION.CONTINUE\' | translate}}\n                <ion-icon name="arrow-forward"></ion-icon>\n            </button>\n        </ion-slide>\n\n    </ion-slides>\n</ion-content>\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\introduction\introduction.component.html"*/
+            selector: 'fwf-page-my-valuations',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\my-valuations\my-valuations.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.MY_VALUATIONS" | translate}}</p>\n\n        </ion-title>\n\n        <ion-buttons end *ngIf="!valuationDisabled">               \n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    (click)="saveScores()">\n\n                <ion-icon name="checkmark-circle"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-list *ngIf="matchScore">\n\n        <ion-item *ngFor="let item of matchScore.scores; let i = index;">\n\n            <ion-label>{{i+1}}. {{item.namePlayer}}</ion-label>\n\n                <ion-select [(ngModel)]="item.score" [disabled]="valuationDisabled">\n\n                    <ion-option selected=true>---</ion-option>\n\n                    <ion-option \n\n                        *ngFor="let score of [0,1,2,3,4,5,6,7,8,9,10]">\n\n                            {{score}}\n\n                    </ion-option>\n\n                </ion-select>\n\n        </ion-item>\n\n    </ion-list>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\my-valuations\my-valuations.component.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
-    ], IntroductionPageComponent);
-    return IntroductionPageComponent;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_3__providers__["n" /* ValuationsService */],
+            __WEBPACK_IMPORTED_MODULE_3__providers__["i" /* MessagesService */]])
+    ], MyValuationsPageComponent);
+    return MyValuationsPageComponent;
 }());
 
-//# sourceMappingURL=introduction.component.js.map
+//# sourceMappingURL=my-valuations.component.js.map
 
 /***/ })
 

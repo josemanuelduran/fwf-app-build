@@ -8,10 +8,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MatchPageModule", function() { return MatchPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_moment__ = __webpack_require__(596);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_moment__ = __webpack_require__(597);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angular2_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__match_component__ = __webpack_require__(606);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__match_component__ = __webpack_require__(607);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -45,7 +45,7 @@ var MatchPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 583:
+/***/ 584:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79,7 +79,7 @@ exports.AddPipe = AddPipe;
 
 /***/ }),
 
-/***/ 584:
+/***/ 585:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -190,7 +190,7 @@ exports.CalendarPipe = CalendarPipe;
 
 /***/ }),
 
-/***/ 585:
+/***/ 586:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -229,7 +229,7 @@ exports.DateFormatPipe = DateFormatPipe;
 
 /***/ }),
 
-/***/ 586:
+/***/ 587:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -264,7 +264,7 @@ exports.DifferencePipe = DifferencePipe;
 
 /***/ }),
 
-/***/ 587:
+/***/ 588:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -301,7 +301,7 @@ exports.DurationPipe = DurationPipe;
 
 /***/ }),
 
-/***/ 588:
+/***/ 589:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -339,7 +339,7 @@ exports.FromUnixPipe = FromUnixPipe;
 
 /***/ }),
 
-/***/ 589:
+/***/ 590:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -371,7 +371,7 @@ exports.ParsePipe = ParsePipe;
 
 /***/ }),
 
-/***/ 590:
+/***/ 591:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -405,7 +405,7 @@ exports.SubtractPipe = SubtractPipe;
 
 /***/ }),
 
-/***/ 591:
+/***/ 592:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -510,7 +510,7 @@ exports.TimeAgoPipe = TimeAgoPipe;
 
 /***/ }),
 
-/***/ 592:
+/***/ 593:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -542,7 +542,7 @@ exports.UtcPipe = UtcPipe;
 
 /***/ }),
 
-/***/ 593:
+/***/ 594:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -577,7 +577,7 @@ exports.FromUtcPipe = FromUtcPipe;
 
 /***/ }),
 
-/***/ 594:
+/***/ 595:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -609,7 +609,7 @@ exports.LocalTimePipe = LocalTimePipe;
 
 /***/ }),
 
-/***/ 595:
+/***/ 596:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -641,45 +641,45 @@ exports.LocalePipe = LocalePipe;
 
 /***/ }),
 
-/***/ 596:
+/***/ 597:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var add_pipe_1 = __webpack_require__(583);
+var add_pipe_1 = __webpack_require__(584);
 exports.AddPipe = add_pipe_1.AddPipe;
-var calendar_pipe_1 = __webpack_require__(584);
+var calendar_pipe_1 = __webpack_require__(585);
 exports.CalendarPipe = calendar_pipe_1.CalendarPipe;
-var date_format_pipe_1 = __webpack_require__(585);
+var date_format_pipe_1 = __webpack_require__(586);
 exports.DateFormatPipe = date_format_pipe_1.DateFormatPipe;
-var difference_pipe_1 = __webpack_require__(586);
+var difference_pipe_1 = __webpack_require__(587);
 exports.DifferencePipe = difference_pipe_1.DifferencePipe;
-var duration_pipe_1 = __webpack_require__(587);
+var duration_pipe_1 = __webpack_require__(588);
 exports.DurationPipe = duration_pipe_1.DurationPipe;
-var from_unix_pipe_1 = __webpack_require__(588);
+var from_unix_pipe_1 = __webpack_require__(589);
 exports.FromUnixPipe = from_unix_pipe_1.FromUnixPipe;
-var parse_pipe_1 = __webpack_require__(589);
+var parse_pipe_1 = __webpack_require__(590);
 exports.ParsePipe = parse_pipe_1.ParsePipe;
-var moment_module_1 = __webpack_require__(597);
+var moment_module_1 = __webpack_require__(598);
 exports.MomentModule = moment_module_1.MomentModule;
-var subtract_pipe_1 = __webpack_require__(590);
+var subtract_pipe_1 = __webpack_require__(591);
 exports.SubtractPipe = subtract_pipe_1.SubtractPipe;
-var time_ago_pipe_1 = __webpack_require__(591);
+var time_ago_pipe_1 = __webpack_require__(592);
 exports.TimeAgoPipe = time_ago_pipe_1.TimeAgoPipe;
-var utc_pipe_1 = __webpack_require__(592);
+var utc_pipe_1 = __webpack_require__(593);
 exports.UtcPipe = utc_pipe_1.UtcPipe;
-var from_utc_pipe_1 = __webpack_require__(593);
+var from_utc_pipe_1 = __webpack_require__(594);
 exports.FromUtcPipe = from_utc_pipe_1.FromUtcPipe;
-var local_pipe_1 = __webpack_require__(594);
+var local_pipe_1 = __webpack_require__(595);
 exports.LocalTimePipe = local_pipe_1.LocalTimePipe;
-var locale_pipe_1 = __webpack_require__(595);
+var locale_pipe_1 = __webpack_require__(596);
 exports.LocalePipe = locale_pipe_1.LocalePipe;
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ 597:
+/***/ 598:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -692,19 +692,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var add_pipe_1 = __webpack_require__(583);
-var calendar_pipe_1 = __webpack_require__(584);
-var date_format_pipe_1 = __webpack_require__(585);
-var difference_pipe_1 = __webpack_require__(586);
-var duration_pipe_1 = __webpack_require__(587);
-var from_unix_pipe_1 = __webpack_require__(588);
-var parse_pipe_1 = __webpack_require__(589);
-var subtract_pipe_1 = __webpack_require__(590);
-var time_ago_pipe_1 = __webpack_require__(591);
-var utc_pipe_1 = __webpack_require__(592);
-var from_utc_pipe_1 = __webpack_require__(593);
-var local_pipe_1 = __webpack_require__(594);
-var locale_pipe_1 = __webpack_require__(595);
+var add_pipe_1 = __webpack_require__(584);
+var calendar_pipe_1 = __webpack_require__(585);
+var date_format_pipe_1 = __webpack_require__(586);
+var difference_pipe_1 = __webpack_require__(587);
+var duration_pipe_1 = __webpack_require__(588);
+var from_unix_pipe_1 = __webpack_require__(589);
+var parse_pipe_1 = __webpack_require__(590);
+var subtract_pipe_1 = __webpack_require__(591);
+var time_ago_pipe_1 = __webpack_require__(592);
+var utc_pipe_1 = __webpack_require__(593);
+var from_utc_pipe_1 = __webpack_require__(594);
+var local_pipe_1 = __webpack_require__(595);
+var locale_pipe_1 = __webpack_require__(596);
 var ANGULAR_MOMENT_PIPES = [
     add_pipe_1.AddPipe,
     calendar_pipe_1.CalendarPipe,
@@ -736,7 +736,7 @@ exports.MomentModule = MomentModule;
 
 /***/ }),
 
-/***/ 598:
+/***/ 599:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -753,7 +753,7 @@ exports.MomentModule = MomentModule;
 
 /***/ }),
 
-/***/ 606:
+/***/ 607:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -761,11 +761,13 @@ exports.MomentModule = MomentModule;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components__ = __webpack_require__(598);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_scoreboard_scoreboard_component__ = __webpack_require__(410);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ionic_angular_util_util__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components__ = __webpack_require__(599);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_scoreboard_scoreboard_component__ = __webpack_require__(410);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ionic_angular_util_util__ = __webpack_require__(3);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -783,76 +785,77 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var AVAILABLE_OPTIONS = [
     {
-        action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EDIT_TEAMS,
-        roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN, __WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].COACH],
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EDIT_TEAMS,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN, __WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].COACH],
         token: 'MATCH_PAGE.ACTION.EDIT_TEAMS',
         icon: 'build'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EDIT_MATCH,
-        roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EDIT_MATCH,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
         token: 'MATCH_PAGE.ACTION.EDIT_MATCH',
         icon: 'create'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].DELETE_MATCH,
-        roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].DELETE_MATCH,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
         token: 'MATCH_PAGE.ACTION.DELETE_MATCH',
         icon: 'trash'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].SET_SCOREBOARD,
-        roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].SET_SCOREBOARD,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
         token: 'MATCH_PAGE.ACTION.SCOREBOARD',
         icon: 'football'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].JOIN_CALL_UP,
-        roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].PLAYER],
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].JOIN_CALL_UP,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].PLAYER],
         token: 'MATCH_PAGE.ACTION.JOIN_CALL_UP',
         icon: 'thumbs-up'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].UNJOIN_CALL_UP,
-        roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].PLAYER],
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].UNJOIN_CALL_UP,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].PLAYER],
         token: 'MATCH_PAGE.ACTION.UNJOIN_CALL_UP',
         icon: 'thumbs-down'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].DISCARD_ME_CALL_UP,
-        roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].PLAYER],
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].DISCARD_ME_CALL_UP,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].PLAYER],
         token: 'MATCH_PAGE.ACTION.DISCARD_ME_CALL_UP',
         icon: 'remove-circle'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EXIT_FROM_DISCARDS,
-        roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].PLAYER],
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EXIT_FROM_DISCARDS,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].PLAYER],
         token: 'MATCH_PAGE.ACTION.EXIT_FROM_DISCARDS',
         icon: 'checkmark-circle'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EDIT_CALL_UP,
-        roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EDIT_CALL_UP,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
         token: 'MATCH_PAGE.ACTION.EDIT_CALL_UP',
         icon: 'people'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EDIT_DISCARDS,
-        roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EDIT_DISCARDS,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
         token: 'MATCH_PAGE.ACTION.EDIT_DISCARDS',
         icon: 'close-circle'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].ADD_EXTRA_PLAYER,
-        roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].ADD_EXTRA_PLAYER,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
         token: 'MATCH_PAGE.ACTION.ADD_EXTRA_PLAYER',
         icon: 'add'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].REMOVE_EXTRA_PLAYER,
-        roles: [__WEBPACK_IMPORTED_MODULE_3__models__["c" /* Role */].ADMIN],
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].REMOVE_EXTRA_PLAYER,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
         token: 'MATCH_PAGE.ACTION.REMOVE_EXTRA_PLAYER',
         icon: 'remove'
     }
@@ -878,48 +881,48 @@ var MatchPageComponent = /** @class */ (function () {
         this.setDiscardedPlayer();
         this.setMenuDisable();
         this.setMatchPlayed();
-        this.setShowValidations();
+        this.setShowValuations();
     };
     MatchPageComponent.prototype.showOptions = function (clickEvent) {
         var _this = this;
-        var actionsPopover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_4__components__["b" /* OverflowMenuComponent */], { options: this.getOptionsAllowed() });
+        var actionsPopover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_5__components__["b" /* OverflowMenuComponent */], { options: this.getOptionsAllowed() });
         actionsPopover.onDidDismiss(function (data) {
             if (data) {
                 switch (data.action) {
-                    case __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EDIT_TEAMS:
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EDIT_TEAMS:
                         _this.editTeams();
                         break;
-                    case __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EDIT_MATCH:
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EDIT_MATCH:
                         _this.editMatch();
                         break;
-                    case __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].DELETE_MATCH:
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].DELETE_MATCH:
                         _this.deleteMatch();
                         break;
-                    case __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].JOIN_CALL_UP:
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].JOIN_CALL_UP:
                         _this.joinCallUp();
                         break;
-                    case __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].UNJOIN_CALL_UP:
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].UNJOIN_CALL_UP:
                         _this.unjoinCallUp();
                         break;
-                    case __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].DISCARD_ME_CALL_UP:
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].DISCARD_ME_CALL_UP:
                         _this.discardMeCallUp();
                         break;
-                    case __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EXIT_FROM_DISCARDS:
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EXIT_FROM_DISCARDS:
                         _this.exitFromDiscards();
                         break;
-                    case __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].SET_SCOREBOARD:
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].SET_SCOREBOARD:
                         _this.setScoreBoard();
                         break;
-                    case __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EDIT_CALL_UP:
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EDIT_CALL_UP:
                         _this.editCallUp();
                         break;
-                    case __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EDIT_DISCARDS:
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EDIT_DISCARDS:
                         _this.editDiscards();
                         break;
-                    case __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].ADD_EXTRA_PLAYER:
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].ADD_EXTRA_PLAYER:
                         _this.addExtraPlayer();
                         break;
-                    case __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].REMOVE_EXTRA_PLAYER:
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].REMOVE_EXTRA_PLAYER:
                         _this.removeExtraPlayer();
                         break;
                 }
@@ -941,8 +944,11 @@ var MatchPageComponent = /** @class */ (function () {
     MatchPageComponent.prototype.goToReserves = function () {
         this.navCtrl.push('CallUpPage', { match: this.match, reserves: true });
     };
+    MatchPageComponent.prototype.goToMyValuations = function () {
+        this.navCtrl.push('MyValuationsPage', { match: this.match, player: this.player });
+    };
     MatchPageComponent.prototype.goToValuations = function () {
-        this.navCtrl.push('ValuationsPage', { match: this.match, player: this.player });
+        this.navCtrl.push('ValuationsPage', { match: this.match });
     };
     MatchPageComponent.prototype.getOptionsAllowed = function () {
         var _this = this;
@@ -953,22 +959,22 @@ var MatchPageComponent = /** @class */ (function () {
         });
         if (this.match.openCallUp) {
             if (this.joinedPlayer) {
-                var actions = [__WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].JOIN_CALL_UP, __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].DISCARD_ME_CALL_UP, __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EXIT_FROM_DISCARDS];
+                var actions = [__WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].JOIN_CALL_UP, __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].DISCARD_ME_CALL_UP, __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EXIT_FROM_DISCARDS];
                 result = this.removeOptions(result, actions);
             }
             else {
-                var actions = [__WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].UNJOIN_CALL_UP];
+                var actions = [__WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].UNJOIN_CALL_UP];
                 if (this.discardedPlayer) {
-                    actions.push(__WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].JOIN_CALL_UP, __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].DISCARD_ME_CALL_UP);
+                    actions.push(__WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].JOIN_CALL_UP, __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].DISCARD_ME_CALL_UP);
                 }
                 else {
-                    actions.push(__WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EXIT_FROM_DISCARDS);
+                    actions.push(__WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EXIT_FROM_DISCARDS);
                 }
                 result = this.removeOptions(result, actions);
             }
         }
         else {
-            var actions = [__WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].JOIN_CALL_UP, __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].UNJOIN_CALL_UP, __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].DISCARD_ME_CALL_UP, __WEBPACK_IMPORTED_MODULE_3__models__["a" /* Action */].EXIT_FROM_DISCARDS];
+            var actions = [__WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].JOIN_CALL_UP, __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].UNJOIN_CALL_UP, __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].DISCARD_ME_CALL_UP, __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EXIT_FROM_DISCARDS];
             result = this.removeOptions(result, actions);
         }
         return result;
@@ -983,7 +989,7 @@ var MatchPageComponent = /** @class */ (function () {
             this.messages.showInfo('MATCH_PAGE.CALL_UP_INCOMPLETED');
         }
         else {
-            var dialog = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__components__["c" /* TeamsMakerComponent */], { match: this.match, player: this.player }, { enableBackdropDismiss: false });
+            var dialog = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_5__components__["c" /* TeamsMakerComponent */], { match: this.match, player: this.player }, { enableBackdropDismiss: false });
             dialog.onDidDismiss(function (result) {
                 if (result.actionOk) {
                     _this.matchesService.updateTeams(_this.match.id, result.teams)
@@ -1023,7 +1029,7 @@ var MatchPageComponent = /** @class */ (function () {
     };
     MatchPageComponent.prototype.editMatch = function () {
         var _this = this;
-        var dialog = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__components__["a" /* AddMatchComponent */], { match: this.match }, { enableBackdropDismiss: false });
+        var dialog = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_5__components__["a" /* AddMatchComponent */], { match: this.match }, { enableBackdropDismiss: false });
         dialog.onDidDismiss(function (actionOk) {
             if (actionOk) {
                 _this.messages.showSuccess('ACTION_OK', 'CONFIRMATION');
@@ -1078,7 +1084,7 @@ var MatchPageComponent = /** @class */ (function () {
     };
     MatchPageComponent.prototype.setScoreBoard = function () {
         var _this = this;
-        var actionsPopover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_6__components_scoreboard_scoreboard_component__["a" /* ScoreboardComponent */], {
+        var actionsPopover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_7__components_scoreboard_scoreboard_component__["a" /* ScoreboardComponent */], {
             scoreWhite: this.match.team1.goals || 0,
             scoreBlack: this.match.team2.goals || 0
         });
@@ -1120,11 +1126,14 @@ var MatchPageComponent = /** @class */ (function () {
     };
     MatchPageComponent.prototype.setMatchPlayed = function () {
         this.matchPlayed =
-            this.match.team1 && !Object(__WEBPACK_IMPORTED_MODULE_7_ionic_angular_util_util__["p" /* isUndefined */])(this.match.team1.goals)
-                && this.match.team2 && !Object(__WEBPACK_IMPORTED_MODULE_7_ionic_angular_util_util__["p" /* isUndefined */])(this.match.team2.goals);
+            this.match.team1 && !Object(__WEBPACK_IMPORTED_MODULE_8_ionic_angular_util_util__["p" /* isUndefined */])(this.match.team1.goals)
+                && this.match.team2 && !Object(__WEBPACK_IMPORTED_MODULE_8_ionic_angular_util_util__["p" /* isUndefined */])(this.match.team2.goals);
     };
-    MatchPageComponent.prototype.setShowValidations = function () {
-        this.showValidations = this.matchPlayed && this.userLoggedHasPlayed();
+    MatchPageComponent.prototype.setShowValuations = function () {
+        this.showMyValuations = this.matchPlayed && this.userLoggedHasPlayed();
+        var fechaPartido = __WEBPACK_IMPORTED_MODULE_3_moment__(this.match.date);
+        var fechaActual = __WEBPACK_IMPORTED_MODULE_3_moment__();
+        this.showValuations = fechaActual.diff(fechaPartido, 'days') > 2;
     };
     MatchPageComponent.prototype.userLoggedHasPlayed = function () {
         var _this = this;
@@ -1337,7 +1346,7 @@ var MatchPageComponent = /** @class */ (function () {
     };
     MatchPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-match',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\match\match.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name }}\n\n        </ion-title>\n\n        <ion-buttons end>               \n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    [disabled]="menuDisable"\n\n                    (click)="showOptions($event)">\n\n                <ion-icon name="more"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-card>\n\n        <ion-card-header>\n\n            {{"MATCH_PAGE.DATA_HEADER" | translate}}\n\n        </ion-card-header>      \n\n        <ion-list>\n\n            <ion-item>\n\n                <ion-icon name="calendar" item-start></ion-icon>\n\n                {{match.date | amDateFormat: \'DD-MM-YYYY\'}}\n\n            </ion-item>                    \n\n            <ion-item color="none" on-click="goToCallUp()">\n\n                <ion-icon name="people" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.CALL_UP" | translate}}  ({{match.callUp?.length || 0}}/{{match.numPlayers}})\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" on-click="goToTeams()">\n\n                <ion-icon name="shirt" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.TEAMS" | translate}}\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none">\n\n                <ion-icon name="football" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.SCOREBOARD" | translate}}\n\n                <h4 class="scoreboard">\n\n                    <span *ngIf="matchPlayed; else elseBlock ">\n\n                        {{\'WHITE\' | translate}}: {{match.team1.goals}} - {{\'BLACK\' | translate}}: {{match.team2.goals}}\n\n                    </span>\n\n                    <ng-template #elseBlock>\n\n                        {{"MATCH_PAGE.NOT_PLAYED" | translate}}\n\n                    </ng-template>\n\n                </h4>\n\n            </ion-item>     \n\n            <ion-item color="none" *ngIf="match.mister">\n\n                <ion-icon name="build" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.MISTER" | translate}}: {{match.mister.name}}\n\n            </ion-item>\n\n            <ion-item color="none" on-click="goToDiscards()">\n\n                <ion-icon name="thumbs-down" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.DISCARDS" | translate}}  ({{match.discards?.length || 0}})\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" on-click="goToReserves()">\n\n                <ion-icon name="cut" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.RESERVES" | translate}}  ({{match.reserves?.length || 0}})\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item *ngIf="showValidations" color="none" on-click="goToValuations()">\n\n                <ion-icon name="stats" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.VALUATIONS" | translate}}\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item> \n\n        </ion-list>\n\n      </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\match\match.component.html"*/,
+            selector: 'fwf-page-match',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\match\match.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name }}\n\n        </ion-title>\n\n        <ion-buttons end>               \n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    [disabled]="menuDisable"\n\n                    (click)="showOptions($event)">\n\n                <ion-icon name="more"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-card>\n\n        <ion-card-header>\n\n            {{"MATCH_PAGE.DATA_HEADER" | translate}}\n\n        </ion-card-header>      \n\n        <ion-list>\n\n            <ion-item>\n\n                <ion-icon name="calendar" item-start></ion-icon>\n\n                {{match.date | amDateFormat: \'DD-MM-YYYY\'}}\n\n            </ion-item>                    \n\n            <ion-item color="none" on-click="goToCallUp()">\n\n                <ion-icon name="people" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.CALL_UP" | translate}}  ({{match.callUp?.length || 0}}/{{match.numPlayers}})\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" on-click="goToTeams()">\n\n                <ion-icon name="shirt" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.TEAMS" | translate}}\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none">\n\n                <ion-icon name="football" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.SCOREBOARD" | translate}}\n\n                <h4 class="scoreboard">\n\n                    <span *ngIf="matchPlayed; else elseBlock ">\n\n                        {{\'WHITE\' | translate}}: {{match.team1.goals}} - {{\'BLACK\' | translate}}: {{match.team2.goals}}\n\n                    </span>\n\n                    <ng-template #elseBlock>\n\n                        {{"MATCH_PAGE.NOT_PLAYED" | translate}}\n\n                    </ng-template>\n\n                </h4>\n\n            </ion-item>     \n\n            <ion-item color="none" *ngIf="match.mister">\n\n                <ion-icon name="build" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.MISTER" | translate}}: {{match.mister.name}}\n\n            </ion-item>\n\n            <ion-item color="none" on-click="goToDiscards()">\n\n                <ion-icon name="thumbs-down" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.DISCARDS" | translate}}  ({{match.discards?.length || 0}})\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" on-click="goToReserves()">\n\n                <ion-icon name="cut" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.RESERVES" | translate}}  ({{match.reserves?.length || 0}})\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item *ngIf="showMyValuations" color="none" on-click="goToMyValuations()">\n\n                <ion-icon name="stats" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.MY_VALUATIONS" | translate}}\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item *ngIf="showValuations" color="none" on-click="goToValuations()">\n\n                <ion-icon name="podium" item-left></ion-icon>\n\n                {{ "MATCH_PAGE.VALUATIONS" | translate}}\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item> \n\n        </ion-list>\n\n      </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\match\match.component.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
@@ -1345,10 +1354,10 @@ var MatchPageComponent = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
             __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */],
-            __WEBPACK_IMPORTED_MODULE_5__providers__["h" /* MatchesService */],
-            __WEBPACK_IMPORTED_MODULE_5__providers__["j" /* PlayersService */],
-            __WEBPACK_IMPORTED_MODULE_5__providers__["d" /* ContextService */],
-            __WEBPACK_IMPORTED_MODULE_5__providers__["i" /* MessagesService */]])
+            __WEBPACK_IMPORTED_MODULE_6__providers__["h" /* MatchesService */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["j" /* PlayersService */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["d" /* ContextService */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["i" /* MessagesService */]])
     ], MatchPageComponent);
     return MatchPageComponent;
 }());
