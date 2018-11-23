@@ -788,12 +788,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AVAILABLE_OPTIONS = [
     {
-        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EDIT_TEAMS,
-        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN, __WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].COACH],
-        token: 'MATCH_PAGE.ACTION.EDIT_TEAMS',
-        icon: 'build'
-    },
-    {
         action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EDIT_MATCH,
         roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
         token: 'MATCH_PAGE.ACTION.EDIT_MATCH',
@@ -804,12 +798,6 @@ var AVAILABLE_OPTIONS = [
         roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
         token: 'MATCH_PAGE.ACTION.DELETE_MATCH',
         icon: 'trash'
-    },
-    {
-        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].SET_SCOREBOARD,
-        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
-        token: 'MATCH_PAGE.ACTION.SCOREBOARD',
-        icon: 'football'
     },
     {
         action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].JOIN_CALL_UP,
@@ -848,16 +836,22 @@ var AVAILABLE_OPTIONS = [
         icon: 'close-circle'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].ADD_EXTRA_PLAYER,
-        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
-        token: 'MATCH_PAGE.ACTION.ADD_EXTRA_PLAYER',
-        icon: 'add'
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EDIT_TEAMS,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN, __WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].COACH],
+        token: 'MATCH_PAGE.ACTION.EDIT_TEAMS',
+        icon: 'build'
     },
     {
-        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].REMOVE_EXTRA_PLAYER,
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].SET_SCOREBOARD,
         roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
-        token: 'MATCH_PAGE.ACTION.REMOVE_EXTRA_PLAYER',
-        icon: 'remove'
+        token: 'MATCH_PAGE.ACTION.SCOREBOARD',
+        icon: 'football'
+    },
+    {
+        action: __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].ADD_NEW_PLAYER,
+        roles: [__WEBPACK_IMPORTED_MODULE_4__models__["c" /* Role */].ADMIN],
+        token: 'MATCH_PAGE.ACTION.ADD_NEW_PLAYER',
+        icon: 'add'
     }
 ];
 var MatchPageComponent = /** @class */ (function () {
@@ -919,11 +913,8 @@ var MatchPageComponent = /** @class */ (function () {
                     case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].EDIT_DISCARDS:
                         _this.editDiscards();
                         break;
-                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].ADD_EXTRA_PLAYER:
-                        _this.addExtraPlayer();
-                        break;
-                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].REMOVE_EXTRA_PLAYER:
-                        _this.removeExtraPlayer();
+                    case __WEBPACK_IMPORTED_MODULE_4__models__["a" /* Action */].ADD_NEW_PLAYER:
+                        _this.addNewPlayer();
                         break;
                 }
             }
@@ -1150,10 +1141,10 @@ var MatchPageComponent = /** @class */ (function () {
         this.playerService.fetchPlayers()
             .subscribe(function (players) { return _this.showListPlayersDiscards(players); }, function (error) { return _this.messages.showError(error); });
     };
-    MatchPageComponent.prototype.addExtraPlayer = function () {
+    MatchPageComponent.prototype.addNewPlayer = function () {
         var _this = this;
         var prompt = this.alertCtrl.create({
-            title: this.translate.instant('MATCH_PAGE.ACTION.ADD_EXTRA_PLAYER'),
+            title: this.translate.instant('MATCH_PAGE.ACTION.ADD_NEW_PLAYER'),
             inputs: [
                 {
                     name: 'name',
@@ -1168,7 +1159,7 @@ var MatchPageComponent = /** @class */ (function () {
                     text: this.translate.instant('OK_BUTTON'),
                     handler: function (data) {
                         var extraPlayer = {
-                            id: "extraPlayer" + (_this.getNumExtraPlayers() + 1),
+                            id: 'newPlayer',
                             alias: data.name,
                             fixed: false
                         };
@@ -1182,40 +1173,6 @@ var MatchPageComponent = /** @class */ (function () {
             ]
         });
         prompt.present();
-    };
-    MatchPageComponent.prototype.removeExtraPlayer = function () {
-        var _this = this;
-        var prompt = this.alertCtrl.create({
-            title: this.translate.instant('MATCH_PAGE.ACTION.ADD_EXTRA_PLAYER'),
-            inputs: [
-                {
-                    name: 'name',
-                    placeholder: this.translate.instant('MATCH_PAGE.NAME_NEW_PLAYER')
-                },
-            ],
-            buttons: [
-                {
-                    text: this.translate.instant('CANCEL_BUTTON')
-                },
-                {
-                    text: this.translate.instant('OK_BUTTON'),
-                    handler: function (data) {
-                        var extraPlayer = _this.match.callUp.find(function (el) { return el.player.id.startsWith('extraPlayer') && el.player.name === data.name; });
-                        _this.matchesService.unjoinPlayerCallUp(_this.match.id, extraPlayer.player.id)
-                            .subscribe(function (ok) {
-                            _this.messages.showSuccess('ACTION_OK', 'CONFIRMATION');
-                            _this.reloadMatch();
-                        }, function (error) { return _this.messages.showError(error); });
-                    }
-                }
-            ]
-        });
-        prompt.present();
-    };
-    MatchPageComponent.prototype.getNumExtraPlayers = function () {
-        return this.match.callUp ?
-            this.match.callUp.filter(function (el) { return el.player.id.startsWith('extraPlayer'); }).length
-            : 0;
     };
     MatchPageComponent.prototype.showListPlayersCallUp = function (players) {
         var _this = this;

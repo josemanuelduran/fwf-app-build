@@ -64,15 +64,15 @@ webpackEmptyAsyncContext.id = 163;
 
 var map = {
 	"pages/about/about.component.module": [
-		570,
+		572,
 		13
 	],
 	"pages/call-up/call-up.component.module": [
-		571,
+		570,
 		12
 	],
 	"pages/discards/discards.component.module": [
-		572,
+		571,
 		11
 	],
 	"pages/introduction/introduction.component.module": [
@@ -88,11 +88,11 @@ var map = {
 		1
 	],
 	"pages/matches/matches.component.module": [
-		576,
+		582,
 		0
 	],
 	"pages/my-valuations/my-valuations.component.module": [
-		577,
+		576,
 		9
 	],
 	"pages/payments/payments.component.module": [
@@ -100,23 +100,23 @@ var map = {
 		8
 	],
 	"pages/profile/profile.component.module": [
-		579,
+		583,
 		7
 	],
 	"pages/stats/stats.component.module": [
-		580,
+		577,
 		6
 	],
 	"pages/tabs-controller/tabs-controller.module": [
-		581,
+		580,
 		5
 	],
 	"pages/teams/teams.component.module": [
-		582,
+		579,
 		4
 	],
 	"pages/valuations/valuations.component.module": [
-		583,
+		581,
 		3
 	]
 };
@@ -799,20 +799,20 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["c" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* FootballWithFriendsAppComponent */], {}, {
                     links: [
-                        { loadChildren: 'pages/about/about.component.module#StatsPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/call-up/call-up.component.module#CallUpPageModule', name: 'CallUpPage', segment: 'call-up.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/discards/discards.component.module#DiscardsPageModule', name: 'DiscardsPage', segment: 'discards.component', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/about/about.component.module#StatsPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/introduction/introduction.component.module#IntroductionPageModule', name: 'IntroductionPage', segment: 'introduction', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/login/login.component.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/match/match.component.module#MatchPageModule', name: 'MatchPage', segment: 'match.component', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/matches/matches.component.module#MatchesPageModule', name: 'MatchesPage', segment: 'matches', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/my-valuations/my-valuations.component.module#MyValuationsPageModule', name: 'MyValuationsPage', segment: 'my-valuations.component', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/payments/payments.component.module#PaymentsPageModule', name: 'PaymentsPage', segment: 'payments', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/profile/profile.component.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/stats/stats.component.module#StatsPageModule', name: 'StatsPage', segment: 'stats', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/tabs-controller/tabs-controller.module#TabsControllerPageModule', name: 'TabsController', segment: 'tabController', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/payments/payments.component.module#PaymentsPageModule', name: 'PaymentsPage', segment: 'payments', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/teams/teams.component.module#TeamsPageModule', name: 'TeamsPage', segment: 'teams.component', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/valuations/valuations.component.module#ValuationsPageModule', name: 'ValuationsPage', segment: 'valuations.component', priority: 'low', defaultHistory: [] }
+                        { loadChildren: 'pages/tabs-controller/tabs-controller.module#TabsControllerPageModule', name: 'TabsController', segment: 'tabController', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/valuations/valuations.component.module#ValuationsPageModule', name: 'ValuationsPage', segment: 'valuations.component', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/matches/matches.component.module#MatchesPageModule', name: 'MatchesPage', segment: 'matches', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/profile/profile.component.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_9__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
@@ -1127,8 +1127,7 @@ var Action;
     Action[Action["SET_SCOREBOARD"] = 8] = "SET_SCOREBOARD";
     Action[Action["EDIT_CALL_UP"] = 9] = "EDIT_CALL_UP";
     Action[Action["EDIT_DISCARDS"] = 10] = "EDIT_DISCARDS";
-    Action[Action["ADD_EXTRA_PLAYER"] = 11] = "ADD_EXTRA_PLAYER";
-    Action[Action["REMOVE_EXTRA_PLAYER"] = 12] = "REMOVE_EXTRA_PLAYER";
+    Action[Action["ADD_NEW_PLAYER"] = 11] = "ADD_NEW_PLAYER";
 })(Action || (Action = {}));
 //# sourceMappingURL=option.model.js.map
 
