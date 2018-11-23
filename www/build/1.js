@@ -981,13 +981,10 @@ var MatchPageComponent = /** @class */ (function () {
         }
         else {
             var dialog = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_5__components__["c" /* TeamsMakerComponent */], { match: this.match, player: this.player }, { enableBackdropDismiss: false });
-            dialog.onDidDismiss(function (result) {
-                if (result.actionOk) {
-                    _this.matchesService.updateTeams(_this.match.id, result.teams)
-                        .subscribe(function (data) {
-                        _this.messages.showSuccess('ACTION_OK', 'CONFIRMATION');
-                        _this.reloadMatch();
-                    }, function (error) { return _this.messages.showError(error); });
+            dialog.onDidDismiss(function (actionOk) {
+                if (actionOk) {
+                    _this.messages.showSuccess('ACTION_OK', 'CONFIRMATION');
+                    _this.reloadMatch();
                 }
             });
             dialog.present();
