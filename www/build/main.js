@@ -64,15 +64,15 @@ webpackEmptyAsyncContext.id = 163;
 
 var map = {
 	"pages/about/about.component.module": [
-		570,
+		572,
 		13
 	],
 	"pages/call-up/call-up.component.module": [
-		571,
+		570,
 		12
 	],
 	"pages/discards/discards.component.module": [
-		572,
+		571,
 		11
 	],
 	"pages/introduction/introduction.component.module": [
@@ -96,19 +96,19 @@ var map = {
 		9
 	],
 	"pages/payments/payments.component.module": [
-		583,
+		579,
 		8
 	],
 	"pages/profile/profile.component.module": [
-		578,
+		580,
 		7
 	],
 	"pages/stats/stats.component.module": [
-		579,
+		578,
 		6
 	],
 	"pages/tabs-controller/tabs-controller.module": [
-		580,
+		582,
 		5
 	],
 	"pages/teams/teams.component.module": [
@@ -116,7 +116,7 @@ var map = {
 		4
 	],
 	"pages/valuations/valuations.component.module": [
-		582,
+		583,
 		3
 	]
 };
@@ -396,17 +396,19 @@ var TeamsMakerComponent = /** @class */ (function () {
         this.translate = translate;
         this.matchesService = matchesService;
         this.messages = messages;
+        this.colorWhite = __WEBPACK_IMPORTED_MODULE_3__models__["d" /* TeamColor */].WHITE;
+        this.colorBlack = __WEBPACK_IMPORTED_MODULE_3__models__["d" /* TeamColor */].BLACK;
     }
     TeamsMakerComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.match = this.navParams.get('match');
         this.player = this.navParams.get('player');
         this.listPlayers = this.match.callUp.map(function (playerCallUp) {
-            var team = _this.match.team1 && _this.match.team1.players.filter(function (el) { return el.id === playerCallUp.player.id; }).length > 0 ?
-                0 :
+            var team = _this.match.team1
+                && _this.match.team1.players.filter(function (el) { return el.id === playerCallUp.player.id; }).length > 0 ?
+                _this.match.team1.color :
                 _this.match.team2 && _this.match.team2.players.filter(function (el) { return el.id === playerCallUp.player.id; }).length > 0 ?
-                    1 :
-                    undefined;
+                    _this.match.team2.color : undefined;
             return {
                 player: playerCallUp.player,
                 team: team
@@ -467,7 +469,7 @@ var TeamsMakerComponent = /** @class */ (function () {
     };
     TeamsMakerComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-teams-maker',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\components\teams-maker\teams-maker.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">   \n\n        <ion-buttons left>\n\n            <button ion-button \n\n                    icon-only\n\n                    clear\n\n                    (click)="cancel()">\n\n                <ion-icon name="close-circle"></ion-icon>\n\n            </button>\n\n        </ion-buttons>     \n\n        <ion-title>\n\n            {{match.name}} \n\n            <p class="subtitle">{{"MATCH_PAGE.TEAMS_MAKER" | translate}}</p>\n\n        </ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    (click)="saveTeams()">\n\n                <ion-icon name="checkmark-circle"></ion-icon>\n\n            </button>        \n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-card>\n\n        <ion-grid>\n\n            <ion-row>\n\n                <ion-col>                    \n\n                    <ion-list>\n\n                        <ion-list-header>\n\n                            {{\'WHITE\' | translate}}\n\n                        </ion-list-header>\n\n                        <ion-item *ngFor="let whitePlayer of listPlayersWhite; let i = index;">\n\n                            {{i+1}}. {{whitePlayer?.player.name}} <span *ngIf="!whitePlayer?.player.fixed">(s)</span>\n\n                        </ion-item>\n\n                    </ion-list>\n\n                </ion-col>\n\n                <ion-col>\n\n                    <ion-list>\n\n                        <ion-list-header>\n\n                            {{\'BLACK\' | translate}}\n\n                        </ion-list-header>\n\n                        <ion-item *ngFor="let blackPlayer of listPlayersBlack; let i = index;">\n\n                                {{i+1}}. {{blackPlayer?.player.name}} <span *ngIf="!blackPlayer?.player.fixed">(s)</span>\n\n                            </ion-item>\n\n                    </ion-list>\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </ion-card>  \n\n    <ion-card>        \n\n        <ion-list>\n\n            <ion-item *ngFor="let playerTeam of listPlayers; let i = index;">\n\n                <ion-label>{{i+1}}. {{playerTeam.player.name}} <span *ngIf="!playerTeam.player.fixed">(s)</span></ion-label>\n\n                <ion-select [(ngModel)]="playerTeam.team" (ionChange)="onSelectChange($event, playerTeam.player.id)">\n\n                    <ion-option selected=true>---</ion-option>\n\n                    <ion-option [value]=0 disabled="{{listPlayersWhite.length === numPlayersTeam}}">{{\'WHITE\' | translate}}</ion-option>\n\n                    <ion-option [value]=1 disabled="{{listPlayersBlack.length === numPlayersTeam}}">{{\'BLACK\' | translate}}</ion-option>\n\n                </ion-select>\n\n            </ion-item>\n\n        </ion-list>        \n\n    </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\components\teams-maker\teams-maker.component.html"*/
+            selector: 'fwf-teams-maker',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\components\teams-maker\teams-maker.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">   \n\n        <ion-buttons left>\n\n            <button ion-button \n\n                    icon-only\n\n                    clear\n\n                    (click)="cancel()">\n\n                <ion-icon name="close-circle"></ion-icon>\n\n            </button>\n\n        </ion-buttons>     \n\n        <ion-title>\n\n            {{match.name}} \n\n            <p class="subtitle">{{"MATCH_PAGE.TEAMS_MAKER" | translate}}</p>\n\n        </ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    (click)="saveTeams()">\n\n                <ion-icon name="checkmark-circle"></ion-icon>\n\n            </button>        \n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-card>\n\n        <ion-grid>\n\n            <ion-row>\n\n                <ion-col>                    \n\n                    <ion-list>\n\n                        <ion-list-header>\n\n                            {{\'WHITE\' | translate}}\n\n                        </ion-list-header>\n\n                        <ion-item *ngFor="let whitePlayer of listPlayersWhite; let i = index;">\n\n                            {{i+1}}. {{whitePlayer?.player.name}} <span *ngIf="!whitePlayer?.player.fixed">(s)</span>\n\n                        </ion-item>\n\n                    </ion-list>\n\n                </ion-col>\n\n                <ion-col>\n\n                    <ion-list>\n\n                        <ion-list-header>\n\n                            {{\'BLACK\' | translate}}\n\n                        </ion-list-header>\n\n                        <ion-item *ngFor="let blackPlayer of listPlayersBlack; let i = index;">\n\n                                {{i+1}}. {{blackPlayer?.player.name}} <span *ngIf="!blackPlayer?.player.fixed">(s)</span>\n\n                            </ion-item>\n\n                    </ion-list>\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </ion-card>  \n\n    <ion-card>        \n\n        <ion-list>\n\n            <ion-item *ngFor="let playerTeam of listPlayers; let i = index;">\n\n                <ion-label>{{i+1}}. {{playerTeam.player.name}} <span *ngIf="!playerTeam.player.fixed">(s)</span></ion-label>\n\n                <ion-select [(ngModel)]="playerTeam.team" (ionChange)="onSelectChange($event, playerTeam.player.id)">\n\n                    <ion-option selected=true>---</ion-option>\n\n                    <ion-option [value]="colorWhite" disabled="{{listPlayersWhite.length === numPlayersTeam}}">{{\'WHITE\' | translate}}</ion-option>\n\n                    <ion-option [value]="colorBlack" disabled="{{listPlayersBlack.length === numPlayersTeam}}">{{\'BLACK\' | translate}}</ion-option>\n\n                </ion-select>\n\n            </ion-item>\n\n        </ion-list>        \n\n    </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\components\teams-maker\teams-maker.component.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
@@ -799,20 +801,20 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["c" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* FootballWithFriendsAppComponent */], {}, {
                     links: [
-                        { loadChildren: 'pages/about/about.component.module#StatsPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/call-up/call-up.component.module#CallUpPageModule', name: 'CallUpPage', segment: 'call-up.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/discards/discards.component.module#DiscardsPageModule', name: 'DiscardsPage', segment: 'discards.component', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/about/about.component.module#StatsPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/introduction/introduction.component.module#IntroductionPageModule', name: 'IntroductionPage', segment: 'introduction', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/login/login.component.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/match/match.component.module#MatchPageModule', name: 'MatchPage', segment: 'match.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/matches/matches.component.module#MatchesPageModule', name: 'MatchesPage', segment: 'matches', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/my-valuations/my-valuations.component.module#MyValuationsPageModule', name: 'MyValuationsPage', segment: 'my-valuations.component', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/profile/profile.component.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/stats/stats.component.module#StatsPageModule', name: 'StatsPage', segment: 'stats', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/tabs-controller/tabs-controller.module#TabsControllerPageModule', name: 'TabsController', segment: 'tabController', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/payments/payments.component.module#PaymentsPageModule', name: 'PaymentsPage', segment: 'payments', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/profile/profile.component.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/teams/teams.component.module#TeamsPageModule', name: 'TeamsPage', segment: 'teams.component', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/valuations/valuations.component.module#ValuationsPageModule', name: 'ValuationsPage', segment: 'valuations.component', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/payments/payments.component.module#PaymentsPageModule', name: 'PaymentsPage', segment: 'payments', priority: 'low', defaultHistory: [] }
+                        { loadChildren: 'pages/tabs-controller/tabs-controller.module#TabsControllerPageModule', name: 'TabsController', segment: 'tabController', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/valuations/valuations.component.module#ValuationsPageModule', name: 'ValuationsPage', segment: 'valuations.component', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_9__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
@@ -1085,8 +1087,8 @@ var Position;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeamColor; });
 var TeamColor;
 (function (TeamColor) {
-    TeamColor[TeamColor["WHITE"] = 0] = "WHITE";
-    TeamColor[TeamColor["BLACK"] = 1] = "BLACK";
+    TeamColor["WHITE"] = "WHITE";
+    TeamColor["BLACK"] = "BLACK";
 })(TeamColor || (TeamColor = {}));
 //# sourceMappingURL=match.model.js.map
 
