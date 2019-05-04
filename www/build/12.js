@@ -1,15 +1,15 @@
 webpackJsonp([12],{
 
-/***/ 577:
+/***/ 570:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DiscardsPageModule", function() { return DiscardsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CallUpPageModule", function() { return CallUpPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__discards_component__ = __webpack_require__(609);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__call_up_component__ = __webpack_require__(601);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,34 +20,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DiscardsPageModule = /** @class */ (function () {
-    function DiscardsPageModule() {
+var CallUpPageModule = /** @class */ (function () {
+    function CallUpPageModule() {
     }
-    DiscardsPageModule = __decorate([
+    CallUpPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__discards_component__["a" /* DiscardsPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_3__call_up_component__["a" /* CallUpPageComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__discards_component__["a" /* DiscardsPageComponent */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__call_up_component__["a" /* CallUpPageComponent */]),
                 __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]
             ],
         })
-    ], DiscardsPageModule);
-    return DiscardsPageModule;
+    ], CallUpPageModule);
+    return CallUpPageModule;
 }());
 
-//# sourceMappingURL=discards.component.module.js.map
+//# sourceMappingURL=call-up.component.module.js.map
 
 /***/ }),
 
-/***/ 609:
+/***/ 601:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DiscardsPageComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CallUpPageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -59,25 +59,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var DiscardsPageComponent = /** @class */ (function () {
-    function DiscardsPageComponent(navCtrl, navParams) {
+var CallUpPageComponent = /** @class */ (function () {
+    function CallUpPageComponent(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    DiscardsPageComponent.prototype.ngOnInit = function () {
+    CallUpPageComponent.prototype.ngOnInit = function () {
         this.match = this.navParams.get('match');
+        this.reserves = this.navParams.get('reserves');
     };
-    DiscardsPageComponent = __decorate([
+    CallUpPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-discards',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\discards\discards.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.DISCARDS" | translate}}</p>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list>\n\n        <ion-item *ngFor="let item of match.discards; let i = index;">\n\n            {{i+1}}. {{item.player.name}} <span *ngIf="!item.player.fixed">(s)</span>\n\n        </ion-item>\n\n    </ion-list>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\discards\discards.component.html"*/,
+            selector: 'fwf-page-call-up',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\call-up\call-up.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title *ngIf=!reserves>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.CALL_UP" | translate}}</p>\n\n        </ion-title>\n\n        <ion-title *ngIf=reserves>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.RESERVES" | translate}}</p>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list *ngIf="reserves">\n\n        <ion-item *ngFor="let item of match.reserves; let i = index;">\n\n            {{i+1}}. {{item.player.name}} <span *ngIf="!item.player.fixed">(s)</span>\n\n        </ion-item>\n\n    </ion-list>\n\n    <ion-list *ngIf="!reserves">\n\n        <ion-item *ngFor="let item of match.callUp; let i = index;">\n\n            {{i+1}}. {{item.player.name}} <span *ngIf="!item.player.fixed">(s)</span>\n\n        </ion-item>\n\n    </ion-list>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\call-up\call-up.component.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]])
-    ], DiscardsPageComponent);
-    return DiscardsPageComponent;
+    ], CallUpPageComponent);
+    return CallUpPageComponent;
 }());
 
-//# sourceMappingURL=discards.component.js.map
+//# sourceMappingURL=call-up.component.js.map
 
 /***/ })
 

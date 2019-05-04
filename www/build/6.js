@@ -1,15 +1,15 @@
 webpackJsonp([6],{
 
-/***/ 587:
+/***/ 578:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabsControllerPageModule", function() { return TabsControllerPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StatsPageModule", function() { return StatsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_controller__ = __webpack_require__(625);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__stats_component__ = __webpack_require__(615);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,36 +20,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var TabsControllerPageModule = /** @class */ (function () {
-    function TabsControllerPageModule() {
+var StatsPageModule = /** @class */ (function () {
+    function StatsPageModule() {
     }
-    TabsControllerPageModule = __decorate([
+    StatsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__tabs_controller__["a" /* TabsControllerComponent */],
+                __WEBPACK_IMPORTED_MODULE_3__stats_component__["a" /* StatsPageComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__tabs_controller__["a" /* TabsControllerComponent */]),
-                __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__stats_component__["a" /* StatsPageComponent */]),
+                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */]
             ],
         })
-    ], TabsControllerPageModule);
-    return TabsControllerPageModule;
+    ], StatsPageModule);
+    return StatsPageModule;
 }());
 
-//# sourceMappingURL=tabs-controller.module.js.map
+//# sourceMappingURL=stats.component.module.js.map
 
 /***/ }),
 
-/***/ 625:
+/***/ 615:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsControllerComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StatsPageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(77);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -60,51 +59,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-// import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 
-
-var TabsControllerComponent = /** @class */ (function () {
-    function TabsControllerComponent(
-        // public navCtrl: NavController,
-        navParams, global, translate) {
+var StatsPageComponent = /** @class */ (function () {
+    function StatsPageComponent(navCtrl, navParams, global) {
+        this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.global = global;
-        this.translate = translate;
-        this.tab1Root = 'MatchesPage';
-        this.tab2Root = 'ProfilePage';
-        this.tab3Root = 'PaymentsPage';
-        this.tab4Root = 'StatsPage';
     }
-    TabsControllerComponent.prototype.ionViewDidEnter = function () {
-        this.tabs.select(this.navParams.get('indexSelected'), undefined, undefined);
+    StatsPageComponent.prototype.ionViewDidLoad = function () {
         this.global.enableSideMenu(true);
     };
-    TabsControllerComponent.prototype.ngOnInit = function () {
-        this.translateTitles();
-    };
-    TabsControllerComponent.prototype.translateTitles = function () {
-        this.tab1Title = this.translate.instant('TABS.TAB1');
-        this.tab2Title = this.translate.instant('TABS.TAB2');
-        this.tab3Title = this.translate.instant('TABS.TAB3');
-        this.tab4Title = this.translate.instant('TABS.TAB4');
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('tabs'),
-        __metadata("design:type", Object)
-    ], TabsControllerComponent.prototype, "tabs", void 0);
-    TabsControllerComponent = __decorate([
+    StatsPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-tabs-controller',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\tabs-controller\tabs-controller.html"*/'<ion-tabs #tabs>\n    <ion-tab [root]="tab1Root" tabTitle="{{tab1Title}}" tabIcon="football"></ion-tab>\n    <ion-tab [root]="tab2Root" tabTitle="{{tab2Title}}" tabIcon="person"></ion-tab>\n    <ion-tab [root]="tab3Root" tabTitle="{{tab3Title}}" tabIcon="cash"></ion-tab>\n    <ion-tab [root]="tab4Root" tabTitle="{{tab4Title}}" tabIcon="stats"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\tabs-controller\tabs-controller.html"*/,
+            selector: 'fwf-page-stats',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\stats\stats.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n\n        <!--Android pushes buttons to the left even if start attribute is present.\n\n            Check demo: http://ionicframework.com/docs/v2/components/#buttons-in-components-->\n\n        <!--If placing the menuToggle in a navbar or toolbar, it should be placed as a child of the <ion-navbar> or <ion-toolbar>, and not in the <ion-buttons> element\n\n        http://ionicframework.com/docs/v2/api/components/menu/MenuToggle/-->\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            {{ "STATS_PAGE.TITLE" | translate}}\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n    <img src="assets/img/png/under-construction.png"/>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\stats\stats.component.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_3__providers__["f" /* GlobalService */],
-            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]])
-    ], TabsControllerComponent);
-    return TabsControllerComponent;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers__["f" /* GlobalService */]])
+    ], StatsPageComponent);
+    return StatsPageComponent;
 }());
 
-//# sourceMappingURL=tabs-controller.js.map
+//# sourceMappingURL=stats.component.js.map
 
 /***/ })
 

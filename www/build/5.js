@@ -1,16 +1,15 @@
 webpackJsonp([5],{
 
-/***/ 588:
+/***/ 582:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeamsPageModule", function() { return TeamsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabsControllerPageModule", function() { return TabsControllerPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__teams_component__ = __webpack_require__(626);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_controller__ = __webpack_require__(619);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -21,36 +20,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var TeamsPageModule = /** @class */ (function () {
-    function TeamsPageModule() {
+var TabsControllerPageModule = /** @class */ (function () {
+    function TabsControllerPageModule() {
     }
-    TeamsPageModule = __decorate([
+    TabsControllerPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__teams_component__["a" /* TeamsPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_2__tabs_controller__["a" /* TabsControllerComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__teams_component__["a" /* TeamsPageComponent */]),
-                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */],
-                __WEBPACK_IMPORTED_MODULE_4__components_components_module__["a" /* ComponentsModule */]
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__tabs_controller__["a" /* TabsControllerComponent */]),
+                __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */],
             ],
         })
-    ], TeamsPageModule);
-    return TeamsPageModule;
+    ], TabsControllerPageModule);
+    return TabsControllerPageModule;
 }());
 
-//# sourceMappingURL=teams.component.module.js.map
+//# sourceMappingURL=tabs-controller.module.js.map
 
 /***/ }),
 
-/***/ 626:
+/***/ 619:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeamsPageComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsControllerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(77);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -61,28 +60,51 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+// import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-var TeamsPageComponent = /** @class */ (function () {
-    function TeamsPageComponent(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
+
+
+var TabsControllerComponent = /** @class */ (function () {
+    function TabsControllerComponent(
+        // public navCtrl: NavController,
+        navParams, global, translate) {
         this.navParams = navParams;
+        this.global = global;
+        this.translate = translate;
+        this.tab1Root = 'MatchesPage';
+        this.tab2Root = 'ProfilePage';
+        this.tab3Root = 'PaymentsPage';
+        this.tab4Root = 'StatsPage';
     }
-    TeamsPageComponent.prototype.ngOnInit = function () {
-        this.match = this.navParams.get('match');
+    TabsControllerComponent.prototype.ionViewDidEnter = function () {
+        this.tabs.select(this.navParams.get('indexSelected'), undefined, undefined);
+        this.global.enableSideMenu(true);
     };
-    TeamsPageComponent.prototype.showOptions = function () {
+    TabsControllerComponent.prototype.ngOnInit = function () {
+        this.translateTitles();
     };
-    TeamsPageComponent = __decorate([
+    TabsControllerComponent.prototype.translateTitles = function () {
+        this.tab1Title = this.translate.instant('TABS.TAB1');
+        this.tab2Title = this.translate.instant('TABS.TAB2');
+        this.tab3Title = this.translate.instant('TABS.TAB3');
+        this.tab4Title = this.translate.instant('TABS.TAB4');
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('tabs'),
+        __metadata("design:type", Object)
+    ], TabsControllerComponent.prototype, "tabs", void 0);
+    TabsControllerComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-teams',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\teams\teams.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.TEAMS" | translate}}</p>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-card *ngIf="match.team1 && match.team2; else elesBlock">\n\n        <ion-grid>\n\n            <ion-row>\n\n                <ion-col>                    \n\n                    <ion-list>\n\n                        <ion-list-header>\n\n                            {{match.team1.color | translate}}\n\n                        </ion-list-header>\n\n                        <ion-item *ngFor="let player of match.team1.players; let i = index;">\n\n                            {{i+1}}. {{player.name}} <span *ngIf="!player.fixed">(s)</span>\n\n                        </ion-item>\n\n                    </ion-list>\n\n                </ion-col>\n\n                <ion-col>\n\n                    <ion-list>\n\n                        <ion-list-header>\n\n                            {{match.team2.color | translate}}\n\n                        </ion-list-header>\n\n                        <ion-item *ngFor="let player of match.team2.players; let i = index;">\n\n                            {{i+1}}. {{player.name}} <span *ngIf="!player.fixed">(s)</span>\n\n                        </ion-item>\n\n                    </ion-list>\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </ion-card>  \n\n    <ng-template #elseBlock>\n\n        <fwf-empty-state>\n\n            {{\'TEAMSPAGE.NO_TEAMS\' | translate}}\n\n        </fwf-empty-state>\n\n    </ng-template>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\teams\teams.component.html"*/,
+            selector: 'fwf-tabs-controller',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\tabs-controller\tabs-controller.html"*/'<ion-tabs #tabs>\n    <ion-tab [root]="tab1Root" tabTitle="{{tab1Title}}" tabIcon="football"></ion-tab>\n    <ion-tab [root]="tab2Root" tabTitle="{{tab2Title}}" tabIcon="person"></ion-tab>\n    <ion-tab [root]="tab3Root" tabTitle="{{tab3Title}}" tabIcon="cash"></ion-tab>\n    <ion-tab [root]="tab4Root" tabTitle="{{tab4Title}}" tabIcon="stats"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\tabs-controller\tabs-controller.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]])
-    ], TeamsPageComponent);
-    return TeamsPageComponent;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_3__providers__["f" /* GlobalService */],
+            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]])
+    ], TabsControllerComponent);
+    return TabsControllerComponent;
 }());
 
-//# sourceMappingURL=teams.component.js.map
+//# sourceMappingURL=tabs-controller.js.map
 
 /***/ })
 
