@@ -109616,6 +109616,37 @@ fwf-menu .product-info .toolbar-title .copyright:before, ion-menu .product-info 
   content: "\00A9";
 }
 
+fwf-payments-filter .reset-button {
+  color: #ff5252;
+  margin-left: 2rem;
+}
+
+fwf-payment-management-player .payment-amount-no-paid {
+  color: red;
+}
+
+fwf-payment-management-player .filter__in-use.bar-button-default-md::after {
+  border: 1px solid #26c048;
+  background: white;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.4rem;
+  left: 2.3rem;
+}
+
+fwf-payment-management-player .filter__in-use.bar-button-default-ios::after {
+  border: 1px solid #26c048;
+  background: white;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+}
+
 fwf-scoreboard .red:before {
   color: red;
 }
@@ -109792,6 +109823,32 @@ fwf-login-form #loginForm .error-message {
 
 fwf-page-matches ion-header {
   background: #26c048;
+}
+
+fwf-page-payments .payment-amount-no-paid {
+  color: red;
+}
+
+fwf-page-payments .filter__in-use.bar-button-default-md::after {
+  border: 1px solid #26c048;
+  background: white;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.4rem;
+  left: 2.3rem;
+}
+
+fwf-page-payments .filter__in-use.bar-button-default-ios::after {
+  border: 1px solid #26c048;
+  background: white;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
 }
 
 .toast .toast-button, .toast-success .toast-button, .toast-error .toast-button, .toast-info .toast-button, .toast-warning .toast-button {
