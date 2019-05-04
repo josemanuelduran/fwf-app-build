@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/josemanuelduran/football-with-friends-client.git"
   },
-  "engine": {
+  "engines": {
 	"node": "8.11.0"
   },
   "scripts": {
