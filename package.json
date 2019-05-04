@@ -9,7 +9,6 @@
 	"node": "8.11.0"
   },
   "scripts": {
-    "start": "node www/index.js",
     "build": "webpack"
   },
   "dependencies": {
