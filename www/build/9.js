@@ -1,6 +1,6 @@
 webpackJsonp([9],{
 
-/***/ 584:
+/***/ 590:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__payments_component__ = __webpack_require__(622);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__payments_component__ = __webpack_require__(628);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(409);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(51);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -49,7 +49,7 @@ var PaymentsPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 622:
+/***/ 628:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57,10 +57,9 @@ var PaymentsPageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_payments_filter_payments_filter_component__ = __webpack_require__(152);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
@@ -120,9 +119,7 @@ var PaymentsPageComponent = /** @class */ (function () {
                 }
                 else {
                     name = _this.translate.instant('MONTHS.' + payment.month) + " - " + payment.year;
-                    var month = payment.month.toLowerCase();
-                    month = month.charAt(0).toUpperCase() + month.slice(1);
-                    monthIndex = __WEBPACK_IMPORTED_MODULE_3_moment__["months"]().indexOf(month);
+                    monthIndex = __WEBPACK_IMPORTED_MODULE_4__models__["c" /* Month */].getIndex(payment.month);
                 }
                 return __assign({}, payment, { name: name, monthIndex: monthIndex });
             });
@@ -152,7 +149,7 @@ var PaymentsPageComponent = /** @class */ (function () {
         }
     };
     PaymentsPageComponent.prototype.initializeList = function (data) {
-        this.payments = __WEBPACK_IMPORTED_MODULE_4_lodash__["orderBy"](data, ['year', 'monthIndex', 'matchDate'], ['desc', 'desc', 'desc']);
+        this.payments = __WEBPACK_IMPORTED_MODULE_3_lodash__["orderBy"](data, ['year', 'monthIndex', 'matchDate'], ['desc', 'desc', 'desc']);
     };
     PaymentsPageComponent.prototype.getFilterIconClass = function (selectedFilters) {
         var classIcon;
