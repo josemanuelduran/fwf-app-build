@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/josemanuelduran/football-with-friends-client.git"
   },
+  "engine": {
+	"node": "8.11.0"
+  },
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
