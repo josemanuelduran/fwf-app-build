@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 586:
+/***/ 584:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,15 +11,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_moment__ = __webpack_require__(604);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angular2_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__payment_management_component__ = __webpack_require__(623);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__payment_management_component__ = __webpack_require__(621);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(409);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_payment_management_players_payment_management_players_component__ = __webpack_require__(624);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_payment_management_players_payment_management_players_component__ = __webpack_require__(622);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_payment_management_pending_payment_management_pending_component__ = __webpack_require__(623);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -35,6 +37,7 @@ var PaymentManagementPageModule = /** @class */ (function () {
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_4__payment_management_component__["a" /* PaymentManagementPageComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__components_payment_management_players_payment_management_players_component__["a" /* PaymentManagementPlayersComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__components_payment_management_pending_payment_management_pending_component__["a" /* PaymentManagementPendingComponent */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_4__payment_management_component__["a" /* PaymentManagementPageComponent */]),
@@ -767,7 +770,7 @@ exports.MomentModule = MomentModule;
 
 /***/ }),
 
-/***/ 623:
+/***/ 621:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -799,7 +802,7 @@ var PaymentManagementPageComponent = /** @class */ (function () {
     };
     PaymentManagementPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-payment-management',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\payment-management\payment-management.component.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <!--Android pushes buttons to the left even if start attribute is present.\n            Check demo: http://ionicframework.com/docs/v2/components/#buttons-in-components-->\n        <!--If placing the menuToggle in a navbar or toolbar, it should be placed as a child of the <ion-navbar> or <ion-toolbar>, and not in the <ion-buttons> element\n        http://ionicframework.com/docs/v2/api/components/menu/MenuToggle/-->\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n            {{ \'PAYMENT_MANAGEMENT_PAGE.TITLE\' | translate}}\n        </ion-title>\n    </ion-navbar>\n    <ion-toolbar no-padding class="filter-container" color="primary">\n        <ion-segment name="selectedOption" [ngModel]="selectedOption" (ionChange)="onSelectionChanged($event.value)" color="primary">\n            <ion-segment-button value="players">\n                {{"PAYMENT_MANAGEMENT_PAGE.PLAYERS_TAB" | translate}}\n            </ion-segment-button>\n            <ion-segment-button value="payments">\n                {{"PAYMENT_MANAGEMENT_PAGE.PAYMENTS_TAB" | translate}}\n            </ion-segment-button>\n        </ion-segment>\n    </ion-toolbar>\n</ion-header>\n<ion-content>\n    <ng-container [ngSwitch]="selectedOption">\n        <div *ngSwitchCase="\'players\'">\n            <fwf-payment-management-players></fwf-payment-management-players>\n        </div>\n        <div *ngSwitchCase="\'payments\'" class="card-section">\n            <img src="assets/img/png/under-construction.png"/>\n        </div>\n    </ng-container>\n</ion-content>\n        \n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\payment-management\payment-management.component.html"*/
+            selector: 'fwf-payment-management',template:/*ion-inline-start:"C:\FWF\football-with-friends-client\src\app\pages\payment-management\payment-management.component.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <!--Android pushes buttons to the left even if start attribute is present.\n            Check demo: http://ionicframework.com/docs/v2/components/#buttons-in-components-->\n        <!--If placing the menuToggle in a navbar or toolbar, it should be placed as a child of the <ion-navbar> or <ion-toolbar>, and not in the <ion-buttons> element\n        http://ionicframework.com/docs/v2/api/components/menu/MenuToggle/-->\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n            {{ \'PAYMENT_MANAGEMENT_PAGE.TITLE\' | translate}}\n        </ion-title>\n    </ion-navbar>\n    <ion-toolbar no-padding class="filter-container" color="primary">\n        <ion-segment name="selectedOption" [ngModel]="selectedOption" (ionChange)="onSelectionChanged($event.value)" color="primary">\n            <ion-segment-button value="players">\n                {{"PAYMENT_MANAGEMENT_PAGE.PLAYERS_TAB" | translate}}\n            </ion-segment-button>\n            <ion-segment-button value="payments">\n                {{"PAYMENT_MANAGEMENT_PAGE.PAYMENTS_TAB" | translate}}\n            </ion-segment-button>\n        </ion-segment>\n    </ion-toolbar>\n</ion-header>\n<ion-content>\n    <ng-container [ngSwitch]="selectedOption">\n        <div *ngSwitchCase="\'players\'">\n            <fwf-payment-management-players></fwf-payment-management-players>\n        </div>\n        <div *ngSwitchCase="\'payments\'" class="card-section">\n            <fwf-payment-management-pending></fwf-payment-management-pending>\n        </div>\n    </ng-container>\n</ion-content>\n\n\n'/*ion-inline-end:"C:\FWF\football-with-friends-client\src\app\pages\payment-management\payment-management.component.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers__["d" /* ContextService */]])
     ], PaymentManagementPageComponent);
@@ -810,7 +813,7 @@ var PaymentManagementPageComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 624:
+/***/ 622:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -856,7 +859,7 @@ var PaymentManagementPlayersComponent = /** @class */ (function () {
     };
     PaymentManagementPlayersComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-payment-management-players',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\payment-management\components\payment-management-players\payment-management-players.component.html"*/'<ion-list list-grouped>\n    <ion-list-header>\n        {{\'PAYMENT_MANAGEMENT_PAGE.FIXED_HEADER\' | translate}}\n    </ion-list-header>\n    <ion-item\n            detail-push \n            *ngFor="let player of fixedPlayers" \n            (click)="playerSelected(player)"\n            text-wrap>\n        <h3 class="payment-nmme">\n            {{player.alias}}\n        </h3>\n    </ion-item>\n</ion-list>\n<ion-list list-grouped>\n    <ion-list-header>\n        {{\'PAYMENT_MANAGEMENT_PAGE.NO_FIXED_HEADER\' | translate}}\n    </ion-list-header>\n    <ion-item\n            detail-push \n            *ngFor="let player of noFixedPlayers" \n            (click)="playerSelected(player)"\n            text-wrap>\n        <h3 class="payment-name">\n            {{player.alias}}\n        </h3>\n    </ion-item>\n</ion-list>\n<!--No treatments available to display-->\n<fwf-empty-state *ngIf="filteredPlayer?.length === 0">\n    {{\'PAYMENT_MANAGEMENT_PAGE.NO_FOUND_PLAYERS\' | translate}}\n</fwf-empty-state>\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\payment-management\components\payment-management-players\payment-management-players.component.html"*/
+            selector: 'fwf-payment-management-players',template:/*ion-inline-start:"C:\FWF\football-with-friends-client\src\app\pages\payment-management\components\payment-management-players\payment-management-players.component.html"*/'<ion-list list-grouped>\n    <ion-list-header>\n        {{\'PAYMENT_MANAGEMENT_PAGE.FIXED_HEADER\' | translate}}\n    </ion-list-header>\n    <ion-item\n            detail-push\n            *ngFor="let player of fixedPlayers"\n            (click)="playerSelected(player)"\n            text-wrap>\n        <h3 class="payment-nmme">\n            {{player.alias}}\n        </h3>\n    </ion-item>\n</ion-list>\n<ion-list list-grouped>\n    <ion-list-header>\n        {{\'PAYMENT_MANAGEMENT_PAGE.NO_FIXED_HEADER\' | translate}}\n    </ion-list-header>\n    <ion-item\n            detail-push\n            *ngFor="let player of noFixedPlayers"\n            (click)="playerSelected(player)"\n            text-wrap>\n        <h3 class="payment-name">\n            {{player.alias}}\n        </h3>\n    </ion-item>\n</ion-list>\n'/*ion-inline-end:"C:\FWF\football-with-friends-client\src\app\pages\payment-management\components\payment-management-players\payment-management-players.component.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1__providers__["k" /* PlayersService */],
@@ -866,6 +869,146 @@ var PaymentManagementPlayersComponent = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=payment-management-players.component.js.map
+
+/***/ }),
+
+/***/ 623:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PaymentManagementPendingComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(51);
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var PaymentManagementPendingComponent = /** @class */ (function () {
+    function PaymentManagementPendingComponent(playersService, paymentService, translate, messages, alertCtrl) {
+        this.playersService = playersService;
+        this.paymentService = paymentService;
+        this.translate = translate;
+        this.messages = messages;
+        this.alertCtrl = alertCtrl;
+    }
+    PaymentManagementPendingComponent.prototype.ngOnInit = function () {
+        this.loadListPlayers();
+    };
+    PaymentManagementPendingComponent.prototype.loadListPlayers = function () {
+        var _this = this;
+        this.playersService.fetchPlayers()
+            .subscribe(function (players) {
+            _this.playersList = players;
+            _this.loadListPayments();
+        }, function (error) { return _this.messages.showError(error); });
+    };
+    PaymentManagementPendingComponent.prototype.loadListPayments = function () {
+        var _this = this;
+        this.paymentService
+            .fetchPendingPayments()
+            .subscribe(function (data) {
+            var payments = data.map(function (payment) {
+                var matchDate = payment.matchDate;
+                var name = '';
+                var monthIndex = 0;
+                if (matchDate) {
+                    name = matchDate.split('T')[0];
+                }
+                else {
+                    name = _this.translate.instant('MONTHS.' + payment.month) + " - " + payment.year;
+                    monthIndex = __WEBPACK_IMPORTED_MODULE_4__models__["c" /* Month */].getIndex(payment.month);
+                }
+                return __assign({}, payment, { name: name, monthIndex: monthIndex });
+            });
+            _this.initializeList(__WEBPACK_IMPORTED_MODULE_3_lodash__["orderBy"](payments, ['year', 'monthIndex', 'matchDate'], ['desc', 'desc', 'desc']));
+        }, function (err) {
+            _this.messages.showError(err);
+        });
+    };
+    PaymentManagementPendingComponent.prototype.paid = function (payment, slidingItem) {
+        var _this = this;
+        payment.paid = true;
+        payment.paymentDate = new Date();
+        this.paymentService.updatePayment(payment)
+            .subscribe(function (data) { return _this.loadListPayments(); }, function (error) { return _this.messages.showError(error); });
+        slidingItem.close();
+    };
+    PaymentManagementPendingComponent.prototype.deletePayment = function (payment, slidingItem) {
+        var _this = this;
+        var alert = this.alertCtrl.create({
+            title: this.translate.instant('PAYMENT_MANAGEMENT_PAGE.DELETE_PAYMENT'),
+            subTitle: this.translate.instant('PAYMENT_MANAGEMENT_PAGE.DELETE_SURE'),
+            buttons: [
+                {
+                    text: this.translate.instant('CANCEL_BUTTON'),
+                    role: 'cancel',
+                },
+                {
+                    text: 'OK',
+                    role: 'ok',
+                    handler: function (response) {
+                        _this.paymentService.deletePayment(payment.id)
+                            .subscribe(function (data) {
+                            _this.loadListPayments();
+                            _this.messages.showSuccess('ACTION_OK', 'CONFIRMATION');
+                        }, function (error) { return _this.messages.showError(error); });
+                    }
+                },
+            ]
+        });
+        alert.present();
+        slidingItem.close();
+    };
+    PaymentManagementPendingComponent.prototype.initializeList = function (payments) {
+        var _this = this;
+        var playersPendingPayments = payments.map(function (payment) {
+            var player = _this.playersList.find(function (el) { return el.id === payment.playerId; });
+            return {
+                player: player,
+                payment: payment,
+            };
+        });
+        this.fixedPlayersPayments = playersPendingPayments.filter(function (el) { return el.player.fixed; });
+        this.noFixedPlayersPayments = playersPendingPayments.filter(function (el) { return !el.player.fixed; });
+    };
+    PaymentManagementPendingComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'fwf-payment-management-pending',template:/*ion-inline-start:"C:\FWF\football-with-friends-client\src\app\pages\payment-management\components\payment-management-pending\payment-management-pending.component.html"*/'<ion-list list-grouped>\n    <ion-list-header>\n        {{\'PAYMENT_MANAGEMENT_PAGE.FIXED_HEADER\' | translate}}\n    </ion-list-header>\n    <ion-item-sliding #slidingItem *ngFor="let playerPayment of fixedPlayersPayments">\n        <ion-item text-wrap>\n            <ion-icon item-left name="thumbs-down"></ion-icon>\n            <h2>\n                {{playerPayment.player.alias}}\n            </h2>\n            <h3>\n                {{playerPayment.payment.name}}\n            </h3>\n            <h4>\n                <span id="paymentAmount" class="payment-amount-no-paid">\n                    {{playerPayment.payment.amount}} €\n                </span>\n            </h4>\n        </ion-item>\n        <ion-item-options side="left">\n            <button ion-button color="danger"\n                    (click)="deletePayment(playerPayment.payment, slidingItem)">\n                <ion-icon name="trash"></ion-icon>\n                {{\'DELETE_BUTTON\' | translate}}\n            </button>\n        </ion-item-options>\n        <ion-item-options side="right" (ionSwipe)="paid(playerPayment.payment, slidingItem)">\n            <button ion-button color="primary"\n                    (click)="paid(playerPayment.payment, slidingItem)">\n                <ion-icon name="cash"></ion-icon>\n                {{\'PAID_BUTTON\' | translate}}\n            </button>\n        </ion-item-options>\n    </ion-item-sliding>\n</ion-list>\n<ion-list list-grouped>\n    <ion-list-header>\n        {{\'PAYMENT_MANAGEMENT_PAGE.NO_FIXED_HEADER\' | translate}}\n    </ion-list-header>\n    <ion-item-sliding #slidingItem *ngFor="let playerPayment of noFixedPlayersPayments">\n        <ion-item text-wrap>\n            <ion-icon item-left name="thumbs-down"></ion-icon>\n            <h2>\n                {{playerPayment.player.alias}}\n            </h2>\n            <h3>\n                {{playerPayment.payment.name}}\n            </h3>\n            <h4>\n                <span id="paymentAmount" class="payment-amount-no-paid">\n                    {{playerPayment.payment.amount}} €\n                </span>\n            </h4>\n        </ion-item>\n        <ion-item-options side="left">\n            <button ion-button color="danger"\n                    (click)="deletePayment(playerPayment.payment, slidingItem)">\n                <ion-icon name="trash"></ion-icon>\n                {{\'DELETE_BUTTON\' | translate}}\n            </button>\n        </ion-item-options>\n        <ion-item-options side="right" (ionSwipe)="paid(playerPayment.payment, slidingItem)">\n            <button ion-button color="primary"\n                    (click)="paid(playerPayment.payment, slidingItem)">\n                <ion-icon name="cash"></ion-icon>\n                {{\'PAID_BUTTON\' | translate}}\n            </button>\n        </ion-item-options>\n    </ion-item-sliding>\n</ion-list>\n'/*ion-inline-end:"C:\FWF\football-with-friends-client\src\app\pages\payment-management\components\payment-management-pending\payment-management-pending.component.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__providers__["k" /* PlayersService */],
+            __WEBPACK_IMPORTED_MODULE_5__providers__["j" /* PaymentsService */],
+            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */],
+            __WEBPACK_IMPORTED_MODULE_5__providers__["i" /* MessagesService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+    ], PaymentManagementPendingComponent);
+    return PaymentManagementPendingComponent;
+}());
+
+//# sourceMappingURL=payment-management-pending.component.js.map
 
 /***/ })
 

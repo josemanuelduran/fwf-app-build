@@ -109825,6 +109825,10 @@ fwf-page-matches ion-header {
   background: #26c048;
 }
 
+fwf-payment-management-pending .payment-amount-no-paid {
+  color: red;
+}
+
 fwf-page-payments .payment-amount-no-paid {
   color: red;
 }

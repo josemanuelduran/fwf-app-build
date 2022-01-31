@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 582:
+/***/ 583:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,9 +11,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_moment__ = __webpack_require__(604);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matches_component__ = __webpack_require__(615);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_matches_list_item_matches_list_item_component__ = __webpack_require__(616);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_pipes_module__ = __webpack_require__(617);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matches_component__ = __webpack_require__(616);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_matches_list_item_matches_list_item_component__ = __webpack_require__(617);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_pipes_module__ = __webpack_require__(618);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_components_module__ = __webpack_require__(409);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -770,7 +770,7 @@ exports.MomentModule = MomentModule;
 
 /***/ }),
 
-/***/ 615:
+/***/ 616:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -985,7 +985,7 @@ var MatchesPageComponent = /** @class */ (function () {
     };
     MatchesPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-matches',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\matches\matches.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n\n        <!--Android pushes buttons to the left even if start attribute is present.\n\n            Check demo: http://ionicframework.com/docs/v2/components/#buttons-in-components-->\n\n        <!--If placing the menuToggle in a navbar or toolbar, it should be placed as a child of the <ion-navbar> or <ion-toolbar>, and not in the <ion-buttons> element\n\n        http://ionicframework.com/docs/v2/api/components/menu/MenuToggle/-->\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            {{ "MATCHES_PAGE.TITLE" | translate}}\n\n        </ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    (click)="openSearchBox()">\n\n                <ion-icon name="funnel"></ion-icon>\n\n            </button>        \n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <ion-refresher (ionRefresh)="loadListMatches($event)">\n\n        <ion-refresher-content\n\n                pullingIcon="arrow-dropdown"\n\n                pullingText="{{\'REFRESHER_COMPONENT.PULL_TO_REFRESH\' | translate}}"\n\n                refreshingSpinner="circles">\n\n        </ion-refresher-content>\n\n    </ion-refresher>\n\n\n\n    <ion-list\n\n            *ngFor="let group of groupedMatches"\n\n            no-lines\n\n            list-grouped\n\n            class="expanded">\n\n        <ion-list-header>\n\n            {{(group.group | fwfCapitalize)}}\n\n        </ion-list-header>\n\n        <div class="item-group">\n\n            <fwf-matches-list-item\n\n                    *ngFor="let matchMonthYear of group.matches"\n\n                    [match]="matchMonthYear.match"\n\n                    [isAdmin]="isAdmin"\n\n                    [playerId]="userLogged.playerId"\n\n                    (action)="doAction(matchMonthYear.match, $event)">\n\n            </fwf-matches-list-item>\n\n        </div>\n\n    </ion-list>\n\n    <!--No treatments available to display-->\n\n    <fwf-empty-state *ngIf="groupedMatches?.length === 0">\n\n        {{\'MATCHES_PAGE.NO_FOUND\' | translate}}\n\n    </fwf-empty-state>\n\n    <ion-fab right bottom *ngIf="isAdmin">\n\n        <button ion-fab color="primary" (click)="addMatch()">\n\n            <ion-icon name="add"></ion-icon>\n\n        </button>\n\n    </ion-fab>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\matches\matches.component.html"*/,
+            selector: 'fwf-page-matches',template:/*ion-inline-start:"C:\FWF\football-with-friends-client\src\app\pages\matches\matches.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n\n        <!--Android pushes buttons to the left even if start attribute is present.\n\n            Check demo: http://ionicframework.com/docs/v2/components/#buttons-in-components-->\n\n        <!--If placing the menuToggle in a navbar or toolbar, it should be placed as a child of the <ion-navbar> or <ion-toolbar>, and not in the <ion-buttons> element\n\n        http://ionicframework.com/docs/v2/api/components/menu/MenuToggle/-->\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            {{ "MATCHES_PAGE.TITLE" | translate}}\n\n        </ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    (click)="openSearchBox()">\n\n                <ion-icon name="funnel"></ion-icon>\n\n            </button>        \n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <ion-refresher (ionRefresh)="loadListMatches($event)">\n\n        <ion-refresher-content\n\n                pullingIcon="arrow-dropdown"\n\n                pullingText="{{\'REFRESHER_COMPONENT.PULL_TO_REFRESH\' | translate}}"\n\n                refreshingSpinner="circles">\n\n        </ion-refresher-content>\n\n    </ion-refresher>\n\n\n\n    <ion-list\n\n            *ngFor="let group of groupedMatches"\n\n            no-lines\n\n            list-grouped\n\n            class="expanded">\n\n        <ion-list-header>\n\n            {{(group.group | fwfCapitalize)}}\n\n        </ion-list-header>\n\n        <div class="item-group">\n\n            <fwf-matches-list-item\n\n                    *ngFor="let matchMonthYear of group.matches"\n\n                    [match]="matchMonthYear.match"\n\n                    [isAdmin]="isAdmin"\n\n                    [playerId]="userLogged.playerId"\n\n                    (action)="doAction(matchMonthYear.match, $event)">\n\n            </fwf-matches-list-item>\n\n        </div>\n\n    </ion-list>\n\n    <!--No treatments available to display-->\n\n    <fwf-empty-state *ngIf="groupedMatches?.length === 0">\n\n        {{\'MATCHES_PAGE.NO_FOUND\' | translate}}\n\n    </fwf-empty-state>\n\n    <ion-fab right bottom *ngIf="isAdmin">\n\n        <button ion-fab color="primary" (click)="addMatch()">\n\n            <ion-icon name="add"></ion-icon>\n\n        </button>\n\n    </ion-fab>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\FWF\football-with-friends-client\src\app\pages\matches\matches.component.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_6__providers__["h" /* MatchesService */],
@@ -1002,7 +1002,7 @@ var MatchesPageComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 616:
+/***/ 617:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1095,7 +1095,7 @@ var MatchesListItemComponent = /** @class */ (function () {
     ], MatchesListItemComponent.prototype, "action", void 0);
     MatchesListItemComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-matches-list-item',template:/*ion-inline-start:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\matches\components\matches-list-item\matches-list-item.component.html"*/'<ion-item-sliding #item>\n    <ion-item detail-push (click)="matchSelected()" text-wrap>\n        <ion-icon item-left *ngIf="matchClosed" name="lock"></ion-icon>\n        <ion-icon item-left *ngIf="matchCancelled" name="close"></ion-icon>\n        <ion-icon item-left *ngIf="matchOpen" name="thumbs-up"></ion-icon>\n        <ion-icon item-left *ngIf="matchPlayed" name="done-all"></ion-icon>\n        <h3 class="macth-name">\n            {{match.name}}\n        </h3>\n        <h4 class="match-info">\n            <span id="matchDate" *ngIf="match.date">\n                {{match.date | amDateFormat: \'DD-MM-YYYY\'}}\n            </span>\n        </h4>\n    </ion-item>\n    <ion-item-options side="left" *ngIf="isAdmin">\n        <button ion-button \n                color="danger" \n                (click)="delete(item)">\n            <ion-icon name="trash"></ion-icon>\n            {{"DELETE_BUTTON" | translate}}\n        </button>\n        <button ion-button color="primary" (click)="edit(item)">\n            <ion-icon name="create"></ion-icon>\n            {{"EDIT_BUTTON" | translate}}\n        </button>\n    </ion-item-options>\n    <ion-item-options side="right">\n        <button ion-button color="secondary"\n                (click)="joinCallUp(item)"\n                *ngIf="match.openCallUp && !playerJoined">\n            <ion-icon name="thumbs-up"></ion-icon>\n            {{\'JOIN_BUTTON\' | translate}}\n        </button>\n        <button ion-button color="danger"\n                (click)="unjoinCallUp(item)"\n                *ngIf="match.openCallUp && playerJoined">\n            <ion-icon name="thumbs-down"></ion-icon>\n            {{\'UNJOIN_BUTTON\' | translate}}\n        </button>\n        <button ion-button color="danger"\n                (click)="discardCallUp(item)"\n                *ngIf="match.openCallUp && !playerJoined && !playerDiscarded">\n            <ion-icon name="close"></ion-icon>\n            {{\'DISCARD_BUTTON\' | translate}}\n        </button>\n    </ion-item-options>\n  </ion-item-sliding>\n\n'/*ion-inline-end:"C:\DEVELOPMENT\FootballWithFriends\FWF-client\footballwithfriends\src\app\pages\matches\components\matches-list-item\matches-list-item.component.html"*/
+            selector: 'fwf-matches-list-item',template:/*ion-inline-start:"C:\FWF\football-with-friends-client\src\app\pages\matches\components\matches-list-item\matches-list-item.component.html"*/'<ion-item-sliding #item>\n\n    <ion-item detail-push (click)="matchSelected()" text-wrap>\n\n        <ion-icon item-left *ngIf="matchClosed" name="lock"></ion-icon>\n\n        <ion-icon item-left *ngIf="matchCancelled" name="close"></ion-icon>\n\n        <ion-icon item-left *ngIf="matchOpen" name="thumbs-up"></ion-icon>\n\n        <ion-icon item-left *ngIf="matchPlayed" name="done-all"></ion-icon>\n\n        <h3 class="macth-name">\n\n            {{match.name}}\n\n        </h3>\n\n        <h4 class="match-info">\n\n            <span id="matchDate" *ngIf="match.date">\n\n                {{match.date | amDateFormat: \'DD-MM-YYYY\'}}\n\n            </span>\n\n        </h4>\n\n    </ion-item>\n\n    <ion-item-options side="left" *ngIf="isAdmin">\n\n        <button ion-button \n\n                color="danger" \n\n                (click)="delete(item)">\n\n            <ion-icon name="trash"></ion-icon>\n\n            {{"DELETE_BUTTON" | translate}}\n\n        </button>\n\n        <button ion-button color="primary" (click)="edit(item)">\n\n            <ion-icon name="create"></ion-icon>\n\n            {{"EDIT_BUTTON" | translate}}\n\n        </button>\n\n    </ion-item-options>\n\n    <ion-item-options side="right">\n\n        <button ion-button color="secondary"\n\n                (click)="joinCallUp(item)"\n\n                *ngIf="match.openCallUp && !playerJoined">\n\n            <ion-icon name="thumbs-up"></ion-icon>\n\n            {{\'JOIN_BUTTON\' | translate}}\n\n        </button>\n\n        <button ion-button color="danger"\n\n                (click)="unjoinCallUp(item)"\n\n                *ngIf="match.openCallUp && playerJoined">\n\n            <ion-icon name="thumbs-down"></ion-icon>\n\n            {{\'UNJOIN_BUTTON\' | translate}}\n\n        </button>\n\n        <button ion-button color="danger"\n\n                (click)="discardCallUp(item)"\n\n                *ngIf="match.openCallUp && !playerJoined && !playerDiscarded">\n\n            <ion-icon name="close"></ion-icon>\n\n            {{\'DISCARD_BUTTON\' | translate}}\n\n        </button>\n\n    </ion-item-options>\n\n  </ion-item-sliding>\n\n\n\n'/*ion-inline-end:"C:\FWF\football-with-friends-client\src\app\pages\matches\components\matches-list-item\matches-list-item.component.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], MatchesListItemComponent);
@@ -1106,14 +1106,14 @@ var MatchesListItemComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 617:
+/***/ 618:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PipesModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__capitalize_pipe__ = __webpack_require__(618);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__elapsed_time_pipe__ = __webpack_require__(619);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__capitalize_pipe__ = __webpack_require__(619);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__elapsed_time_pipe__ = __webpack_require__(620);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1145,7 +1145,7 @@ var PipesModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 618:
+/***/ 619:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1180,7 +1180,7 @@ var CapitalizePipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 619:
+/***/ 620:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
