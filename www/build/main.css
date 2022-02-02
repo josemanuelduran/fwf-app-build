@@ -109855,6 +109855,14 @@ fwf-page-payments .filter__in-use.bar-button-default-ios::after {
   left: 2.5rem;
 }
 
+fwf-page-valuations .voted {
+  color: lightgreen;
+}
+
+fwf-page-valuations .no-voted {
+  color: red;
+}
+
 .toast .toast-button, .toast-success .toast-button, .toast-error .toast-button, .toast-info .toast-button, .toast-warning .toast-button {
   color: #ffffff;
 }

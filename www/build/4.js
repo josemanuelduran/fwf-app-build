@@ -84,7 +84,8 @@ var ValuationsPageComponent = /** @class */ (function () {
                     return {
                         namePlayer: item.player.name,
                         idPlayer: item.player.id,
-                        score: (item.totalScore / item.numVotes)
+                        score: (item.totalScore / item.numVotes),
+                        voted: item.voted,
                     };
                 });
                 _this.scores.sort(function (a, b) {
@@ -114,7 +115,7 @@ var ValuationsPageComponent = /** @class */ (function () {
     };
     ValuationsPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-valuations',template:/*ion-inline-start:"C:\FWF\football-with-friends-client\src\app\pages\valuations\valuations.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.VALUATIONS" | translate}}</p>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-list *ngIf="scores">\n\n        <ion-item *ngFor="let item of scores; let i = index;">\n\n            <ion-label>{{i+1}}. {{item.namePlayer}}</ion-label>\n\n            <ion-label>{{item.score.toFixed(2)}}</ion-label>\n\n        </ion-item>\n\n    </ion-list>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\FWF\football-with-friends-client\src\app\pages\valuations\valuations.component.html"*/,
+            selector: 'fwf-page-valuations',template:/*ion-inline-start:"C:\FWF\football-with-friends-client\src\app\pages\valuations\valuations.component.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>\n            {{match.name}}\n            <p class="subtitle">{{"MATCH_PAGE.VALUATIONS" | translate}}</p>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <ion-list *ngIf="scores">\n        <ion-item *ngFor="let item of scores; let i = index;">\n            <ion-label>{{i+1}}. {{item.namePlayer}}</ion-label>\n            <ion-label>{{item.score.toFixed(2)}}</ion-label>\n            <ion-icon *ngIf="item.voted" name="checkmark" class="voted" item-right></ion-icon>\n            <ion-icon *ngIf="!item.voted" name="close" class="no-voted" item-right></ion-icon>\n        </ion-item>\n    </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"C:\FWF\football-with-friends-client\src\app\pages\valuations\valuations.component.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],

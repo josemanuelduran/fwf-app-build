@@ -133,11 +133,11 @@ var map = {
 		13
 	],
 	"pages/discards/discards.component.module": [
-		579,
+		580,
 		12
 	],
 	"pages/introduction/introduction.component.module": [
-		580,
+		579,
 		11
 	],
 	"pages/login/login.component.module": [
@@ -161,23 +161,23 @@ var map = {
 		1
 	],
 	"pages/payments/payments.component.module": [
-		587,
+		586,
 		9
 	],
 	"pages/profile/profile.component.module": [
-		586,
+		590,
 		8
 	],
 	"pages/stats/stats.component.module": [
-		588,
+		587,
 		7
 	],
 	"pages/tabs-controller/tabs-controller.module": [
-		590,
+		589,
 		6
 	],
 	"pages/teams/teams.component.module": [
-		589,
+		588,
 		5
 	],
 	"pages/valuations/valuations.component.module": [
@@ -1209,18 +1209,18 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: 'pages/call-up/call-up.component.module#CallUpPageModule', name: 'CallUpPage', segment: 'call-up.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/about/about.component.module#StatsPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/discards/discards.component.module#DiscardsPageModule', name: 'DiscardsPage', segment: 'discards.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/introduction/introduction.component.module#IntroductionPageModule', name: 'IntroductionPage', segment: 'introduction', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/discards/discards.component.module#DiscardsPageModule', name: 'DiscardsPage', segment: 'discards.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/login/login.component.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/match/match.component.module#MatchPageModule', name: 'MatchPage', segment: 'match.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/matches/matches.component.module#MatchesPageModule', name: 'MatchesPage', segment: 'matches', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/my-valuations/my-valuations.component.module#MyValuationsPageModule', name: 'MyValuationsPage', segment: 'my-valuations.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/payment-management/payment-management.component.module#PaymentManagementPageModule', name: 'PaymentManagementPage', segment: 'paymentsManagement', priority: 'low', defaultHistory: [] },
-                        { loadChildren: 'pages/profile/profile.component.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/payments/payments.component.module#PaymentsPageModule', name: 'PaymentsPage', segment: 'payments', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/stats/stats.component.module#StatsPageModule', name: 'StatsPage', segment: 'stats', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/teams/teams.component.module#TeamsPageModule', name: 'TeamsPage', segment: 'teams.component', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/tabs-controller/tabs-controller.module#TabsControllerPageModule', name: 'TabsController', segment: 'tabController', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'pages/profile/profile.component.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'pages/valuations/valuations.component.module#ValuationsPageModule', name: 'ValuationsPage', segment: 'valuations.component', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -1755,8 +1755,8 @@ var UrlInterceptor = /** @class */ (function () {
         if (!request.url.includes('assets/i18n')) {
             request = request.clone({
                 // url: `http://192.168.0.157:8100/${request.url}`
-                // url: `http://localhost:8100/${request.url}`
-                url: "https://fwf-server.herokuapp.com/" + request.url
+                url: "http://localhost:8080/" + request.url
+                // url: `https://fwf-server.herokuapp.com/${request.url}`
             });
         }
         return next.handle(request);
