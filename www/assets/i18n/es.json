@@ -152,7 +152,7 @@
         "BLACK": "De Negro",
         "MATCHES_WON": "Partidos Ganados",
         "MATCHES_LOST": "Partidos Perdidos",
-        "MATCHES_TIED": "Partidos Empatados",
+        "NATCHES_TIED": "Partidos Empatados",
         "GOALS": "Goles",
         "GOALS_SCORED": "Goles a favor",
         "GOALS_CONCEDED": "Goles en contra"

@@ -1,6 +1,6 @@
 webpackJsonp([10],{
 
-/***/ 586:
+/***/ 584:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__my_valuations_component__ = __webpack_require__(625);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__my_valuations_component__ = __webpack_require__(619);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var MyValuationsPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 625:
+/***/ 619:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -143,7 +143,7 @@ var MyValuationsPageComponent = /** @class */ (function () {
     };
     MyValuationsPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-my-valuations',template:/*ion-inline-start:"C:\FWF\football-with-friends-client\src\app\pages\my-valuations\my-valuations.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.MY_VALUATIONS" | translate}}</p>\n\n        </ion-title>\n\n        <ion-buttons end *ngIf="!valuationDisabled">               \n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    (click)="saveScores()">\n\n                <ion-icon name="checkmark-circle"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-list *ngIf="matchScore">\n\n        <ion-item *ngFor="let item of matchScore.scores; let i = index;">\n\n            <ion-label>{{i+1}}. {{item.namePlayer}}</ion-label>\n\n                <ion-select [(ngModel)]="item.score" [disabled]="valuationDisabled">\n\n                    <ion-option selected=true>---</ion-option>\n\n                    <ion-option \n\n                        *ngFor="let score of [0,1,2,3,4,5,6,7,8,9,10]">\n\n                            {{score}}\n\n                    </ion-option>\n\n                </ion-select>\n\n        </ion-item>\n\n    </ion-list>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\FWF\football-with-friends-client\src\app\pages\my-valuations\my-valuations.component.html"*/,
+            selector: 'fwf-page-my-valuations',template:/*ion-inline-start:"C:\FWF\fwf-client\src\app\pages\my-valuations\my-valuations.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.MY_VALUATIONS" | translate}}</p>\n\n        </ion-title>\n\n        <ion-buttons end *ngIf="!valuationDisabled">               \n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    (click)="saveScores()">\n\n                <ion-icon name="checkmark-circle"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-list *ngIf="matchScore">\n\n        <ion-item *ngFor="let item of matchScore.scores; let i = index;">\n\n            <ion-label>{{i+1}}. {{item.namePlayer}}</ion-label>\n\n                <ion-select [(ngModel)]="item.score" [disabled]="valuationDisabled">\n\n                    <ion-option selected=true>---</ion-option>\n\n                    <ion-option \n\n                        *ngFor="let score of [0,1,2,3,4,5,6,7,8,9,10]">\n\n                            {{score}}\n\n                    </ion-option>\n\n                </ion-select>\n\n        </ion-item>\n\n    </ion-list>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\FWF\fwf-client\src\app\pages\my-valuations\my-valuations.component.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],

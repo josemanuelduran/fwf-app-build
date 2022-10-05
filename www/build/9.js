@@ -1,6 +1,6 @@
 webpackJsonp([9],{
 
-/***/ 587:
+/***/ 588:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__payments_component__ = __webpack_require__(626);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__payments_component__ = __webpack_require__(627);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(409);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -49,7 +49,7 @@ var PaymentsPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 626:
+/***/ 627:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -160,7 +160,7 @@ var PaymentsPageComponent = /** @class */ (function () {
     };
     PaymentsPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-payments',template:/*ion-inline-start:"C:\FWF\football-with-friends-client\src\app\pages\payments\payments.component.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <!--Android pushes buttons to the left even if start attribute is present.\n            Check demo: http://ionicframework.com/docs/v2/components/#buttons-in-components-->\n        <!--If placing the menuToggle in a navbar or toolbar, it should be placed as a child of the <ion-navbar> or <ion-toolbar>, and not in the <ion-buttons> element\n        http://ionicframework.com/docs/v2/api/components/menu/MenuToggle/-->\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n            {{ "PAYMENTS_PAGE.TITLE" | translate}}\n        </ion-title>\n        <ion-buttons end>\n            <button ion-button\n                    icon-only\n                    clear\n                    [ngClass]="filterIconClass"\n                    (click)="openFilter($event)">\n                <ion-icon name="funnel"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-refresher (ionRefresh)="loadListPayments($event)">\n        <ion-refresher-content\n                pullingIcon="arrow-dropdown"\n                pullingText="{{\'REFRESHER_COMPONENT.PULL_TO_REFRESH\' | translate}}"\n                refreshingSpinner="circles">\n        </ion-refresher-content>\n    </ion-refresher>\n\n    <ion-list>\n        <ion-item text-wrap *ngFor="let payment of payments">\n            <ion-icon item-left *ngIf="payment.paid" name="thumbs-up"></ion-icon>\n            <ion-icon item-left *ngIf="!payment.paid" name="thumbs-down"></ion-icon>\n            <h3 class="payment-nmme">\n                {{payment.name}}\n            </h3>\n            <h4 *ngIf="payment.paid">\n                <span id="paymentAmount">\n                    {{payment.amount}} €\n                </span>\n            </h4>\n            <h4 *ngIf="!payment.paid">\n                <span id="paymentAmount" class="payment-amount-no-paid">\n                    {{payment.amount}} €\n                </span>\n            </h4>\n        </ion-item>\n    </ion-list>\n    <!--No treatments available to display-->\n    <fwf-empty-state *ngIf="payments?.length === 0">\n        {{\'PAYMENTS_PAGE.NO_FOUND\' | translate}}\n    </fwf-empty-state>\n</ion-content>\n'/*ion-inline-end:"C:\FWF\football-with-friends-client\src\app\pages\payments\payments.component.html"*/
+            selector: 'fwf-page-payments',template:/*ion-inline-start:"C:\FWF\fwf-client\src\app\pages\payments\payments.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n\n        <!--Android pushes buttons to the left even if start attribute is present.\n\n            Check demo: http://ionicframework.com/docs/v2/components/#buttons-in-components-->\n\n        <!--If placing the menuToggle in a navbar or toolbar, it should be placed as a child of the <ion-navbar> or <ion-toolbar>, and not in the <ion-buttons> element\n\n        http://ionicframework.com/docs/v2/api/components/menu/MenuToggle/-->\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            {{ "PAYMENTS_PAGE.TITLE" | translate}}\n\n        </ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button\n\n                    icon-only\n\n                    clear\n\n                    [ngClass]="filterIconClass"\n\n                    (click)="openFilter($event)">\n\n                <ion-icon name="funnel"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher (ionRefresh)="loadListPayments($event)">\n\n        <ion-refresher-content\n\n                pullingIcon="arrow-dropdown"\n\n                pullingText="{{\'REFRESHER_COMPONENT.PULL_TO_REFRESH\' | translate}}"\n\n                refreshingSpinner="circles">\n\n        </ion-refresher-content>\n\n    </ion-refresher>\n\n\n\n    <ion-list>\n\n        <ion-item text-wrap *ngFor="let payment of payments">\n\n            <ion-icon item-left *ngIf="payment.paid" name="thumbs-up"></ion-icon>\n\n            <ion-icon item-left *ngIf="!payment.paid" name="thumbs-down"></ion-icon>\n\n            <h3 class="payment-nmme">\n\n                {{payment.name}}\n\n            </h3>\n\n            <h4 *ngIf="payment.paid">\n\n                <span id="paymentAmount">\n\n                    {{payment.amount}} €\n\n                </span>\n\n            </h4>\n\n            <h4 *ngIf="!payment.paid">\n\n                <span id="paymentAmount" class="payment-amount-no-paid">\n\n                    {{payment.amount}} €\n\n                </span>\n\n            </h4>\n\n        </ion-item>\n\n    </ion-list>\n\n    <!--No treatments available to display-->\n\n    <fwf-empty-state *ngIf="payments?.length === 0">\n\n        {{\'PAYMENTS_PAGE.NO_FOUND\' | translate}}\n\n    </fwf-empty-state>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\FWF\fwf-client\src\app\pages\payments\payments.component.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__providers__["j" /* PaymentsService */],
             __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */],

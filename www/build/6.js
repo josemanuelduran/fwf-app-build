@@ -1,6 +1,6 @@
 webpackJsonp([6],{
 
-/***/ 591:
+/***/ 590:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabsControllerPageModule", function() { return TabsControllerPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_controller__ = __webpack_require__(630);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_controller__ = __webpack_require__(629);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(23);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -41,7 +41,7 @@ var TabsControllerPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 630:
+/***/ 629:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -95,7 +95,7 @@ var TabsControllerComponent = /** @class */ (function () {
     ], TabsControllerComponent.prototype, "tabs", void 0);
     TabsControllerComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-tabs-controller',template:/*ion-inline-start:"C:\FWF\football-with-friends-client\src\app\pages\tabs-controller\tabs-controller.html"*/'<ion-tabs #tabs>\n\n    <ion-tab [root]="tab1Root" tabTitle="{{tab1Title}}" tabIcon="football"></ion-tab>\n\n    <ion-tab [root]="tab2Root" tabTitle="{{tab2Title}}" tabIcon="person"></ion-tab>\n\n    <ion-tab [root]="tab3Root" tabTitle="{{tab3Title}}" tabIcon="cash"></ion-tab>\n\n    <ion-tab [root]="tab4Root" tabTitle="{{tab4Title}}" tabIcon="stats"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"C:\FWF\football-with-friends-client\src\app\pages\tabs-controller\tabs-controller.html"*/,
+            selector: 'fwf-tabs-controller',template:/*ion-inline-start:"C:\FWF\fwf-client\src\app\pages\tabs-controller\tabs-controller.html"*/'<ion-tabs #tabs>\n\n    <ion-tab [root]="tab1Root" tabTitle="{{tab1Title}}" tabIcon="football"></ion-tab>\n\n    <ion-tab [root]="tab2Root" tabTitle="{{tab2Title}}" tabIcon="person"></ion-tab>\n\n    <ion-tab [root]="tab3Root" tabTitle="{{tab3Title}}" tabIcon="cash"></ion-tab>\n\n    <ion-tab [root]="tab4Root" tabTitle="{{tab4Title}}" tabIcon="stats"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"C:\FWF\fwf-client\src\app\pages\tabs-controller\tabs-controller.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_3__providers__["f" /* GlobalService */],

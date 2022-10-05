@@ -1,6 +1,6 @@
 webpackJsonp([12],{
 
-/***/ 581:
+/***/ 580:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__discards_component__ = __webpack_require__(615);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__discards_component__ = __webpack_require__(614);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var DiscardsPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 615:
+/***/ 614:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69,7 +69,7 @@ var DiscardsPageComponent = /** @class */ (function () {
     };
     DiscardsPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-discards',template:/*ion-inline-start:"C:\FWF\football-with-friends-client\src\app\pages\discards\discards.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.DISCARDS" | translate}}</p>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list>\n\n        <ion-item *ngFor="let item of match.discards; let i = index;">\n\n            {{i+1}}. {{item.player.name}} <span *ngIf="!item.player.fixed">(s)</span>\n\n        </ion-item>\n\n    </ion-list>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\FWF\football-with-friends-client\src\app\pages\discards\discards.component.html"*/,
+            selector: 'fwf-page-discards',template:/*ion-inline-start:"C:\FWF\fwf-client\src\app\pages\discards\discards.component.html"*/'<ion-header>\n\n    <ion-navbar color="primary">        \n\n        <ion-title>\n\n            {{match.name}}\n\n            <p class="subtitle">{{"MATCH_PAGE.DISCARDS" | translate}}</p>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list>\n\n        <ion-item *ngFor="let item of match.discards; let i = index;">\n\n            {{i+1}}. {{item.player.name}} <span *ngIf="!item.player.fixed">(s)</span>\n\n        </ion-item>\n\n    </ion-list>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\FWF\fwf-client\src\app\pages\discards\discards.component.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]])

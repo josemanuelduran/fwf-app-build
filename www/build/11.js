@@ -1,6 +1,6 @@
 webpackJsonp([11],{
 
-/***/ 580:
+/***/ 581:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__introduction_component__ = __webpack_require__(614);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__introduction_component__ = __webpack_require__(615);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var IntroductionPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 614:
+/***/ 615:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -98,7 +98,7 @@ var IntroductionPageComponent = /** @class */ (function () {
     ], IntroductionPageComponent.prototype, "slides", void 0);
     IntroductionPageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'fwf-page-introduction',template:/*ion-inline-start:"C:\FWF\football-with-friends-client\src\app\pages\introduction\introduction.component.html"*/'<ion-header no-border>\n\n  <ion-navbar>\n\n    <ion-buttons end *ngIf="showSkip">\n\n      <button ion-button (click)="startApp()" color="primary">Skip</button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content no-bounce>\n\n    <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>\n\n\n\n        <ion-slide>\n\n            <img [src]="image1" class="slide-image"/>\n\n            <h2 class="slide-title">\n\n                {{\'INTRODUCTION.SLIDE1_1\' | translate}} <b>{{\'APPLICATION_DETAIL.NAME\' | translate}}</b>\n\n            </h2>\n\n            <p>\n\n                {{\'INTRODUCTION.SLIDE1_2\' | translate}} <b>app</b> {{\'INTRODUCTION.SLIDE1_3\' | translate}} \n\n            </p>\n\n        </ion-slide>\n\n\n\n        <ion-slide>\n\n            <img [src]="image2" class="slide-image"/>\n\n            <h2 class="slide-title" >\n\n                {{\'INTRODUCTION.SLIDE2_1\' | translate}}\n\n            </h2>\n\n\n\n            <p><b>{{\'APPLICATION_DETAIL.NAME\' | translate}}</b> {{\'INTRODUCTION.SLIDE2_2\' | translate}}</p>\n\n            <p><b>{{\'APPLICATION_DETAIL.NAME\' | translate}}</b> {{\'INTRODUCTION.SLIDE2_3\' | translate}}</p>\n\n        </ion-slide>\n\n\n\n        <ion-slide>\n\n            <img [src]="image3" class="slide-image"/>\n\n            <h2 class="slide-title">\n\n                {{\'INTRODUCTION.SLIDE3_1\' | translate}}\n\n            </h2>\n\n            <p>{{\'INTRODUCTION.SLIDE3_2\' | translate}} <b>{{\'INTRODUCTION.SLIDE3_3\' | translate}}</b> {{\'INTRODUCTION.SLIDE3_4\' | translate}}</p>\n\n        </ion-slide>\n\n\n\n        <ion-slide>\n\n            <img [src]="image4" class="slide-image"/>\n\n            <h2 class="slide-title">\n\n                {{\'INTRODUCTION.SLIDE4_1\' | translate}}\n\n            </h2>\n\n            <button ion-button icon-end large clear (click)="startApp()">\n\n                {{\'INTRODUCTION.CONTINUE\' | translate}}\n\n                <ion-icon name="arrow-forward"></ion-icon>\n\n            </button>\n\n        </ion-slide>\n\n\n\n    </ion-slides>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\FWF\football-with-friends-client\src\app\pages\introduction\introduction.component.html"*/
+            selector: 'fwf-page-introduction',template:/*ion-inline-start:"C:\FWF\fwf-client\src\app\pages\introduction\introduction.component.html"*/'<ion-header no-border>\n\n  <ion-navbar>\n\n    <ion-buttons end *ngIf="showSkip">\n\n      <button ion-button (click)="startApp()" color="primary">Skip</button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content no-bounce>\n\n    <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>\n\n\n\n        <ion-slide>\n\n            <img [src]="image1" class="slide-image"/>\n\n            <h2 class="slide-title">\n\n                {{\'INTRODUCTION.SLIDE1_1\' | translate}} <b>{{\'APPLICATION_DETAIL.NAME\' | translate}}</b>\n\n            </h2>\n\n            <p>\n\n                {{\'INTRODUCTION.SLIDE1_2\' | translate}} <b>app</b> {{\'INTRODUCTION.SLIDE1_3\' | translate}} \n\n            </p>\n\n        </ion-slide>\n\n\n\n        <ion-slide>\n\n            <img [src]="image2" class="slide-image"/>\n\n            <h2 class="slide-title" >\n\n                {{\'INTRODUCTION.SLIDE2_1\' | translate}}\n\n            </h2>\n\n\n\n            <p><b>{{\'APPLICATION_DETAIL.NAME\' | translate}}</b> {{\'INTRODUCTION.SLIDE2_2\' | translate}}</p>\n\n            <p><b>{{\'APPLICATION_DETAIL.NAME\' | translate}}</b> {{\'INTRODUCTION.SLIDE2_3\' | translate}}</p>\n\n        </ion-slide>\n\n\n\n        <ion-slide>\n\n            <img [src]="image3" class="slide-image"/>\n\n            <h2 class="slide-title">\n\n                {{\'INTRODUCTION.SLIDE3_1\' | translate}}\n\n            </h2>\n\n            <p>{{\'INTRODUCTION.SLIDE3_2\' | translate}} <b>{{\'INTRODUCTION.SLIDE3_3\' | translate}}</b> {{\'INTRODUCTION.SLIDE3_4\' | translate}}</p>\n\n        </ion-slide>\n\n\n\n        <ion-slide>\n\n            <img [src]="image4" class="slide-image"/>\n\n            <h2 class="slide-title">\n\n                {{\'INTRODUCTION.SLIDE4_1\' | translate}}\n\n            </h2>\n\n            <button ion-button icon-end large clear (click)="startApp()">\n\n                {{\'INTRODUCTION.CONTINUE\' | translate}}\n\n                <ion-icon name="arrow-forward"></ion-icon>\n\n            </button>\n\n        </ion-slide>\n\n\n\n    </ion-slides>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\FWF\fwf-client\src\app\pages\introduction\introduction.component.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */],
